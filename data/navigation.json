@@ -1,29 +1,26 @@
 {
-  "logo": "/images/logo.svg",
+  "logo": "/images/large-logo.png",
   "items": [
     {
       "link": "/",
-      "text": "Home"
+      "text": "Inicio"
     },
     {
       "link": "/features/",
-      "text": "Features"
+      "text": "¿Quiénes somos?"
     },
     {
       "link": "/pricing/",
-      "text": "Pricing"
+      "text": "Servicios"
     },
     {
       "link": "/about/",
-      "text": "About"
+      "text": "Capacitaciones"
     },
-    {
-      "link": "/blog/",
-      "text": "Blog"
-    },
+  
     {
       "link": "/contact/",
-      "text": "Contact"
+      "text": "Contáctanos"
     }
   ],
   "btn": {

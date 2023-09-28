@@ -11,15 +11,15 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: home/hero
-    title: Beautiful email campaigns
+    title: Planes de Internet Para Su Hogar o Negocio
     description: >-
       With Sendit, you can quickly create beautiful rich emails that capture a
       reader's attention, engage them, and convert them into customers.
-    image: /images/hero/hero-image-2.png
-    image_alt: Reports dashboard
-    button:
-      text: Try This Free
-      link: /signup/
+    # image: /images/hero/hero-image-2.png
+    # image_alt: Reports dashboard
+    # button:
+    #   text: Try This Free
+    #   link: /signup/
   - _bookshop_name: global/counter
     title: Scale your
     title_suffix: Business
@@ -47,7 +47,7 @@ content_blocks:
   - _bookshop_name: home/video
     image: /images/video/video-thum.jpg
     image_alt: Thumbnail for video
-    video_url: https://vimeo.com/45830194
+    video_url: https://www.youtube.com/watch?v=VSlBLWEBN98
   - _bookshop_name: global/header
     title: "Sendit "
     title_suffix: Features
@@ -104,17 +104,25 @@ content_blocks:
           Sendit has taken Clear Appeal to the next level with it's beautiful
           targetted email campaigns.
       - image: /images/testimonial/logo-3.jpg
-        image_alt: Profile photo of Dolly Watson
-        author: Dolly Watson
-        designation: Digital Marketer at Time Cop
+        image_alt: Profile photo of Dolly Watsona
+        author: Dolly Watsona
+        designation: Digital Marketer at Time Copa
         message: >-
           Wow, what a difference Sendit has made. My customers are more engaged
-          than ever.
-      - image: /images/testimonial/logo-4.jpg
-        image_alt: Profile photo of Simon Moriarty
-        author: Simon Moriarty
-        designation: Head of Marketing at Pinnacle Mines
+          than ever.a
+      - image: /images/testimonial/logo-3.jpg
+        image_alt: Profile photo of Dolly Watsona
+        author: Dolly Watsona
+        designation: Digital Marketer at Time Copa
         message: >-
-          I can't imagine life without Sendit now, I have no idea how we were
-          surviving before.
+          Wow, what a difference Sendit has made. My customers are more engaged
+          than ever.a
+      - image: /images/testimonial/logo-3.jpg
+        image_alt: Profile photo of Dolly Watsona
+        author: Dolly Watsona
+        designation: Digital Marketer at Time Copa
+        message: >-
+          Wow, what a difference Sendit has made. My customers are more engaged
+          than ever.a
+    
 ---

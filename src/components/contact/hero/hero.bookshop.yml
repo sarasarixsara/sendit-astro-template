@@ -9,7 +9,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  title: Let&#39;s talk.
+  title: Let's talk.
   description: We take our commitment to our users seriously. Have a question or
     suggestion? Feel free to drop us a message!
 

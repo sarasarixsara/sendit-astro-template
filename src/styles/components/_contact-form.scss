@@ -7,24 +7,16 @@
 
   &-hero {
     background: $color-secondary-dark;
-    padding: $base-padding * 17.4 0 $base-padding * 9.6;
+    padding: $base-padding * 11 0 $base-padding * 6;
 
     @include media-breakpoint-down-xl {
       padding: $base-padding * 13 0 $base-padding * 5;
     }
 
-    @include media-breakpoint-down-lg {
-      padding: $base-padding * 12 0 $base-padding * 20;
-      text-align: center;
-    }
-
     @include media-breakpoint-down-md {
-      padding: $base-padding * 10 0 $base-padding * 68;
+      padding: $base-padding * 11 0 $base-padding * 9;
     }
 
-    @include media-breakpoint-down-sm {
-      padding: $base-padding * 8.5 0 $base-padding * 66;
-    }
 
     &-content {
       h1 {
@@ -103,77 +95,7 @@
     }
   }
 
-  &-form {
-    position: relative;
-    z-index: 1;
-
-    form {
-      border: 1px solid $color-secondary-dark;
-      box-shadow: 0px 0px 80px rgba(150, 0, 0, 0.06);
-      border-radius: 20px;
-      z-index: 1;
-      margin-top: $base-margin;
-      padding: $base-padding * 4.2 $base-padding * 3.3 $base-padding * 3.1;
-      background: $color-white;
-
-      @include media-breakpoint-down-md {
-        padding: $base-padding * 2.5 $base-padding * 1.25 $base-padding * 1.25;
-      }
-
-      h3 {
-        font-size: $base-font-size * 1.9;
-        margin-bottom: $base-margin * 3;
-      }
-
-      .label {
-        margin-bottom: $base-margin * 0.8;
-        font-weight: 600;
-        color: $color-text;
-      }
-
-      .form-control {
-        padding: 19px 20px;
-        font-size: $base-font-size * 0.9;
-        font-weight: 600;
-        color: $color-header;
-        background: $color-secondary-dark;
-        border: 1px solid $color-text-dark;
-        border-radius: 10px;
-        margin-bottom: $base-margin * 1.9;
-
-        &:focus {
-          background: $color-header-dark;
-          border: 1px solid $color-anchor;
-          outline: 0;
-          box-shadow: none;
-        }
-      }
-
-      textarea {
-        resize: none;
-      }
-
-      ::placeholder {
-        color: $color-cyan;
-      }
-    }
-
-    .effect {
-      -webkit-mask-image: url(/images/contact/effects.png);
-      mask-image: url(/images/contact/effects.png);
-      background: $color-background-effects;
-      position: absolute;
-      top: -10%;
-      left: -14%;
-      z-index: -1;
-      mask-repeat: no-repeat;
-      -webkit-mask-repeat: no-repeat;
-      mask-size: contain;
-      -webkit-mask-size: contain;
-      width: 115%;
-      height: 100%;
-    }
-  }
+  
 }
 
 .contact-hero+.contact {
@@ -196,4 +118,5 @@
       margin-top: -$base-margin * 63;
     }
   }
+  
 }

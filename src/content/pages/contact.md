@@ -10,36 +10,21 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: contact/hero
-    title: Let's talk.
-    description: Have a question or suggestion? Feel free to drop us a message!
+    title: Contáctanos.
+    description: ¿Cómo podemos ayudarte? Ponte en contacto con nuestros expertos.
   - _bookshop_name: contact/form
     address:
-      heading: Office Address
-      address: 123 Train St, San Francisco, CA 9107
+      heading: Dirección 
+      address: Calle 17# 8-52 Interlaken Av. Guabinal
     phone:
-      heading: Phone
-      cell: (123) 456 - 7895
+      heading: Teléfono
+      cell: 3138825184
       image: /images/contact/call-add.svg
       image_alt: call-add
     email:
       heading: Email
-      email: info@example.com
+      email: convergenciadigitalsas@gmail.com
       image: /images/contact/directbox-send.svg
       image_alt: send-box
-    form:
-      heading: Say Hello
-      fullname:
-        heading: Full Name
-        placeholder: Enter First Name
-      phone_number:
-        heading: Phone number
-        placeholder: Enter Phone Number
-      email:
-        heading: Email Address
-        placeholder: Enter Email Address
-      message:
-        heading: Your Messages
-        placeholder: Enter your message
-      submit_button:
-        text: Send message
+    
 ---

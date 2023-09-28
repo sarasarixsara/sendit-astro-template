@@ -1,7 +1,7 @@
 {
-  "logo": "/images/footer-logo.svg",
+  "logo": "/images/footer-logo (1).svg",
   "logo_url": "/",
-  "copyright": "MyCompany. All rights reserved.",
+  "copyright": "Con tecnología de WordPress",
   "social": [
     {
       "link": "https://www.facebook.com/mycompany",
@@ -25,50 +25,30 @@
     }
   ],
   "sections": [
-    {
-      "title": "Main Pages",
+    {  
       "links": [
         {
           "link": "/",
-          "text": "Home"
-        },
-        {
-          "link": "/features/",
-          "text": "Features"
-        },
-        {
-          "link": "/pricing/",
-          "text": "Price"
-        },
-        {
-          "link": "/about/",
-          "text": "About"
+          "text": "Inicio"
         }
       ]
     },
     {
-      "title": "Community",
+   
       "links": [
         {
           "link": "/blog/",
-          "text": "Blog"
-        },
-        {
-          "link": "/feed.xml",
-          "text": "RSS Feed"
+          "text": "Servicios"
         }
+        
       ]
     },
     {
-      "title": "Company",
+    
       "links": [
         {
           "link": "/contact/",
-          "text": "Contact"
-        },
-        {
-          "link": "/privacy/",
-          "text": "Privacy Policy"
+          "text": "Contáctanos"
         }
       ]
     }

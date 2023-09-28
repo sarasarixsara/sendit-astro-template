@@ -22,7 +22,7 @@ export default function Footer({}) {
                     <li key={i}>
                       <a href={`${link.link}`}>
                         <i className={link.icon} aria-hidden="true">
-                          <span className="visually-hidden">
+                          <span className="">
                             {link.icon_alt}
                           </span>
                         </i>
@@ -34,9 +34,8 @@ export default function Footer({}) {
             </div>
 
             {footer.sections.map((section, i) => (
-              <div className="col-6 col-md-3 col-lg-2 order-1" key={i}>
+              <div className="col-3 col-md-3 col-lg-2 order-1" key={i}>
                 <div className="footer-widget">
-                  <h3 className="">{section.title}</h3>
                   <ul className="list-unstyled">
                     {section.links.map((link, i) => (
                       <li key={i}>

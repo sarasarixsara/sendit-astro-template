@@ -30,7 +30,7 @@ export default function GlobalTestimonial(block) {
 }
 function Testimonial({ slide, i }) {
   return (
-    <div className="col-lg-4 col-md-6 mb-5" key={i}>
+    <div className="col-lg-3 col-md-6 mb-5" key={i}>
       <div className="testimonial-item">
         <div className="testimonial-item-person">
           <div className="thumb">
