@@ -2,14 +2,14 @@ import footer from "@data/footer.json";
 
 export default function Footer({}) {
   return (
-    <footer className="footer pt-xxl-19 pt-8 pb-sm-7 pb-5" id="footer">
+    <footer className="footer" id="footer">
       <div className="container-fluid">
         <div className="footer-wrapper">
-          <div className="row">
+          <div className="row py-6 px-lg-20 ">
            
 
             {footer.sections.map((section, i) => (
-              <div className="col-3 col-md-3 col-lg-3 order-1" key={i}>
+              <div className="col-6 col-md-3 col-lg-3 order-1 mb-4" key={i}>
                 <div className="footer-widget">
                   <ul className="list-unstyled">
                     {section.links.map((link, i) => (
@@ -37,11 +37,7 @@ export default function Footer({}) {
                     <li key={i}>
                       <a href={`${link.link}`}>
                         <img src={link.social_icon} width="30" />
-                         <i className={link.icon} aria-hidden="true">
-                           <span className="">
-                            {link.icon_alt}
-                          </span> 
-                        </i> 
+                          
                       </a>
                     </li>
                   ))}

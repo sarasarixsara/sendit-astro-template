@@ -10,7 +10,7 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: pricing/hero
-    title: A plan for everyone
+    title: Servicios
     description: Sendit is easy to get started and we have a pricing plan for businesses of all sizes.
 
   - _bookshop_name: pricing/table
@@ -103,19 +103,74 @@ content_blocks:
           link: /signup
           text: Try This Free
 
-  - _bookshop_name: global/faq
-    title: Have
-    title_suffix: Questions?
-    # description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
-    FAQ:
-      - title: Is there a maximum numbers of emails I can send each month?
-       # description: No, the prices include unlimited emails. Send to your heart's content.
-      - title: https://keep.google.com/u/0/#home
-        # description: "https://keep.google.com/u/0/#home"
-      - title: Do you have pricing for non-profits?
-       # description: Yes, contact our support team and we'll get you set up on our non-profit plan.
-      - title: What forms of payment do you accept?
-       # description: We accept credit cards, checks, and cash.
-      - title: In which currencies can I make payments?
-      #  description: All payments are in **USD**.
+  - _bookshop_name: featureNew/heroNew
+    image: /images/feature/feature-card-one.png
+    image_alt: Message inbox
+    title: Internet dedicado
+    description: >-
+      
+    # button:
+    #   link: /signup
+    #   text: Try This Free
+    reversed: false
+  - _bookshop_name: featureNew/heroNew
+    image: /images/feature/feature-card-two.png
+    image_alt: Visitor chart
+    title: Internet banda ancha
+    description: >-
+      
+    # button:
+    #   link: /signup
+    #   text: Try This Free
+    reversed: true
+  - _bookshop_name: featureNew/heroNew
+    image: /images/feature/feature-card-three.png
+    image_alt: File upload
+    title: Zonas Wi-Fi
+    description: >-
+      
+    # button:
+    #   link: /signup
+    #   text: Try This Free
+    reversed: false
+  - _bookshop_name: featureNew/heroNew
+    image: /images/feature/feature-card-three.png
+    image_alt: File upload
+    title: CCTV y Seguridad Electrónica
+    description: >-
+      
+    # button:
+    #   link: /signup
+    #   text: Try This Free
+    reversed: true
+  - _bookshop_name: featureNew/heroNew
+    image: /images/feature/feature-card-three.png
+    image_alt: File upload
+    title: Sistema de Energía Solar
+    description: >-
+      
+    # button:
+    #   link: /signup
+    #   text: Try This Free
+    reversed: false
+  - _bookshop_name: featureNew/heroNew
+    image: /images/feature/feature-card-three.png
+    image_alt: File upload
+    title: Internet de las Cosas
+    description: >-
+      
+    # button:
+    #   link: /signup
+    #   text: Try This Free
+    reversed: true
+  - _bookshop_name: featureNew/heroNew
+    image: /images/feature/feature-card-three.png
+    image_alt: File upload
+    title: Redes Empresariales
+    description: >-
+      
+    # button:
+    #   link: /signup
+    #   text: Try This Free
+    reversed: false
 ---
