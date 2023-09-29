@@ -6,35 +6,10 @@ export default function Footer({}) {
       <div className="container-fluid">
         <div className="footer-wrapper">
           <div className="row">
-            <div className="col-12 col-lg-4 me-auto order-2 order-lg-1">
-              <div className="footer-logo mt-7 mt-md-0">
-                <a href={footer.logo_url} className="">
-                  <img src={footer.logo} alt="logo" />
-                </a>
-                <p>
-                  © Copyright <span>{new Date().getFullYear()}</span>{" "}
-                  {footer.copyright}
-                </p>
-              </div>
-              <div className="social-icon">
-                <ul className="list-unstyled">
-                  {footer.social.map((link, i) => (
-                    <li key={i}>
-                      <a href={`${link.link}`}>
-                        <i className={link.icon} aria-hidden="true">
-                          <span className="">
-                            {link.icon_alt}
-                          </span>
-                        </i>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+           
 
             {footer.sections.map((section, i) => (
-              <div className="col-3 col-md-3 col-lg-2 order-1" key={i}>
+              <div className="col-3 col-md-3 col-lg-3 order-1" key={i}>
                 <div className="footer-widget">
                   <ul className="list-unstyled">
                     {section.links.map((link, i) => (
@@ -46,6 +21,33 @@ export default function Footer({}) {
                 </div>
               </div>
             ))}
+             <div className="col-12 col-lg-12 me-auto order-2 order-lg-1">
+              <div className="mt-7 mt-md-0">
+                {/* <a href={footer.logo_url} className="">
+                  <img src={footer.logo} alt="logo" />
+                </a> */}
+                <p>
+                  © Copyright <span>{new Date().getFullYear()}</span>{" "}
+                  {footer.copyright}
+                </p>
+              </div>
+               <div className="social-icon">
+                <ul className="list-unstyled">
+                  {footer.social.map((link, i) => (
+                    <li key={i}>
+                      <a href={`${link.link}`}>
+                        <img src={link.social_icon} width="30" />
+                         <i className={link.icon} aria-hidden="true">
+                           <span className="">
+                            {link.icon_alt}
+                          </span> 
+                        </i> 
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div> 
+            </div>
           </div>
         </div>
       </div>

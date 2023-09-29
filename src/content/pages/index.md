@@ -15,17 +15,16 @@ content_blocks:
     description: >-
       With Sendit, you can quickly create beautiful rich emails that capture a
       reader's attention, engage them, and convert them into customers.
-    # image: /images/hero/hero-image-2.png
-    # image_alt: Reports dashboard
+    image: /images/index-plan.svg
+    image_alt: Reports dashboard
     # button:
     #   text: Try This Free
     #   link: /signup/
   - _bookshop_name: global/counter
-    title: Scale your
-    title_suffix: Business
+    title: Disponibilidad de los Servicios de 
+    title_suffix: Conectividad a Internet
     description: >-
-      We have an extensive library of pre-written sales emails, proven marketing
-      templates, and more to get you started on your next project.
+      El despliegue de la red de distribución donde se ofrecen los servicios de conectividad a Internet por parte de Convergencia Digital esta basado en tecnología Wi-Fi de largo alcance por lo que la disponibilidad del servicio es del 99,6%.
     alternate_style: false
     numbers:
       - prefix: $
@@ -40,14 +39,11 @@ content_blocks:
         number: 40
         suffix: +
         text: Amazing team members
-      - prefix:
-        number: 4322
-        suffix: +
-        text: Active users and growing
-  - _bookshop_name: home/video
-    image: /images/video/video-thum.jpg
-    image_alt: Thumbnail for video
-    video_url: https://www.youtube.com/watch?v=VSlBLWEBN98
+  
+  # - _bookshop_name: home/video
+  #   image: /images/video/video-thum.jpg
+  #   image_alt: Thumbnail for video
+  #   video_url: https://www.youtube.com/watch?v=VSlBLWEBN98
   - _bookshop_name: global/header
     title: "Sendit "
     title_suffix: Features
@@ -55,74 +51,59 @@ content_blocks:
     description: >-
       Our platform offers the most advanced features including automated email
       content creation, dynamic personalization, and customer segmentation.
-  - _bookshop_name: global/feature
-    image: /images/feature/feature-card-one.png
-    image_alt: Message inbox
-    title: Email Campaign in one minute
-    description: >-
-      Send an email campaign with one click, in just minutes. Automate your
-      emails and content, while keeping the human touch.
-    button:
-      link: /signup
-      text: Try This Free
-    reversed: false
-  - _bookshop_name: global/feature
-    image: /images/feature/feature-card-two.png
-    image_alt: Visitor chart
-    title: See every Lead in one Place
-    description: >-
-      Sales analytics and automation made simple: see every sales lead in one
-      place, regardless of where it came from.
-    button:
-      link: /signup
-      text: Try This Free
-    reversed: true
-  - _bookshop_name: global/feature
-    image: /images/feature/feature-card-three.png
-    image_alt: File upload
-    title: 100% free uploads
-    description: >-
-      Sendit is used by everyone from small businesses to fortune 500 companies.
-      Browse our collection of email marketing templates and start sending
-      beautiful emails in minutes.
-    button:
-      link: /signup
-      text: Try This Free
-    reversed: false
+  
   - _bookshop_name: global/testimonial
-    title: Build relationships that
-    title_suffix: last
+    title: Conoce nuestros 
+    title_suffix: servicios
     description: >-
-      Customers from around the world are building game changing email marketing
-      campaigns.
+      
     slider:
-      - image: /images/testimonial/logo-2.jpg
+      - image: /images/testimonial/logo-1.jpg
         image_alt: Profile photo of Pete Fish
-        author: Pete Fish
-        designation: CMO at Clear Appeal
+        author: Cableado estructurado y Redes Empresariales
+        
         message: >-
-          Sendit has taken Clear Appeal to the next level with it's beautiful
-          targetted email campaigns.
-      - image: /images/testimonial/logo-3.jpg
+          Instalación y mantenimiento de cableado estructurado de redes de telecomunicaciones. Instalación y Mantenimiento de redes empresariales. Instalación y Gestión de Zonas Wi-fi.
+      - image: /images/testimonial/logo-2.jpg
         image_alt: Profile photo of Dolly Watsona
-        author: Dolly Watsona
-        designation: Digital Marketer at Time Copa
+        author: Equipamiento Para Radio Enlaces
+        
         message: >-
-          Wow, what a difference Sendit has made. My customers are more engaged
-          than ever.a
+          Suministro, instalación y mantenimiento de equipamiento para radio enlace PtP y PtMP aplicado a proyectos corporativos o gubernamentales.
       - image: /images/testimonial/logo-3.jpg
-        image_alt: Profile photo of Dolly Watsona
-        author: Dolly Watsona
-        designation: Digital Marketer at Time Copa
+        image_alt: Soluciones en Fibra Óptica
+        author: Soluciones en Fibra Óptica
+         
         message: >-
-          Wow, what a difference Sendit has made. My customers are more engaged
-          than ever.a
-      - image: /images/testimonial/logo-3.jpg
-        image_alt: Profile photo of Dolly Watsona
-        author: Dolly Watsona
-        designation: Digital Marketer at Time Copa
+          Instalación, certificación y mantenimiento de Fibra Óptica (GPON/AON)
+      - image: /images/testimonial/logo-4.jpg
+        image_alt: Consultoría y Diseño
+        author: Consultoría y Diseño
+         
         message: >-
-          Wow, what a difference Sendit has made. My customers are more engaged
-          than ever.a
+          Consultoría y Diseño y Diseño de aplicaciones para el uso del Internet de las cosas (IoT) en proyectos de domótica e inmótica, ahorro energético, seguridad, telegestión y accesibilidad para casas Inteligentes.
+
+  - _bookshop_name: global/faq
+    title: Marco
+    title_suffix: Legal
+    #description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
+    FAQ:
+      - title: Internet seguro
+        link: http://convergenciadigitalsas.com/internetsano/
+      - title: Te protejo - Denuncie aquí
+       # description: https://keep.google.com/u/0/#home
+        link: https://teprotejo.org/
+      - title: Control parental
+        link: http://convergenciadigitalsas.com/wp-content/uploads/2021/01/Control-Parental.pdf
+      - title: Ley 679 de 2001
+        link: http://convergenciadigitalsas.com/wp-content/uploads/2021/01/LEY-679-DE-2001.pdf
+      - title: Seguridad en internet
+        link: http://convergenciadigitalsas.com/wp-content/uploads/2021/01/Seguridad-en-Internet.pdf
+      - title: Medidor de velocidad Speedtest
+        link: https://www.speedtest.net/es
+      - title: Medidor de velocidad ETB
+        link: https://etb.com/medidor/
+      - title: Especificaciones técnicas de nuestros equipos
+        link: http://convergenciadigitalsas.com/equipos/
     
 ---

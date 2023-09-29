@@ -11,11 +11,11 @@ export default function GlobalTestimonial(block) {
               <h2>
                 {block.title} <span> {block.title_suffix}</span>
               </h2>
-              <div
+              {/* <div
                 dangerouslySetInnerHTML={{
                   __html: md.render(block.description),
                 }}
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -31,8 +31,13 @@ export default function GlobalTestimonial(block) {
 function Testimonial({ slide, i }) {
   return (
     <div className="col-lg-3 col-md-6 mb-5" key={i}>
-      <div className="testimonial-item">
+      <div className="testimonial-item flex-column">
         <div className="testimonial-item-person">
+        <div className="content">
+            <h3>{slide.author}</h3>
+            
+          </div>
+          <p>{slide.message}</p>
           <div className="thumb">
             <img
               src={slide.image}
@@ -41,12 +46,9 @@ function Testimonial({ slide, i }) {
               loading="lazy"
             />
           </div>
-          <div className="content">
-            <h3>{slide.author}</h3>
-            <p>{slide.designation}</p>
-          </div>
+          
         </div>
-        <p>{slide.message}</p>
+        
       </div>
     </div>
   );

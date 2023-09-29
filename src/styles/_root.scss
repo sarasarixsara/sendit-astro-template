@@ -205,7 +205,7 @@ h1 {
 }
 
 h2 {
-  font-size: $base-font-size * 2.6;
+  font-size: $base-font-size * 1;
 }
 
 h3 {
@@ -537,6 +537,7 @@ a {
   margin-bottom: 40px;
   border: 1px solid $color-white;
   padding: 28px 30px 28px 120px;
+  border: 1px solid $color-anchor;
 
   @include media-breakpoint-down-lg {
     margin-bottom: 20px;

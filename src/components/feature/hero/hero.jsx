@@ -6,38 +6,17 @@ export default function FeatureHero(block) {
     <section className="feature-hero">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-6">
+          <div className="col-lg-4">
             <div className="feature-hero-content">
-              <h1 className="">{block.title}</h1>
-              <div
+              <h3 className="pe-xl-0">{block.title}</h3>
+            </div>
+          </div>
+          <div className="col-lg-8">
+             <div
                 dangerouslySetInnerHTML={{
                   __html: md.render(block.description),
                 }}
-              />
-              <div className="d-block mb-6">
-                {block.button && (
-                  <a
-                    href={block.button.link}
-                    className="btn btn-primary btn-lg"
-                  >
-                    {" "}
-                    {block.button.text}{" "}
-                  </a>
-                )}
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6">
-            <div className="feature-hero-banner">
-              <img src={block.image} alt={block.image_alt} loading="lazy" />
-              <div className="shape">
-                <img
-                  src="/images/feature/effect-4.png"
-                  alt="shape"
-                  loading="lazy"
-                />
-              </div>
-            </div>
+              />           
           </div>
         </div>
       </div>

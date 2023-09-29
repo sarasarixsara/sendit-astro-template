@@ -9,48 +9,14 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
-  - _bookshop_name: about/hero
-    title: On a mission to change email marketing
-    description: We're here to breathe new air into email marketing and help grow your business.
-    hero_images:
-      - image: /images/about/aboutfeature-two.jpg
-        image_alt: People working on laptops
-        placement: "front_bottom"
-      - image: /images/about/aboutfeature-three.jpg
-        image_alt: Group working on a laptop
-        placement: "back_top_right"
-      - image: /images/about/aboutfeature-four.jpg
-        image_alt: Staff group photo
-        placement: "back_top_left"
-    button:
-      text: "Try This Free"
-      link: "/signup"
-
-  - _bookshop_name: global/counter
-    title: Built for your
-    title_suffix: Business
-    description: We've built Sendit from the ground up the help grow your business faster.
-    alternate_style: true
-    numbers:
-      - prefix: $
-        number: 200
-        suffix: m
-        text: Venture capital raised
-      - number: 2016
-        text: Established in
-      - number: 40
-        suffix: +
-        text: Amazing team members
-      - number: 44325
-        suffix: +
-        text: Active users and growing
+  
 
   - _bookshop_name: about/video
     title: We love what we do
     description: Our team has decades of experience working with email marketing campaigns and we’re passionate about helping you connect with your customers.
-    button:
-      link: https://www.linkedin.com/
-      text: Follow on Linkedin
+    # button:
+    #   link: https://www.linkedin.com/
+    #   text: Follow on Linkedin
     video:
       image: /images/works/banner.jpg
       image_alt: Thumbnail image for video

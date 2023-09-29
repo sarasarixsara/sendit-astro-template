@@ -6,7 +6,7 @@ export default function GlobalHeader(block) {
     <section className="feature pt-0 pb-0">
       <div className="container">
         <div className="row">
-          <div className="col-lg-8 mx-auto">
+          <div className="col-lg-12 mx-auto">
             <div
               className={`section-header @@disply ${
                 block.remove_top_padding ? "no-top-pad" : ""
