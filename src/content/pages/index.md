@@ -15,8 +15,8 @@ content_blocks:
     description: >-
       With Sendit, you can quickly create beautiful rich emails that capture a
       reader's attention, engage them, and convert them into customers.
-    image: /images/index-plan.svg
-    image_alt: Reports dashboard
+    image: 
+    image_alt: 
     # button:
     #   text: Try This Free
     #   link: /signup/
@@ -39,19 +39,26 @@ content_blocks:
         number: 40
         suffix: +
         text: Amazing team members
+      - prefix:
+        number: 40
+        suffix: +
+        text: Amazing team members
   
-  # - _bookshop_name: home/video
-  #   image: /images/video/video-thum.jpg
-  #   image_alt: Thumbnail for video
-  #   video_url: https://www.youtube.com/watch?v=VSlBLWEBN98
-  - _bookshop_name: global/header
-    title: "Sendit "
-    title_suffix: Features
+
+  - _bookshop_name: global/text
+    title: 
+    title_suffix: 
     remove_top_padding: true
     description: >-
-      Our platform offers the most advanced features including automated email
-      content creation, dynamic personalization, and customer segmentation.
-  
+      Convergencia Digital S.A.S se permite comunicar respecto al bloqueo de contenidos, que NO se realiza por ningún motivo guardando el principio de neutralidad en la prestación del servicio, salvo aquellos que por disposición legal se deba realizar (contenido de pornografía infantil con base en la ley 679 de 2001), sin el consentimiento expreso del usuario.
+      De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
+  - _bookshop_name: global/header
+    title: 
+    title_suffix: 
+    remove_top_padding: true
+    description: >-
+      De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
+
   - _bookshop_name: global/testimonial
     title: Conoce nuestros 
     title_suffix: servicios
@@ -61,27 +68,26 @@ content_blocks:
       - image: /images/testimonial/logo-1.jpg
         image_alt: Profile photo of Pete Fish
         author: Cableado estructurado y Redes Empresariales
-        
         message: >-
-          Instalación y mantenimiento de cableado estructurado de redes de telecomunicaciones. Instalación y Mantenimiento de redes empresariales. Instalación y Gestión de Zonas Wi-fi.
+          Instalación y mantenimiento de cableado estructurado de redes de telecomunicaciones y de redes empresariales. Instalación y gestión de zonas Wi-fi.
       - image: /images/testimonial/logo-2.jpg
         image_alt: Profile photo of Dolly Watsona
         author: Equipamiento Para Radio Enlaces
         
         message: >-
-          Suministro, instalación y mantenimiento de equipamiento para radio enlace PtP y PtMP aplicado a proyectos corporativos o gubernamentales.
+          Suministro, instalación y mantenimiento de equipamiento para el radio enlace PtP y PtMP aplicado tanto a proyectos corporativos, como gubernamentales.
       - image: /images/testimonial/logo-3.jpg
         image_alt: Soluciones en Fibra Óptica
         author: Soluciones en Fibra Óptica
          
         message: >-
-          Instalación, certificación y mantenimiento de Fibra Óptica (GPON/AON)
+          Instalación, certificación y mantenimiento de Fibra Óptica, Red Óptica Pasiva con Capacidad de Gigabit y Red de Actividad en Nodo (GPON/AON)
       - image: /images/testimonial/logo-4.jpg
         image_alt: Consultoría y Diseño
         author: Consultoría y Diseño
          
         message: >-
-          Consultoría y Diseño y Diseño de aplicaciones para el uso del Internet de las cosas (IoT) en proyectos de domótica e inmótica, ahorro energético, seguridad, telegestión y accesibilidad para casas Inteligentes.
+          Consultoría y diseño de aplicaciones para el uso del Internet de las cosas en proyectos de domótica e inmótica, ahorro energético, seguridad y accesibilidad para casas Inteligentes.
 
   - _bookshop_name: global/faq
     title: Marco

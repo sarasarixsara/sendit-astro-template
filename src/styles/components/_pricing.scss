@@ -233,23 +233,14 @@
   /* Pricing in Inner Page section */
   &-inner {
     position: relative;
-    padding: $base-padding * 14 $base-padding * 0 $base-padding * 27;
+    padding: $base-padding * 8 $base-padding * 0 $base-padding * 4;
 
-    @include media-breakpoint-down-xxl {
-      padding: $base-padding * 10 $base-padding * 0 $base-padding * 27;
-    }
-
-    @include media-breakpoint-down-lg {
-      padding: $base-padding * 10 $base-padding * 0 $base-padding * 25;
-    }
 
     @include media-breakpoint-down-md {
-      padding: $base-padding * 10 $base-padding * 0 $base-padding * 27;
+      padding: $base-padding * 8 $base-padding * 0 $base-padding * 0;
     }
 
-    @include media-breakpoint-down-sm {
-      padding: $base-padding * 8.5 $base-padding * 0 $base-padding * 27;
-    }
+   
 
     .section-header {
       padding: 0 0 $base-padding * 1;

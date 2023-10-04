@@ -6,7 +6,7 @@ export default function GlobalTestimonial(block) {
     <section className="testimonial">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-8 mx-auto text-center mb-5">
+          <div className="col-lg-8 mx-auto text-center mb-2 ">
             <div className="testimonial-content">
               <h2>
                 {block.title} <span> {block.title_suffix}</span>

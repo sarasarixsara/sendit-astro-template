@@ -53,9 +53,10 @@
          .thumb {
             img {
                // width: 80px;
-               height: 80px;
+               height: 100px;
                margin-left: auto;
                margin-right: auto;
+               border-radius: 5px;
                display: block; /* Esto asegura que la imagen se comporte como un bloque y se centre horizontalmente */
                margin-bottom: 15px;
                

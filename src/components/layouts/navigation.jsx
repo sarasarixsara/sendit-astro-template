@@ -127,7 +127,7 @@ export default function Navigation({ pageUrl }) {
                 ))}
               </ul>
             </div>
-            <div className="d-none d-lg-block">
+            {/* <div className="d-none d-lg-block">
               <div className="nav-item">
                 <a
                   href={`${navigation.btn.link}`}
@@ -136,7 +136,7 @@ export default function Navigation({ pageUrl }) {
                   {navigation.btn.text}
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </nav>
       </header>

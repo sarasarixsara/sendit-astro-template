@@ -10,12 +10,12 @@ export default function HomeHero(block) {
           <div className="col-lg-6">
             <div className="hero-two-content">
               <h1 className="mb-4">{block.title}</h1>
-              <div
+              {/* <div
                 className="mb-7 w-xxl-80"
                 dangerouslySetInnerHTML={{
                   __html: md.render(block.description),
                 }}
-              />
+              /> */}
               <div className="">
                 {block.button && (
                   <a

@@ -7,19 +7,21 @@
   overflow: hidden;
 
   .section-header {
-    padding-bottom: $base-padding *5;
+    padding-bottom: $base-padding *6;
+    
 
     @include media-breakpoint-down-xxl {
       padding-bottom: $base-padding * 7;
     }
 
     @include media-breakpoint-down-sm {
-      padding: $base-padding * 7 0 $base-padding * 3.5;
+      padding: $base-padding * 0 0 $base-padding * 3.5;
     }
 
     p {
       width: 80%;
       margin: 0 auto;
+      text-align: justify;
 
       @include media-breakpoint-down-xl {
         width: 90%;
@@ -31,17 +33,24 @@
     position: relative;
     z-index: 1;
 
-    .card-image {
-      z-index: 1;
+     .card-image {
       text-align:justify;
-
-      img {
-        max-width: 100%;
-
-        @include media-breakpoint-down-lg {
-          width: 100%;
-        }
+      display: flex;
+      justify-content: center;
+      img{
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
       }
+    //   z-index: 1;
+    //   text-align:justify;
+
+    //   img {
+    //     max-width: 100%;
+
+    //     @include media-breakpoint-down-lg {
+    //       width: 100%;
+    //     }
+    //   }
     }
 
     .effect-one,
@@ -94,7 +103,7 @@
   &-item-content {
     h2 {
       font-size: $base-font-size * 2.8;
-      padding-right: $base-padding * 10;
+      padding-right: $base-padding * 2;
       margin-bottom: $base-margin * 2.5;
 
       @include media-breakpoint-down-xl {
@@ -115,6 +124,7 @@
       font-size: 20px;
       line-height: 33px;
       letter-spacing: -0.8px;
+      text-align: justify;
 
       @include media-breakpoint-down-sm {
         font-size: $base-font-size * 1.1;

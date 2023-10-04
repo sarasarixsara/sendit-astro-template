@@ -6,7 +6,7 @@
   }
 
   &-hero {
-    background: $color-secondary-dark;
+    background: $color-primary-dark;
     padding: $base-padding * 11 0 $base-padding * 6;
 
     @include media-breakpoint-down-xl {
