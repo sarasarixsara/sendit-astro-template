@@ -16,15 +16,11 @@
     {
       "link": "/about/",
       "text": "Capacitaciones"
-    },
-  
-    {
-      "link": "/contact/",
-      "text": "Contáctanos"
     }
+   
   ],
   "btn": {
-    "link": "/signup/",
-    "text": "Get Started"
+    "link": "/contact/",
+    "text": "Contáctanos"
   }
 }

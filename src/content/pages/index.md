@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Home
+title: Inicio
 seo:
   page_description:
   canonical_url:
@@ -17,9 +17,9 @@ content_blocks:
       reader's attention, engage them, and convert them into customers.
     image: 
     image_alt: 
-    # button:
-    #   text: Try This Free
-    #   link: /signup/
+    button:
+      text: Cotiza con nosotros
+      link: /contact/
   - _bookshop_name: global/counter
     title: Disponibilidad de los Servicios de 
     title_suffix: Conectividad a Internet
@@ -45,19 +45,19 @@ content_blocks:
         text: Amazing team members
   
 
-  - _bookshop_name: global/text
-    title: 
-    title_suffix: 
-    remove_top_padding: true
-    description: >-
-      Convergencia Digital S.A.S se permite comunicar respecto al bloqueo de contenidos, que NO se realiza por ningún motivo guardando el principio de neutralidad en la prestación del servicio, salvo aquellos que por disposición legal se deba realizar (contenido de pornografía infantil con base en la ley 679 de 2001), sin el consentimiento expreso del usuario.
-      De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
-  - _bookshop_name: global/header
-    title: 
-    title_suffix: 
-    remove_top_padding: true
-    description: >-
-      De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
+  # - _bookshop_name: global/text
+  #   title: 
+  #   title_suffix: 
+  #   remove_top_padding: true
+  #   description: >-
+  #     Convergencia Digital S.A.S se permite comunicar respecto al bloqueo de contenidos, que NO se realiza por ningún motivo guardando el principio de neutralidad en la prestación del servicio, salvo aquellos que por disposición legal se deba realizar (contenido de pornografía infantil con base en la ley 679 de 2001), sin el consentimiento expreso del usuario.
+  #     De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
+  # - _bookshop_name: global/header
+  #   title: 
+  #   title_suffix: 
+  #   remove_top_padding: true
+  #   description: >-
+  #     De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
 
   - _bookshop_name: global/testimonial
     title: Conoce nuestros 

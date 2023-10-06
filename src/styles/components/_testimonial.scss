@@ -3,6 +3,7 @@
 **********/
 .testimonial {
    background: $color-header;
+   //align-items: center;
    position: relative;
    border-bottom: 1px solid $color-text;
    overflow: hidden;
@@ -11,12 +12,13 @@
       border-bottom: none;
    }
    &-content {
+      
       padding-right: 50px;
       @include media-breakpoint-down-xl {
          padding-right: 0;
       }
       @include media-breakpoint-down-lg {
-         text-align: center;
+         text-align: justify;
          padding-bottom: $base-padding * 3;
       }
       h2 {
@@ -48,22 +50,26 @@
       background-color: $color-white;
       padding: 15px 30px;
       border-radius: 12px;
+      
       &-person {
          margin-top: 1rem;
+         
          .thumb {
+            
             img {
-               // width: 80px;
-               height: 100px;
+               
+               width: 100%;
                margin-left: auto;
                margin-right: auto;
                border-radius: 5px;
                display: block; /* Esto asegura que la imagen se comporte como un bloque y se centre horizontalmente */
-               margin-bottom: 15px;
+               margin-bottom: 25px;
                
              }
              
          }
          .content {
+            
             h3 {
                font-size: $base-font-size * 1.6;
                

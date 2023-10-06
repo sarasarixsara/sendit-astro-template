@@ -12,7 +12,7 @@ content_blocks:
   - _bookshop_name: global/header
     title: "¿Quiénes "
     title_suffix: somos?
-    description: Somos una empresa 100% Tolimense dedicado a droporcionar las soluciones tecnológicas a las necesidades empresariales, gubernamentales y agroindustriales de la región, a través de la planeación e implementación de proyectos basados en la aplicación práctica de las tecnologías más innovadoras. Desarrollamos soluciones robustas y creativas, con el firme objetivo de incrementar su productividad.
+    description: Somos una empresa 100% Tolimense dedicado a porcionar soluciones tecnológicas a las necesidades empresariales, gubernamentales y agroindustriales de la región, a través de la planeación e implementación de proyectos basados en la aplicación práctica de las tecnologías más innovadoras. Desarrollamos soluciones robustas y creativas, con el firme objetivo de incrementar su productividad.
     
 
   - _bookshop_name: feature/hero

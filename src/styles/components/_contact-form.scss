@@ -87,8 +87,16 @@
           font-family: $font-secondary;
           font-weight: 700;
 
+
           span {
             margin-bottom: $base-margin * 0.7;
+          }
+
+          @include media-breakpoint-down-md {
+            font-size: $base-font-size * 1;
+          }
+          @include media-breakpoint-down-xl {
+            font-size: $base-font-size * 1.07;
           }
         }
       }

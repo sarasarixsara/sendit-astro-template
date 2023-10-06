@@ -23,7 +23,7 @@ export default function GlobalCounter(block) {
               />
             </div>
           </div>
-          <div className="col-12">
+          <div className="col-12 pb-8">
             <div className="counter-up-wrapper d-grid">
               {block.numbers.map((number, i) => (
                 <div className="counter-up-content" key={i}>
