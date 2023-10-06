@@ -10,23 +10,7 @@ export default function HomeHero(block) {
           <div className="col-lg-6">
             <div className="hero-two-content">
               <h1 className="mb-4">{block.title}</h1>
-              {/* <div
-                className="mb-7 w-xxl-80"
-                dangerouslySetInnerHTML={{
-                  __html: md.render(block.description),
-                }}
-              /> */}
-              {/* <div className="">
-                {block.button && (
-                  <a
-                    href={block.button.link}
-                    className="btn btn-primary btn-lg"
-                  >
-                    {" "}
-                    {block.button.text}{" "}
-                  </a>
-                )}
-              </div> */}
+              
             </div>
           </div>
           <div className="col-lg-6 justify-content-center" style={{display: "flex"}}>
@@ -41,10 +25,7 @@ export default function HomeHero(block) {
                   </a>
                 )}
               </div>
-            {/* <div className="hero-two-banner">
-              <img src={block.image} alt={block.image_alt} />
-              <div className="hero-two-banner-shape"></div>
-            </div> */}
+           
           </div>
         </div>
       </div>

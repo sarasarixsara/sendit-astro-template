@@ -9,11 +9,7 @@ export default function PricingHero(block) {
           <div className="col-lg-8 mx-auto">
             <div className="section-header position-relative text-center">
               <h2>{block.title}</h2>
-              {/* <div
-                dangerouslySetInnerHTML={{
-                  __html: md.render(block.description),
-                }}
-              /> */}
+              
             </div>
           </div>
         </div>

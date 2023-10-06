@@ -23,14 +23,7 @@ export default function GlobalFeature(block) {
                   __html: md.render(block.description),
                 }}
               />
-              {/* <div className="Learn-more">
-                {block.button && (
-                  <a href={block.button.link}>
-                    {block.button.text}
-                    <i className="ph-arrow-right"></i>
-                  </a>
-                )}
-              </div> */}
+             
             </div>
           </div>
         </div>
@@ -48,14 +41,7 @@ export default function GlobalFeature(block) {
                   __html: md.render(block.description),
                 }}
               />
-              {/* <div className="Learn-more">
-                {block.button && (
-                  <a href={block.button.link}>
-                    {block.button.text}
-                    <i className="ph-arrow-right"></i>
-                  </a>
-                )}
-              </div> */}
+           
             </div>
           </div>
           <div className="col-lg-6 order-1 order-lg-2">

@@ -18,10 +18,7 @@ export default function GlobalFaqItem({ faq, i }) {
         aria-labelledby={`heading${i}`}
         data-bs-parent="#accordionExample"
       >
-        {/* <div
-          className="accordion-body"
-          dangerouslySetInnerHTML={{ __html: md.render(faq.description) }}
-        ></div> */}
+        
       </div>
     </div>
   );

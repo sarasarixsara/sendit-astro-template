@@ -12,11 +12,7 @@ export default function GlobalFaq(block) {
               <h2>
                 {block.title} <span>{block.title_suffix}</span>
               </h2>
-              {/* <div
-                dangerouslySetInnerHTML={{
-                  __html: md.render(block.description),
-                }}
-              /> */}
+             
             </div>
           </div>
         </div>

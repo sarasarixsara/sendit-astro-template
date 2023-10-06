@@ -24,7 +24,7 @@
     {
       "links": [
         {
-          "link": "/about/",
+          "link": "/features/",
           "text": "¿Quiénes Somos?"
         }
         
@@ -34,7 +34,7 @@
    
       "links": [
         {
-          "link": "/about/",
+          "link": "/pricing/",
           "text": "Servicios"
         }
         
@@ -54,7 +54,7 @@
     
       "links": [
         {
-          "link": "/about/",
+          "link": "/contact/",
           "text": "Contáctanos"
         }
       ]
