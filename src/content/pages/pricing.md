@@ -10,12 +10,12 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: pricing/hero
-    title: Servicios
+    title: Servicios 
     description: Conoce cómo podemos ayudarte
 
   - _bookshop_name: pricing/table
     pricing_tier:
-      - tier: Hogar
+      - tier: Hogar 
         highlight_tier: true
         description: Everything you need to get started.
         currency_symbol: $
@@ -37,7 +37,9 @@ content_blocks:
         button:
           link: /contact
           text: Contáctanos
-      - tier: Básico
+          number: 573152102953
+          message: Hola, me interesa el plan:"
+      - tier: Básico 
         highlight_tier: false
         description: More collaborative power and unlimited boards for fast-growing.
         currency_symbol: $
@@ -59,7 +61,9 @@ content_blocks:
         button:
           link: /contact
           text: Contáctanos
-      - tier: Empresarial
+          number: 573152102953
+          message: soy el mensaje
+      - tier: Empresarial 
         highlight_tier: false
         description: For starters Includes unlimited members
         currency_symbol: $
@@ -81,75 +85,77 @@ content_blocks:
         button:
           link: /contact
           text: Contáctanos
+          number: 573152102953
+          message: soy el mensaje
 
-  - _bookshop_name: featureNew/heroNew
-    image: /images/pricing/internet.jpg
-    image_alt: Message inbox
-    title: Internet dedicado
-    description: >-
+  # - _bookshop_name: featureNew/heroNew
+  #   image: /images/pricing/internet.jpg
+  #   image_alt: Message inbox
+  #   title: Internet dedicado
+  #   description: >-
       
-    # button:
-    #   link: /signup
-    #   text: Try This Free
-    reversed: false
-  - _bookshop_name: featureNew/heroNew
-    image: /images/pricing/bandaAncha.jpg
-    image_alt: Bancha ancha
-    title: Internet banda ancha
-    description: >-
+  #   button:
+  #     link: /signup
+  #     text: Try This Free
+  #   reversed: false
+  # - _bookshop_name: featureNew/heroNew
+  #   image: /images/pricing/bandaAncha.jpg
+  #   image_alt: Bancha ancha
+  #   title: Internet banda ancha
+  #   description: >-
       
-    # button:
-    #   link: /signup
-    #   text: Try This Free
-    reversed: true
-  - _bookshop_name: featureNew/heroNew
-    image: /images/pricing/wifi.jpg
-    image_alt: wifi
-    title: Zonas Wi-Fi
-    description: >-
+  #   # button:
+  #   #   link: /signup
+  #   #   text: Try This Free
+  #   reversed: true
+  # - _bookshop_name: featureNew/heroNew
+  #   image: /images/pricing/wifi.jpg
+  #   image_alt: wifi
+  #   title: Zonas Wi-Fi
+  #   description: >-
       
-    # button:
-    #   link: /signup
-    #   text: Try This Free
-    reversed: false
-  - _bookshop_name: featureNew/heroNew
-    image: /images/pricing/camara.jpg
-    image_alt: File upload
-    title: CCTV y Seguridad Electrónica
-    description: >-
+  #   # button:
+  #   #   link: /signup
+  #   #   text: Try This Free
+  #   reversed: false
+  # - _bookshop_name: featureNew/heroNew
+  #   image: /images/pricing/camara.jpg
+  #   image_alt: File upload
+  #   title: CCTV y Seguridad Electrónica
+  #   description: >-
       
-    # button:
-    #   link: /signup
-    #   text: Try This Free
-    reversed: true
-  - _bookshop_name: featureNew/heroNew
-    image: /images/pricing/solar.jpg
-    image_alt: File upload
-    title: Sistema de Energía Solar
-    description: >-
+  #   # button:
+  #   #   link: /signup
+  #   #   text: Try This Free
+  #   reversed: true
+  # - _bookshop_name: featureNew/heroNew
+  #   image: /images/pricing/solar.jpg
+  #   image_alt: File upload
+  #   title: Sistema de Energía Solar
+  #   description: >-
       
-    # button:
-    #   link: /signup
-    #   text: Try This Free
-    reversed: false
-  - _bookshop_name: featureNew/heroNew
-    image: /images/pricing/iot.jpg
-    image_alt: File upload
-    title: Internet de las Cosas
-    description: >-
+  #   # button:
+  #   #   link: /signup
+  #   #   text: Try This Free
+  #   reversed: false
+  # - _bookshop_name: featureNew/heroNew
+  #   image: /images/pricing/iot.jpg
+  #   image_alt: File upload
+  #   title: Internet de las Cosas
+  #   description: >-
       
-    # button:
-    #   link: /signup
-    #   text: Try This Free
-    reversed: true
-  - _bookshop_name: featureNew/heroNew
-    image: /images/pricing/redes.jpg
-    image_alt: File upload
-    title: Redes Empresariales
-    description: >-
+  #   # button:
+  #   #   link: /signup
+  #   #   text: Try This Free
+  #   reversed: true
+  # - _bookshop_name: featureNew/heroNew
+  #   image: /images/pricing/redes.jpg
+  #   image_alt: File upload
+  #   title: Redes Empresariales
+  #   description: >-
       
-    # button:
-    #   link: /signup
-    #   text: Try This Free
-    reversed: false
+  #   # button:
+  #   #   link: /signup
+  #   #   text: Try This Free
+  #   reversed: false
 ---

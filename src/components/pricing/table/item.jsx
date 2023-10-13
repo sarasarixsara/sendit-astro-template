@@ -1,4 +1,8 @@
 export default function PricingTier({ tier }) {
+  const generateLink = (phone, messagee) =>{
+    return 'https://wa.me/'+`${phone}`+'?text='+`${messagee + tier.tier.replace(/ /g, "%20")}`
+  };
+
   let pricing = "";
   if (tier.has_discount) {
     pricing = (
@@ -63,9 +67,10 @@ export default function PricingTier({ tier }) {
           </ul>
           <div className="link">
             {tier.button && (
-              <a href={tier.button.link} className="btn btn-lg btn-white">
+                <a href={`${generateLink(tier.button.number, tier.button.message)}`} target="_blank" className="btn btn-lg btn-white">
                 {tier.button.text}
-              </a>
+                </a>
+           
             )}
           </div>
         </div>

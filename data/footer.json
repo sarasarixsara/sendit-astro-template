@@ -4,20 +4,10 @@
   "copyright": "Con tecnología de Black Golden",
   "social": [
     {
-      "link": "https://www.facebook.com/mycompany",
-      "social_icon": "/images/footer/facebook-icon.svg"
-    },
-    {
-      "link": "https://www.instagram.com/mycompany",
-      "social_icon": "/images/footer/instagram-icon.svg"
-    },
-    {
-      "link": "https://www.twitter.com/mycompany",
-      "social_icon": "/images/footer/twitter-icon.svg"
-    },
-    {
-      "link": "https://www.linkedin.com/",
-      "social_icon": "/images/footer/linkedin-icon.svg"
+      "number": 573152102953,
+      "message": "soy el mensaje",
+      "social_icon": "/images/footer/whsp-icon.svg",
+      "link":"https://google.com"
     }
   ],
   "sections": [
@@ -30,12 +20,13 @@
         
       ]
     },
+   
     {
    
       "links": [
         {
           "link": "/pricing/",
-          "text": "Servicios"
+          "text": "Soluciones"
         }
         
       ]
@@ -46,6 +37,15 @@
         {
           "link": "/about/",
           "text": "Capacitaciones"
+        }
+        
+      ]
+    },
+    {
+      "links": [
+        {
+          "link": "/privacy/",
+          "text": "Productos"
         }
         
       ]

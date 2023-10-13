@@ -11,16 +11,22 @@
     },
     {
       "link": "/pricing/",
-      "text": "Servicios"
+      "text": "Soluciones"
     },
     {
-      "link": "/about/",
-      "text": "Capacitaciones"
+      "link": "/privacy/",
+      "text": "Productos"
     }
    
   ],
   "btn": {
     "link": "/contact/",
     "text": "Contáctanos"
+  },
+  "whsp":{
+    "src":"/images/whsp-button.png",
+    "number": 573152102953,
+    "message": "soy el mensaje"
+
   }
 }

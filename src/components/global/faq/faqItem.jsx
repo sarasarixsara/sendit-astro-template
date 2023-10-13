@@ -9,7 +9,7 @@ export default function GlobalFaqItem({ faq, i }) {
       <span>0{i + 1}</span>
       <h2 className="accordion-header" id={`heading${i}`} >
         
-          <a className="header-content" href={faq.link} >{faq.title}</a>
+          <a className="header-content" href={faq.link}  target="_blank">{faq.title}</a>
        
       </h2>
       <div

@@ -20,6 +20,10 @@ export default function Navigation({ pageUrl }) {
     navbar.toggleClass("bg-nav");
   };
 
+  const generateLink = (phone, message) =>{
+    return 'https://wa.me/' +`${phone}`+ '?text=' + `${message.replace(/ /g, "%20")}`
+  };
+
   return (
     <>
       <header>
@@ -138,6 +142,11 @@ export default function Navigation({ pageUrl }) {
                 </a>
               </div>
             </div>
+            <div>
+           <a href={`${generateLink(navigation.whsp.number, navigation.whsp.message)}`} target="_blank">
+              <img src={navigation.whsp.src} alt="Descripción de la imagen" width={"50"} style={{marginLeft: 40}}/>
+            </a>
+            </div> 
           </div>
         </nav>
       </header>
