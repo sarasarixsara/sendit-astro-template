@@ -10,16 +10,7 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
-  - _bookshop_name: home/hero
-    title: Planes de Internet Para Su Hogar o Negocio
-    description: >-
-      With Sendit, you can quickly create beautiful rich emails that capture a
-      reader's attention, engage them, and convert them into customers.
-    image: 
-    image_alt: 
-    button:
-      text: Cotiza con nosotros
-      link: /contact/
+  - _bookshop_name: global/swiper
   - _bookshop_name: global/counter
     title: Disponibilidad de los Servicios de 
     title_suffix: Conectividad a Internet

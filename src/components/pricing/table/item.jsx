@@ -1,6 +1,6 @@
 export default function PricingTier({ tier }) {
   const generateLink = (phone, messagee) =>{
-    return 'https://wa.me/'+`${phone}`+'?text='+`${messagee + tier.tier.replace(/ /g, "%20")}`
+    return 'https://wa.me/'+`${phone}`+'?text='+`${messagee + (" ")+ tier.tier.replace(/ /g, "%20")}`
   };
 
   let pricing = "";

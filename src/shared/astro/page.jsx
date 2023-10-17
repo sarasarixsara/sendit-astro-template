@@ -1,3 +1,4 @@
+
 const components = {};
 const componentImports = import.meta.glob("../../components/**/*.jsx", {
   eager: true,
@@ -16,7 +17,7 @@ export default function Page({ contentBlocks }) {
     <main>
       {contentBlocks.map((block, i) => {
         const Component = components[block._bookshop_name];
-        return <Component {...block} key={i} />;
+        return <Component {...block} key={i}/>;
       })}
     </main>
   );

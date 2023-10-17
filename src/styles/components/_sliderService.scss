@@ -1,0 +1,105 @@
+.header-section {
+    padding: $base-padding * 1 0 $base-padding * 4;
+    text-align: center;
+    position: relative;
+
+
+    @include media-breakpoint-down-sm {
+        padding: $base-padding * 2 0 $base-padding * 4.1;
+    }
+
+    &.no-top-pad {
+        padding-top: 0;
+    }
+
+    h2 {
+        position: relative;
+        font-size: $base-font-size * 4;
+        line-height: 81.25px;
+        letter-spacing: -0.4px;
+        margin-bottom: $base-margin * 1;
+
+        span {
+            color: $color-primary;
+        }
+
+        @include media-breakpoint-down-xxl {
+            font-size: $base-font-size * 3.5;
+        }
+
+        @include media-breakpoint-down-lg {
+            font-size: $base-font-size * 3;
+            line-height: 65px;
+        }
+
+        @include media-breakpoint-down-md {
+            font-size: $base-font-size * 2.5;
+            line-height: 1.4;
+        }
+
+        @include media-breakpoint-down-sm {
+            font-size: $base-font-size * 1.9;
+            margin-bottom: $base-margin * 0.6;
+            line-height: 37.5px;
+        }
+    }
+
+    p {
+        font-size: $base-font-size * 1.4;
+        color: $color-text-light;
+        font-weight: $medium-font-weight;
+        line-height: 36.3px;
+        letter-spacing: -0.4px;
+        margin-bottom: 0;
+
+        @include media-breakpoint-down-sm {
+            font-size: $base-font-size * 1.1;
+            line-height: 29.7px;
+            letter-spacing: -0.008px;
+        }
+    }
+}
+
+.slider-container {
+    background-color: azure;
+    padding: 3rem;
+}
+
+.slide-swiper {
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 20rem;
+   
+
+}
+
+
+.img {
+   width: 100%;
+    object-fit: fill;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.text-slide {
+   
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    border-end-start-radius: 15px;
+    border-end-end-radius: 15px;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    //background-color: aqua;
+}

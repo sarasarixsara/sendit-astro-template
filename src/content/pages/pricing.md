@@ -38,7 +38,7 @@ content_blocks:
           link: /contact
           text: Contáctanos
           number: 573152102953
-          message: Hola, me interesa el plan:"
+          message: Hola, me interesa el plan 
       - tier: Básico 
         highlight_tier: false
         description: More collaborative power and unlimited boards for fast-growing.
@@ -62,7 +62,7 @@ content_blocks:
           link: /contact
           text: Contáctanos
           number: 573152102953
-          message: soy el mensaje
+          message: Hola, me interesa el plan 
       - tier: Empresarial 
         highlight_tier: false
         description: For starters Includes unlimited members
@@ -86,8 +86,10 @@ content_blocks:
           link: /contact
           text: Contáctanos
           number: 573152102953
-          message: soy el mensaje
-
+          message: Hola, me interesa el plan 
+  - _bookshop_name: pricing/services   
+   
+ 
   # - _bookshop_name: featureNew/heroNew
   #   image: /images/pricing/internet.jpg
   #   image_alt: Message inbox
