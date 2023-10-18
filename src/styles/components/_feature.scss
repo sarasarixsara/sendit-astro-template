@@ -15,11 +15,11 @@
     }
 
     @include media-breakpoint-down-sm {
-      padding: $base-padding * 0 0 $base-padding * 3.5;
+      padding: $base-padding * 6 0 $base-padding * 4;
     }
 
     p {
-      width: 80%;
+      width: 70%;
       margin: 0 auto;
       text-align: justify;
 
@@ -129,6 +129,7 @@
       @include media-breakpoint-down-sm {
         font-size: $base-font-size * 1.1;
         line-height: 29.7px;
+        margin-bottom: $base-margin * 5;
       }
     }
 

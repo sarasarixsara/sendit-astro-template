@@ -2,8 +2,7 @@
   11. Testimonial Section Styles 
 **********/
 .testimonial {
-   background: $color-header;
-   //align-items: center;
+   background: $color-header;;
    position: relative;
    border-bottom: 1px solid $color-text;
    overflow: hidden;
@@ -18,7 +17,7 @@
          padding-right: 0;
       }
       @include media-breakpoint-down-lg {
-         text-align: justify;
+         //text-align: justify;
          padding-bottom: $base-padding * 3;
       }
       h2 {
