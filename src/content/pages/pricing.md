@@ -87,69 +87,21 @@ content_blocks:
           text: Contáctanos
           number: 573152102953
           message: Hola, me interesa el plan 
-  - _bookshop_name: pricing/services   
-   
- 
-  # - _bookshop_name: featureNew/heroNew
-  #   image: /images/pricing/internet.jpg
-  #   image_alt: Message inbox
-  #   title: Internet dedicado
-  #   description: >-
-      
-  #   button:
-  #     link: /signup
-  #     text: Try This Free
-  #   reversed: false
-  # - _bookshop_name: featureNew/heroNew
-  #   image: /images/pricing/bandaAncha.jpg
-  #   image_alt: Bancha ancha
-  #   title: Internet banda ancha
-  #   description: >-
-      
-  #   # button:
-  #   #   link: /signup
-  #   #   text: Try This Free
-  #   reversed: true
-  # - _bookshop_name: featureNew/heroNew
-  #   image: /images/pricing/wifi.jpg
-  #   image_alt: wifi
-  #   title: Zonas Wi-Fi
-  #   description: >-
-      
-  #   # button:
-  #   #   link: /signup
-  #   #   text: Try This Free
-  #   reversed: false
-  # - _bookshop_name: featureNew/heroNew
-  #   image: /images/pricing/camara.jpg
-  #   image_alt: File upload
-  #   title: CCTV y Seguridad Electrónica
-  #   description: >-
-      
-  #   # button:
-  #   #   link: /signup
-  #   #   text: Try This Free
-  #   reversed: true
-  # - _bookshop_name: featureNew/heroNew
-  #   image: /images/pricing/solar.jpg
-  #   image_alt: File upload
-  #   title: Sistema de Energía Solar
-  #   description: >-
-      
-  #   # button:
-  #   #   link: /signup
-  #   #   text: Try This Free
-  #   reversed: false
-  # - _bookshop_name: featureNew/heroNew
-  #   image: /images/pricing/iot.jpg
-  #   image_alt: File upload
-  #   title: Internet de las Cosas
-  #   description: >-
-      
-  #   # button:
-  #   #   link: /signup
-  #   #   text: Try This Free
-  #   reversed: true
+  - _bookshop_name: pricing/services
+    title: Otros servicios   
+    slider:
+  
+      - descp: Domotica
+        src: /images/pricing/iot.jpg  
+    
+      - descp: Internet
+        src: /images/pricing/internet.jpg
+    
+      - descp: Redes y cableado
+        src: /images/pricing/redes.jpg
+
+      - descp: Seguridad electronica
+        src: /images/pricing/camara.jpg
   # - _bookshop_name: featureNew/heroNew
   #   image: /images/pricing/redes.jpg
   #   image_alt: File upload
