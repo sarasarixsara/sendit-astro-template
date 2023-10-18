@@ -234,7 +234,7 @@
   /* Pricing in Inner Page section */
   &-inner {
     position: relative;
-    padding: $base-padding * 10 $base-padding * 0 $base-padding * 4;
+    padding: $base-padding * 10 $base-padding * 0 $base-padding * 3;
 
 
     @include media-breakpoint-down-md {

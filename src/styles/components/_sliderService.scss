@@ -8,9 +8,6 @@
         padding: $base-padding * 2 0 $base-padding * 4.1;
     }
 
-    &.no-top-pad {
-        padding-top: 0;
-    }
 
     h2 {
         position: relative;
@@ -18,10 +15,6 @@
         line-height: 81.25px;
         letter-spacing: -0.4px;
         margin-bottom: $base-margin * 1;
-
-        span {
-            color: $color-primary;
-        }
 
         @include media-breakpoint-down-xxl {
             font-size: $base-font-size * 3.5;
@@ -44,29 +37,39 @@
         }
     }
 
-    p {
-        font-size: $base-font-size * 1.4;
-        color: $color-text-light;
-        font-weight: $medium-font-weight;
-        line-height: 36.3px;
-        letter-spacing: -0.4px;
-        margin-bottom: 0;
+}
 
-        @include media-breakpoint-down-sm {
-            font-size: $base-font-size * 1.1;
-            line-height: 29.7px;
-            letter-spacing: -0.008px;
-        }
-    }
+.card-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
 }
 
 .slider-container {
-    background-color: azure;
-    padding: 3rem;
+    background-color: $color-primary-dark;
+    padding: 3rem 7rem;
+    padding-bottom: 6rem;
+
+    @include media-breakpoint-down-md {
+        padding: 3rem 4rem;
+    }
+    @include media-breakpoint-down-sm {
+        padding: 3rem 3rem;
+    }   
+
+}
+
+.swiper-button-prev {
+    color: $color-primary !important;
+}
+
+.swiper-button-next {
+    color: $color-primary !important;
 }
 
 .slide-swiper {
-    border-color: gray;
+    border-color: rgba(128, 128, 128, 0.614);
     border-width: 1px;
     border-style: solid;
     border-radius: 15px;
@@ -75,31 +78,33 @@
     align-items: center;
     justify-content: space-around;
     width: 20rem;
-   
+    height: 22rem;
+    
 
 }
 
+.image {
+    height: 250px;
+    
+    width: 100%;
+}
 
 .img {
-   width: 100%;
+    height: 100%;
+    width: 100%;
     object-fit: fill;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
 .text-slide {
-   
+
     width: 100%;
     background-color: white;
     text-align: center;
     padding: 30px;
     border-end-start-radius: 15px;
     border-end-end-radius: 15px;
-}
 
-.swiper-slide {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    //background-color: aqua;
+
 }

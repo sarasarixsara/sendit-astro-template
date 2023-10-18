@@ -16,8 +16,10 @@ export default function HomeHero(block) {
           <div className="col-lg-6 justify-content-center" style={{display: "flex"}}>
           <div className="">
                 {block.button && (
-                  <a
-                    href={block.button.link}
+                  // <a
+                  //   href={block.button.link}
+                  <a href={'https://wa.me/' +`${block.button.number}`+ '?text=' + `${block.button.message.replace(/ /g, "%20")}`}  target="_blank"
+
                     className="btn btn-primary btn-lg"
                   >
                     {" "}
