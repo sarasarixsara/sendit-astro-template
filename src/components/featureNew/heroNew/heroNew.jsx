@@ -1,6 +1,6 @@
 import MarkdownIt from "markdown-it";
 const md = new MarkdownIt({ html: true });
-
+import navigation from "../../../../data/navigation.json";
 export default function GlobalFeature(block) {
   let content = "";
   if (block.reversed) {
@@ -10,7 +10,7 @@ export default function GlobalFeature(block) {
           <div className="col-lg-6 ">
             <div className="feature-item-banner mb-sm-8 mb-lg-10 mb-xxl-15 mb-7">
               <div className="card-image ">
-                <img src={block.image} alt={block.image_alt} loading="lazy" width="400" height="300"/>
+                <img src={block.image} alt={block.image_alt} loading="lazy" width="400" height="300" />
               </div>
               <div className="effect-one"></div>
             </div>
@@ -23,7 +23,13 @@ export default function GlobalFeature(block) {
                   __html: md.render(block.description),
                 }}
               />
-             
+              <a
+                href={`${navigation.btn.link}`}
+                target="_blank"
+                className="btn btn-sm btn-links"
+              >
+                {navigation.btn.text}
+              </a>
             </div>
           </div>
         </div>
@@ -41,13 +47,19 @@ export default function GlobalFeature(block) {
                   __html: md.render(block.description),
                 }}
               />
-           
+              <a
+                href={`${navigation.btn.link}`}
+                className="btn btn-sm btn-links"
+                target="_blank"
+              >
+                {navigation.btn.text}
+              </a>
             </div>
           </div>
           <div className="col-lg-6 order-1 order-lg-2">
             <div className="feature-item-banner mb-sm-8 mb-lg-10 mb-xxl-15 mb-7">
               <div className="card-image">
-                <img src={block.image} alt={block.image_alt} loading="lazy" width="400" height="300"/>
+                <img src={block.image} alt={block.image_alt} loading="lazy" width="400" height="300" />
               </div>
               <div className="effect-two"></div>
             </div>

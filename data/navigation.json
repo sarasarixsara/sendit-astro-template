@@ -8,12 +8,7 @@
     {
       "link": "/features/",
       "text": "¿Quiénes somos?"
-    },
-    {
-      "link": "/pricing/",
-      "text": "Soluciones"
     }
-   
   ],
   "products": [
     {
@@ -33,8 +28,26 @@
       "text": "Camaras de seguridad"
     }
   ],
+  "solutions": [
+    {
+      "link": "/domotica/",
+      "text": "Domotica"
+    },
+    {
+      "link": "/",
+      "text": "Internet"
+    },
+    {
+      "link": "/redes/",
+      "text": "Redes y cableado"
+    },
+    {
+      "link": "/redes/",
+      "text": "Seguridad electronica"
+    }
+  ],
   "btn": {
-    "link": "/contact/",
+    "link": "https://api.whatsapp.com/send/?phone=573138825184&text=Me+interesa+conocer+mas+sobre+sus+productos&type=phone_number&app_absent=0",
     "text": "Contáctanos"
   },
   "whsp":{
