@@ -10,7 +10,7 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: pricing/hero
-    title: Servicios 
+    title: Soluciones 
     description: Conoce cómo podemos ayudarte
 
   - _bookshop_name: pricing/table

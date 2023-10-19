@@ -1,4 +1,5 @@
 import footer from "@data/footer.json";
+import navigation from "@data/navigation.json";
 
 
 export default function Footer({}) {
@@ -34,7 +35,7 @@ export default function Footer({}) {
                 <ul className="list-unstyled">
                   {footer.social.map((link, i) => (
                     <li key={i}>
-                      <a href={'https://wa.me/' +`${link.number}`+ '?text=' + `${link.message.replace(/ /g, "%20")}`}  target="_blank">
+                      <a href={'https://wa.me/' +`${navigation.whsp.number}`+ '?text=' + `${link.message.replace(/ /g, "%20")}`}  target="_blank">
                         <img src={link.social_icon} width="30" />
                           
                       </a>

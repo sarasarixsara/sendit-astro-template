@@ -1,4 +1,5 @@
 import MarkdownIt from "markdown-it";
+import navigation from "@data/navigation.json";
 const md = new MarkdownIt({ html: true });
 
 export default function HomeHero(block) {
@@ -18,7 +19,7 @@ export default function HomeHero(block) {
                 {block.button && (
                   // <a
                   //   href={block.button.link}
-                  <a href={'https://wa.me/' +`${block.button.number}`+ '?text=' + `${block.button.message.replace(/ /g, "%20")}`}  target="_blank"
+                  <a href={'https://wa.me/' +`${navigation.whsp.number}`+ '?text=' + `${block.button.message.replace(/ /g, "%20")}`}  target="_blank"
 
                     className="btn btn-primary btn-lg"
                   >

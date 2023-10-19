@@ -18,22 +18,19 @@ content_blocks:
       El despliegue de la red de distribución donde se ofrecen los servicios de conectividad a Internet por parte de Convergencia Digital esta basado en tecnología Wi-Fi de largo alcance por lo que la disponibilidad del servicio es del 99,6%.
     alternate_style: false
     numbers:
-      - prefix: $
-        number: 200
-        suffix: m
-        text: Venture capital raised
-      - prefix:
-        number: 2016
+      - prefix: +
+        number: 50
+        suffix: 
+        text: Proyectos
+      - prefix: +
+        number: 100
         suffix:
-        text: Established in
-      - prefix:
-        number: 40
-        suffix: +
-        text: Amazing team members
-      - prefix:
-        number: 40
-        suffix: +
-        text: Amazing team members
+        text: Productos
+      - prefix: +
+        number: 700
+        suffix: 
+        text: Usuarios
+ 
   
 
   # - _bookshop_name: global/text
@@ -50,7 +47,7 @@ content_blocks:
   #   description: >-
   #     De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
 
-  - _bookshop_name: global/testimonial
+  - _bookshop_name: global/testimonial/testimonialSlider
     title: Conoce nuestros 
     title_suffix: servicios
     description: >-
@@ -69,7 +66,7 @@ content_blocks:
           Suministro, instalación y mantenimiento de equipamiento para el radio enlace PtP y PtMP aplicado tanto a proyectos corporativos, como gubernamentales.
       - image: /images/testimonial/logo-3.jpg
         image_alt: Soluciones en Fibra Óptica
-        author: Soluciones en Fibra Óptica
+        author: Soluciones integrales en Fibra Óptica
          
         message: >-
           Instalación, certificación y mantenimiento de Fibra Óptica, Red Óptica Pasiva con Capacidad de Gigabit y Red de Actividad en Nodo (GPON/AON)
