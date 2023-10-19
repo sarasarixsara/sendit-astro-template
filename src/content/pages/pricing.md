@@ -17,22 +17,17 @@ content_blocks:
     pricing_tier:
       - tier: Hogar 
         highlight_tier: true
-        description: Everything you need to get started.
+        description: Kit 1 de domótica.
         currency_symbol: $
         price: 30,000
         has_discount: false
         discount_price: 0
         features:
-          - item: 1 Email Campaign
+          - item: Soporte
             active_feature: true
-          - item: 1 Year Premium Support
+          - item: Actualizacion regular
             active_feature: true
-          - item: Regular Update for 1 Year
-            active_feature: true
-          - item: 90+ Widgets & Extensions
-            active_feature: true
-          - item: 23+ Templates
-            active_feature: true
+     
           
         button:
           link: /contact
@@ -41,22 +36,17 @@ content_blocks:
           message: Hola, me interesa el plan 
       - tier: Básico 
         highlight_tier: false
-        description: More collaborative power and unlimited boards for fast-growing.
+        description: Kit 2 de domótica.
         currency_symbol: $
         price: 60,000
         has_discount: false
         discount_price: 125
         features:
-          - item: 1 Email Campaign
+          - item: Soporte
             active_feature: true
-          - item: 1 Year Premium Support
+          - item: Actualizacion regular
             active_feature: true
-          - item: Regular Update for 1 Year
-            active_feature: true
-          - item: 90+ Widgets & Extensions
-            active_feature: true
-          - item: 23+ Templates
-            active_feature: true
+    
           
         button:
           link: /contact
@@ -65,22 +55,17 @@ content_blocks:
           message: Hola, me interesa el plan 
       - tier: Empresarial 
         highlight_tier: false
-        description: For starters Includes unlimited members
+        description: Kit 3 de domótica.
         currency_symbol: $
         price: 100,000
         has_discount: false
         discount_price: 100,000
         features:
-          - item: 1 Email Campaign
+          - item: Soporte
             active_feature: true
-          - item: 1 Year Premium Support
+          - item: Actualizacion regular
             active_feature: true
-          - item: Regular Update for 1 Year
-            active_feature: true
-          - item: 90+ Widgets & Extensions
-            active_feature: true
-          - item: 23+ Templates
-            active_feature: true
+        
           
         button:
           link: /contact
@@ -91,7 +76,7 @@ content_blocks:
     title: Otros servicios   
     slider:
   
-      - descp: Domotica
+      - descp: Domótica.
         src: /images/pricing/iot.jpg  
     
       - descp: Internet

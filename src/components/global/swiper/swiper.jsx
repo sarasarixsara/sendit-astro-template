@@ -20,11 +20,24 @@ export default function App() {
     return (
         <>
             <Swiper
-                 navigation={true} modules={[Navigation]} className="mySwiper">
+                navigation={true} modules={[Navigation]} className="mySwiper">
+                <SwiperSlide><HomeHero {...props} /></SwiperSlide>
+                {/* <SwiperSlide>
+                    <div style={{ position: "relative", height: "25rem" }}>
+                        <div style={{
+                            position: "absolute", top: "50%",
+                            right: "10%",
+                            transform: "translateY(-50%)",
+                            backgroundColor: "rgba(0, 0, 0, 0.5)", 
+                            padding: "20px",
+                            borderRadius: "10px",
+                        }}>
+                            <h5 style={{ color: "white"}}>Seguridad electrónica</h5>
+                        </div>
+                        <img src="/images/hero/home-cctv.jpg" alt="" style={{ width: "100%" }} />
+                    </div>
+                </SwiperSlide> */}
 
-                <SwiperSlide><HomeHero {...props} /></SwiperSlide>
-                <SwiperSlide><HomeHero {...props} /></SwiperSlide>
-                <SwiperSlide></SwiperSlide>
 
             </Swiper>
         </>

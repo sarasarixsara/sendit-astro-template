@@ -12,12 +12,26 @@
     {
       "link": "/pricing/",
       "text": "Soluciones"
-    },
-    {
-      "link": "/privacy/",
-      "text": "Productos"
     }
    
+  ],
+  "products": [
+    {
+      "link": "/",
+      "text": "Domotica"
+    },
+    {
+      "link": "/",
+      "text": "Fibra Optica"
+    },
+    {
+      "link": "/",
+      "text": "Radio enlaces"
+    },
+    {
+      "link": "/",
+      "text": "Camaras de seguridad"
+    }
   ],
   "btn": {
     "link": "/contact/",
