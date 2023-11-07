@@ -1,24 +1,7 @@
-import { useEffect, useState } from "react";
 import navigation from "@data/navigation.json";
 
 export default function Navigation({ pageUrl }) {
-  const [isSticky, setSticky] = useState(false);
-
-  const handleScroll = () => {
-    setSticky(window.scrollY >= 70);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const handleClick = (event) => {
-    const navbar = $("#mainnavigationBar");
-    navbar.toggleClass("bg-nav");
-  };
+  
 
   const generateLink = (phone, message) => {
     return 'https://wa.me/' + `${phone}` + '?text=' + `${message.replace(/ /g, "%20")}`
@@ -28,8 +11,7 @@ export default function Navigation({ pageUrl }) {
     <>
       <header>
         <nav
-          className={`navbar navbar-expand-lg position-fixed w-100 zindex-dropdown${isSticky ? " sticky-nav" : ""
-            }`}
+          className={`navbar navbar-expand-lg position-fixed w-100` }
           id="mainnavigationBar"
         >
           <div className="container-fluid">
@@ -44,7 +26,7 @@ export default function Navigation({ pageUrl }) {
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
-              onClick={handleClick}
+              
             >
               <span className="navbar-toggler-default">
                 <svg

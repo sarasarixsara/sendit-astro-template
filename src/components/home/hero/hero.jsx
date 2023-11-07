@@ -1,5 +1,6 @@
 import MarkdownIt from "markdown-it";
 import navigation from "@data/navigation.json";
+import pill from "../../pill.astro";
 const md = new MarkdownIt({ html: true });
 
 export default function HomeHero(block) {
