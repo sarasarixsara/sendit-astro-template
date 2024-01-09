@@ -1,12 +1,12 @@
 {
-  "logo": "/images/footer-logo (1).svg",
+  "logo": "/images/logo_romoredes.jpeg",
   "logo_url": "/",
   "copyright": "Con tecnología de Black Golden",
   "social": [
     {
       "number": 573162205755,
       "message": "Me interesa conocer mas sobre sus productos",
-      "social_icon": "/images/footer/whsp-icon.svg",
+      "social_icon": "/images/whsp-button.png",
       "link":"https://google.com"
     }
   ],

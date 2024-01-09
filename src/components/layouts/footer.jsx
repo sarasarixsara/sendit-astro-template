@@ -36,8 +36,7 @@ export default function Footer({}) {
                   {footer.social.map((link, i) => (
                     <li key={i}>
                       <a href={'https://wa.me/' +`${navigation.whsp.number}`+ '?text=' + `${link.message.replace(/ /g, "%20")}`}  target="_blank">
-                        <img src={link.social_icon} width="30" />
-                          
+                        <img src={link.social_icon} width="35" />
                       </a>
                     </li>
                   ))}

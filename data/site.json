@@ -1,8 +1,8 @@
 {
   "site_title": "Romoredes",
   "description": "A polished, marketing website template built with Astro",
-  "favicon_icon": "/images/favicon.ico",
-  "favicon_image": "/images/favicon.jpeg",
+  "favicon_icon": "/images/romoredes-favicon-ico.ico",
+  "favicon_image": "/images/romoredes-favicon.jpg",
   "twitter_site": "@twitter_site",
   "image": "/images/feature/feature-hero.png",
   "image_alt": "/images/feature/feature-hero.png"

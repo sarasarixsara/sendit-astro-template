@@ -1,5 +1,5 @@
 {
-  "logo": "/images/large-logo.png",
+  "logo": "/images/logo_romoredes.jpeg",
   "items": [
     {
       "link": "/",
@@ -47,12 +47,12 @@
     }
   ],
   "btn": {
-    "link": "https://api.whatsapp.com/send/?phone=573162205755&text=Me+interesa+conocer+mas+sobre+sus+productos&type=phone_number&app_absent=0",
+    "link": "https://api.whatsapp.com/send/?phone=573182309432&text=Me+interesa+conocer+mas+sobre+sus+productos&type=phone_number&app_absent=0",
     "text": "Contáctanos"
   },
   "whsp":{
     "src":"/images/whsp-button.png",
-    "number": 573162205755,
+    "number": 573182309432,
     "message": "Me interesa conocer mas sobre sus productos"
 
   }

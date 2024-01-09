@@ -33,9 +33,9 @@ export default function Navigation({ pageUrl }) {
           id="mainnavigationBar"
         >
           <div className="container-fluid">
-            {/* <a className="navbar-brand" href="/" >
-              <img src={navigation.logo} alt="Nav-Logo" height={"45px"} />
-            </a> */}
+             <a className="navbar-brand" href="/" >
+              <img src={navigation.logo} alt="Nav-Logo" height={"85px"} />
+            </a> 
             <button
               className="navbar-toggler"
               type="button"
@@ -173,6 +173,7 @@ export default function Navigation({ pageUrl }) {
               <div className="nav-item">
                 <a
                   href={`${navigation.btn.link}`}
+                  target="_blank"
                   //className="btn btn-sm btn-links"
                   className="btn btn-sm btn-primary"
                 >
