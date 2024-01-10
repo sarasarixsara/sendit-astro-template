@@ -87,11 +87,11 @@ content_blocks:
       - title: Te protejo - Denuncie aquí
         link: https://teprotejo.org/
       - title: Control parental
-        link: public\docs\Control-Parental.pdf
+        link: docs/Control-Parental.pdf
       - title: Ley 679 de 2001
-        link: public\docs\LEY-679-DE-2001.pdf
+        link: /docs/LEY-679-DE-2001.pdf
       - title: Seguridad en internet
-        link: public\docs\Seguridad-en-Internet.pdf
+        link: docs/Seguridad-en-Internet.pdf
       - title: Medidor de velocidad Speedtest
         link: https://www.speedtest.net/es
       - title: Medidor de velocidad ETB
