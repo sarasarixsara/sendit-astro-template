@@ -15,15 +15,15 @@ content_blocks:
   - _bookshop_name: contact/form
     address:
       heading: Dirección 
-      address: Calle 17# 8-52 Interlaken Av. Guabinal
+      address: CARRERA 5 9 192, PIEDRAS, TOLIMA
     phone:
       heading: Teléfono
-      cell: 3138825184
+      cell: 3182309432
       image: /images/contact/call-add.svg
       image_alt: call-add
     email:
       heading: Email
-      email: convergenciadigitalsas@gmail.com
+      email: cromored3s@gmail.com
       image: /images/contact/directbox-send.svg
       image_alt: send-box
     

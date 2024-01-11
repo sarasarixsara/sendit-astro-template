@@ -31,21 +31,7 @@ content_blocks:
         suffix: 
         text: Usuarios
  
-  
 
-  # - _bookshop_name: global/text
-  #   title: 
-  #   title_suffix: 
-  #   remove_top_padding: true
-  #   description: >-
-  #     Convergencia Digital S.A.S se permite comunicar respecto al bloqueo de contenidos, que NO se realiza por ningún motivo guardando el principio de neutralidad en la prestación del servicio, salvo aquellos que por disposición legal se deba realizar (contenido de pornografía infantil con base en la ley 679 de 2001), sin el consentimiento expreso del usuario.
-  #     De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
-  # - _bookshop_name: global/header
-  #   title: 
-  #   title_suffix: 
-  #   remove_top_padding: true
-  #   description: >-
-  #     De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
 
   - _bookshop_name: global/testimonial/testimonialSlider
     title: Conoce nuestros 
@@ -55,21 +41,21 @@ content_blocks:
     slider:
       - image: /images/testimonial/logo-1.jpg
         image_alt: Profile photo of Pete Fish
-        author: Cableado estructurado y Redes Empresariales
+        author: Redes Empresariales
         message: >-
           Instalación y mantenimiento de cableado estructurado de redes de telecomunicaciones y de redes empresariales. Instalación y gestión de zonas Wi-fi.
       - image: /images/testimonial/logo-2.jpg
         image_alt: Profile photo of Dolly Watsona
-        author: Equipamiento Para Radio Enlaces
+        author: Radio Enlaces
         
         message: >-
           Suministro, instalación y mantenimiento de equipamiento para el radio enlace PtP y PtMP aplicado tanto a proyectos corporativos, como gubernamentales.
       - image: /images/testimonial/logo-3.jpg
-        image_alt: Soluciones en Fibra Óptica
-        author: Soluciones integrales en Fibra Óptica
+        image_alt: Fibra Óptica
+        author: Fibra Óptica
          
         message: >-
-          Instalación, certificación y mantenimiento de Fibra Óptica, Red Óptica Pasiva con Capacidad de Gigabit y Red de Actividad en Nodo (GPON/AON)
+          Instalación, certificación y mantenimiento de Fibra Óptica, Red Óptica Pasiva con la Capacidad de Gigabit y Red de Actividad en Nodo (GPON/AON)
       - image: /images/testimonial/logo-4.jpg
         image_alt: Consultoría y Diseño
         author: Consultoría y Diseño

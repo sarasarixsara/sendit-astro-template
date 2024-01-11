@@ -4,6 +4,6 @@ import bookshop from '@bookshop/astro-bookshop';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://convergenciadigitalsas.com/",
+  site: "https://romoredes.com/",
   integrations: [bookshop(), react()]
 });
