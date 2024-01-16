@@ -1,9 +1,9 @@
 {
   "site_title": "Romoredes",
-  "description": "A polished, marketing website template built with Astro",
+  "description": "Romo Redes Comunicaciones SAS se especializa en telecomunicaciones alambricas.",
   "favicon_icon": "/images/romoredes-favicon-ico.ico",
   "favicon_image": "/images/romoredes-favicon.jpg",
   "twitter_site": "@twitter_site",
-  "image": "/images/feature/feature-hero.png",
-  "image_alt": "/images/feature/feature-hero.png"
+  "image": "/images/romoredes-favicon.jpg",
+  "image_alt": "/images/romoredes-favicon.jpg"
 }
