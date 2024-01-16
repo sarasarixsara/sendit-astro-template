@@ -1,9 +1,9 @@
 {
   "site_title": "Convergencia Digital S.A.S",
-  "description": "A polished, marketing website template built with Astro",
-  "favicon_icon": "/images/favicon.ico",
+  "description": "Servicios de conectividad a Internet para su hogar o negocio.",
+  "favicon_icon": "/images/favicon.jpeg",
   "favicon_image": "/images/favicon.jpeg",
   "twitter_site": "@twitter_site",
-  "image": "/images/feature/feature-hero.png",
-  "image_alt": "/images/feature/feature-hero.png"
+  "image": "/images/large-logo.png",
+  "image_alt": "/images/large-logo.png"
 }

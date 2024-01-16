@@ -1,13 +1,13 @@
 {
 	"site_name": "Convergencia Digital S.A.S",
 	"site_title": "Convergencia Digital S.A.S",
-	"description": "A polished, marketing website template built with Astro.",
+	"description": "Servicios de conectividad a Internet para su hogar o negocio.",
 	"author": "",
 	"author_email": "",
 	"images": [
 		{
-			"image": "/images/_screenshot.png",
-			"description": "Screenshot for Sendit Template",
+			"image": "/images/large-logo.png",
+			"description": "Convergencia Digital",
 			"height": 0,
 			"width": 0
 		}
