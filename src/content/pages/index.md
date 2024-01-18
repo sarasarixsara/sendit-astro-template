@@ -21,15 +21,15 @@ content_blocks:
       - prefix: +
         number: 50
         suffix: 
-        text: Proyectos
+        text: Puntos de conexión 
       - prefix: +
-        number: 100
-        suffix:
-        text: Productos
+        number: 70
+        suffix: '%'
+        text: de cobertura en el Tolima
       - prefix: +
-        number: 700
-        suffix: 
-        text: Usuarios
+        number: 99
+        suffix: '%'
+        text: de estabilidad en las redes
  
 
 

@@ -10,7 +10,28 @@ export default function GlobalFeature() {
 
   useEffect(() => {
     const getLocation = () => {
-      if (navigator.geolocation) {
+      if (navigator.permissions && navigator.permissions.query) {
+        navigator.permissions.query({ name: 'geolocation' })
+          .then((permissionStatus) => {
+            if (permissionStatus.state === 'granted') {
+              navigator.geolocation.getCurrentPosition(
+                (position) => {
+                  const { latitude, longitude } = position.coords;
+                  setLocation({ latitude, longitude });
+                },
+                (error) => {
+                  console.error('Error getting location:', error.message);
+                }
+              );
+            } else if (permissionStatus.state === 'denied') {
+              // Mostrar una alerta cuando el permiso de ubicación está desactivado
+              alert('El permiso de ubicación está desactivado. Por favor, habilítalo para obtener tu ubicación.');
+            }
+          })
+          .catch((error) => {
+            console.error('Error checking geolocation permission:', error.message);
+          });
+      } else if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
           (position) => {
             const { latitude, longitude } = position.coords;
@@ -32,30 +53,31 @@ export default function GlobalFeature() {
 
   return (
     <section className="container my-8">
-      <div className="">
-        <div className="justify-content-center align-items-center" style={{ display: 'flex', flexDirection: 'column' }}>
-          <h1 className="text-center">Obten tu Ubicación</h1>
-          <div className="text-center">
-            Para poder brindarte una asesoría personalizada necesitamos conocer tu ubicación.
-          </div>
-          <button
-            onClick={handleGetLocation}
-            className="btn btn-sm btn-links my-4"
-          >
-            Obtener Ubicación
-          </button>
+    <div className="">
+      <div className="justify-content-center align-items-center" style={{ display: 'flex', flexDirection: 'column' }}>
+        <h1 className="text-center">Obten tu Ubicación</h1>
+        <div className="text-center">
+          Para poder brindarte una asesoría personalizada necesitamos conocer tu ubicación.
         </div>
+        <button
+          onClick={handleGetLocation}
+          className="btn btn-sm btn-links my-4"
+        >
+          Obtener Ubicación
+        </button>
       </div>
-      <div className="flex col-lg-12">
-        {location && (
-          <div className=" flex ">
-            <div className='justify-content-around px-lg-12 feature-item-content' style={{ display: 'flex' }}>
-              <p>Latitud: {location.latitude}</p>
-              <p>Longitud: {location.longitude}</p>
-            </div>
+    </div>
+    <div className="flex col-lg-12">
+      {location && (
+        <div className=" flex ">
+          <div className='justify-content-around px-lg-12 feature-item-content' style={{ display: 'flex' }}>
+            <p>Latitud: {location.latitude}</p>
+            <p>Longitud: {location.longitude}</p>
           </div>
-        )}
-      </div>
-    </section>
-  );
-}
+        </div>
+      )}
+    </div>
+  </section>
+);
+};
+
