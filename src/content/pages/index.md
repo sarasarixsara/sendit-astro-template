@@ -73,7 +73,7 @@ content_blocks:
       - title: Te protejo - Denuncie aquí
         link: https://teprotejo.org/
       - title: Control parental
-        link: docs/Control-Parental.pdf
+        link: https://www.icbf.gov.co/mis-manos-te-ensenan/cinco-apps-de-control-parental-para-proteger-ninas-y-ninos-en-internet
       - title: Ley 679 de 2001
         link: docs/LEY-679-DE-2001.pdf
       - title: Seguridad en internet
