@@ -5,6 +5,8 @@
   position: relative;
   background: $color-primary;
   opacity: 0.95;
+  width: 100vw;
+  overflow-x: hidden;
   
   
   &-wrapper {

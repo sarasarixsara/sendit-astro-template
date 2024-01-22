@@ -6,4 +6,4 @@ import bookshop from '@bookshop/astro-bookshop';
 export default defineConfig({
   site: "https://romoredes.com/",
   integrations: [bookshop(), react()]
-});
+}); 
