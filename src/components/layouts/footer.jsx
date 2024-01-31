@@ -31,7 +31,7 @@ export default function Footer({}) {
                   {footer.copyright}
                 </p>
               </div>
-               <div className="social-icon">
+               {/* <div className="social-icon">
                 <ul className="list-unstyled">
                   {footer.social.map((link, i) => (
                     <li key={i}>
@@ -42,7 +42,7 @@ export default function Footer({}) {
                     </li>
                   ))}
                 </ul>
-              </div> 
+              </div>  */}
             </div>
           </div>
         </div>
