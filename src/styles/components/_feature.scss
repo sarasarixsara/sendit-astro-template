@@ -5,13 +5,14 @@
 .feature-two {
   position: relative;
   overflow: hidden;
+  
 
   .section-header {
     padding-bottom: $base-padding *6;
     
 
     @include media-breakpoint-down-xxl {
-      padding-bottom: $base-padding * 7;
+      padding-bottom: $base-padding * 2;
     }
 
     @include media-breakpoint-down-sm {
@@ -19,7 +20,7 @@
     }
 
     p {
-      width: 70%;
+      width: 85%;
       margin: 0 auto;
       text-align: justify;
 
@@ -173,6 +174,7 @@
     }
 
     &-content {
+      
       h1 {
         margin-bottom: $base-margin * 1.5;
 

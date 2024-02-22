@@ -11,45 +11,55 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: global/swiper
-  - _bookshop_name: global/counter
-    title: Disponibilidad de los Servicios de 
-    title_suffix: Conectividad a Internet
-    description: >-
-      El despliegue de la red de distribución donde se ofrecen los servicios de conectividad a Internet por parte de Convergencia Digital esta basado en tecnología Wi-Fi de largo alcance por lo que la disponibilidad del servicio es del 99,6%.
-    alternate_style: false
-    numbers:
-      - prefix: +
-        number: 50
-        suffix: 
-        text: Proyectos
-      - prefix: +
-        number: 100
-        suffix:
-        text: Productos
-      - prefix: +
-        number: 700
-        suffix: 
-        text: Usuarios
- 
-  
 
-  # - _bookshop_name: global/text
-  #   title: 
-  #   title_suffix: 
-  #   remove_top_padding: true
-  #   description: >-
-  #     Convergencia Digital S.A.S se permite comunicar respecto al bloqueo de contenidos, que NO se realiza por ningún motivo guardando el principio de neutralidad en la prestación del servicio, salvo aquellos que por disposición legal se deba realizar (contenido de pornografía infantil con base en la ley 679 de 2001), sin el consentimiento expreso del usuario.
-  #     De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
-  # - _bookshop_name: global/header
-  #   title: 
-  #   title_suffix: 
-  #   remove_top_padding: true
-  #   description: >-
-  #     De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
+  - _bookshop_name: global/header
+    title: Propuesta de 
+    title_suffix: Valor
+    remove_top_padding: true
+    description: >-
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.  
+  - _bookshop_name: pricing/servicesDisplay
+    title: Servicios   
+    slider:
+  
+    - descp: Domótica.
+      src: /images/pricing/iot.jpg  
+  
+    - descp: Internet
+      src: /images/pricing/internet.jpg
+  
+    - descp: Redes y cableado
+      src: /images/pricing/redes.jpg
+    
+    - descp: Domótica.
+      src: /images/pricing/iot.jpg  
+  
+    - descp: Internet
+      src: /images/pricing/internet.jpg
+  
+    - descp: Redes y cableado
+      src: /images/pricing/redes.jpg
+
+  - _bookshop_name: pricing/services
+    title: Empresas que confian en nosotros   
+    slider:
+  
+    - descp: Domótica.
+      src: /images/pricing/iot.jpg  
+  
+    - descp: Internet
+      src: /images/pricing/internet.jpg
+  
+    - descp: Redes y cableado
+      src: /images/pricing/redes.jpg
+
+    - descp: Seguridad electronica
+      src: /images/pricing/camara.jpg
+
 
   - _bookshop_name: global/testimonial/testimonialSlider
     title: Conoce nuestros 
-    title_suffix: servicios
+    title_suffix: Portafolio
     description: >-
       
     slider:
@@ -77,27 +87,24 @@ content_blocks:
         message: >-
           Consultoría y diseño de aplicaciones para el uso del Internet de las cosas en proyectos de domótica e inmótica, ahorro energético, seguridad y accesibilidad para casas Inteligentes.
 
-  - _bookshop_name: global/faq
-    title: Marco
-    title_suffix: Legal
-    #description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
-    FAQ:
-      # - title: Internet seguro
-      #   link: http://convergenciadigitalsas.com/internetsano/
-      - title: Te protejo - Denuncie aquí
-        link: https://teprotejo.org/
-      - title: Control parental
-        link: docs/Control-Parental.pdf
-      - title: Ley 679 de 2001
-        link: /docs/LEY-679-DE-2001.pdf
-      - title: Seguridad en internet
-        link: docs/Seguridad-en-Internet.pdf
-      - title: Medidor de velocidad Speedtest
-        link: https://www.speedtest.net/es
-      - title: Medidor de velocidad ETB
-        link: https://etb.com/medidor/
-      # - title: Especificaciones técnicas de nuestros equipos
-      #   link: http://convergenciadigitalsas.com/equipos/
-
-
+  - _bookshop_name: contact/form
+    address:
+      heading: Dirección 
+      address: Calle 17# 8-52 Interlaken Av. Guabinal
+    phone:
+      heading: Teléfono
+      cell: 3138825184
+      image: /images/contact/call-add.svg
+      image_alt: call-add
+    email:
+      heading: Email
+      email: convergenciadigitalsas@gmail.com
+      image: /images/contact/directbox-send.svg
+      image_alt: send-box
+  - _bookshop_name: global/header
+    title: Propuesta de 
+    title_suffix: Valor
+    remove_top_padding: true
+    description: >-
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
 ---

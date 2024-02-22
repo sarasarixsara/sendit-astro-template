@@ -1,5 +1,5 @@
 {
-  "logo": "/images/large-logo.png",
+  "logo": "/images/rec-logo.png",
   "items": [
     {
       "link": "/",
@@ -7,45 +7,18 @@
     },
     {
       "link": "/features/",
-      "text": "¿Quiénes somos?"
+      "text": "Servicios"
+    },
+    {
+      "link": "/features/",
+      "text": "Portafolio"
+    },
+    {
+      "link": "/features/",
+      "text": "Nosotros"
     }
   ],
-  "products": [
-    {
-      "link": "/",
-      "text": "Domotica"
-    },
-    {
-      "link": "/",
-      "text": "Fibra Optica"
-    },
-    {
-      "link": "/",
-      "text": "Radio enlaces"
-    },
-    {
-      "link": "/",
-      "text": "Camaras de seguridad"
-    }
-  ],
-  "solutions": [
-    {
-      "link": "/domotica/",
-      "text": "Domotica"
-    },
-    {
-      "link": "/",
-      "text": "Internet"
-    },
-    {
-      "link": "/redes/",
-      "text": "Redes y cableado"
-    },
-    {
-      "link": "/redes/",
-      "text": "Seguridad electronica"
-    }
-  ],
+  
   "btn": {
     "link": "https://api.whatsapp.com/send/?phone=573138825184&text=Me+interesa+conocer+mas+sobre+sus+productos&type=phone_number&app_absent=0",
     "text": "Contáctanos"

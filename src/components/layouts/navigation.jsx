@@ -127,46 +127,7 @@ export default function Navigation({ pageUrl }) {
                     </a>
                   </li>
                 ))}
-                <li className="nav-item dropdown">
-                  <a className="nav-link " href="/" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-                    Soluciones
-                    
-                  </a>
-                  <ul className="dropdown-menu">
-                    {navigation.solutions.map((link, i) => (
-                      <li key={i} >
-                        <a
-                          href={`${link.link}`}
-                          className={`dropdown-item ${pageUrl?.pathname === link.link ? "active" : ""
-                            }`}
-                        >
-                          {link.text}
-                        </a>
-                      </li>
-                    ))}
 
-                  </ul>
-                </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link " href="/" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-                    Productos
-                    
-                  </a>
-                  <ul className="dropdown-menu">
-                    {navigation.products.map((link, i) => (
-                      <li key={i} >
-                        <a
-                          href={`${link.link}`}
-                          className={`dropdown-item ${pageUrl?.pathname === link.link ? "active" : ""
-                            }`}
-                        >
-                          {link.text}
-                        </a>
-                      </li>
-                    ))}
-
-                  </ul>
-                </li>
               </ul>
             </div>
             <div className="d-none d-lg-block">
