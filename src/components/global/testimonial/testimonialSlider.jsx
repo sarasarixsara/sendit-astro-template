@@ -14,7 +14,7 @@ const breakpoints = {
       slidesPerView: 2,
     },
     1015: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     }
   }
 export default function GlobalTestimonialSlider(block) {
