@@ -35,18 +35,29 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Planes de Internet Para Su Hogar o Negocio en Tolima">
-    <meta name="keywords" content="internet, planes, internet para hogar, internet para negocios">
-    <meta name="author" content="convergencia digital">
+    <meta
+      name="description"
+      content="Planes de Internet Para Su Hogar o Negocio en Tolima"
+    />
+    <meta
+      name="keywords"
+      content="internet, planes, internet para hogar, internet para negocios"
+    />
+    <meta name="author" content="convergencia digital" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="/vendor/phosphor-icons/css/phosphor.css" rel="stylesheet" />
     <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/png" href="/images/favicon.jpeg" sizes="192x192" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicon.jpeg"
+      sizes="192x192"
+    />
     <link rel="icon" type="image/png" href="/images/favicon.jpeg" />
     <meta name="generator" content={Astro.generator} />
 
@@ -78,7 +89,10 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
     />
   </head>
   <body>
+   
     <Navigation client:load pageUrl={canonicalURL} />
+    <!-- Button trigger modal -->
+
     <slot />
     <Footer />
 
@@ -87,6 +101,25 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
     <script src="/vendor/counter-up/countup.js" is:inline></script>
     <script src="/vendor/magnific-popup/magnific-popup.min.js" is:inline
     ></script>
+    <script>
+      let modal = true;
+      $(document).ready(function () {
+        if (modal) {
+          $("#myModal").modal("show");
+        }
+      });
+
+      // $(document).ready(function(){
+      //   $('#myModal').modal('show');
+      //    setTimeout(function(){window.open('http://ejemplo.com', '_blank');}, 2000);
+      //   });
+    </script>
     <script src="/js/script.js" async></script>
-  </body>
+  </body><style>
+    .modal-big {
+      max-width: 1000px !important;
+      min-height: 600px !important;
+      overflow: hidden;
+    }
+  </style>
 </html>

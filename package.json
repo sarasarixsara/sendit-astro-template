@@ -31,6 +31,8 @@
   },
   "devDependencies": {
     "@astrojs/rss": "^1.0.3",
+    "@types/bootstrap": "^5.2.10",
+    "@types/jquery": "^3.5.29",
     "@types/luxon": "^3.1.0",
     "astro-seo": "^0.6.0",
     "markdown-it": "^13.0.1",

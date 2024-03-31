@@ -19,27 +19,31 @@ content_blocks:
     description: >-
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.  
   - _bookshop_name: pricing/servicesDisplay
-    title: Servicios   
-    slider:
-  
-    - descp: Domótica.
-      src: /images/pricing/iot.jpg  
-  
-    - descp: Internet
-      src: /images/pricing/internet.jpg
-  
-    - descp: Redes y cableado
-      src: /images/pricing/redes.jpg
-    
-    - descp: Domótica.
-      src: /images/pricing/iot.jpg  
-  
-    - descp: Internet
-      src: /images/pricing/internet.jpg
-  
-    - descp: Redes y cableado
-      src: /images/pricing/redes.jpg
+    title: Servicios    
+    sliders:
 
+      - slides:
+        service: Internet
+        src: /images/pricing/internet.jpg
+        desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.1
+
+      - slides:
+        service: Internet
+        src: /images/pricing/iot.jpg  
+        desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.2        
+
+      - slides:
+        service: Internet
+        src: /images/pricing/redes.jpg
+        desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.1
+
+      - slides:
+        service: Internet
+        src: /images/pricing/iot.jpg  
+        desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.2  
+
+
+      
   - _bookshop_name: pricing/brands
     title: Empresas que confian en nosotros   
     slider:
