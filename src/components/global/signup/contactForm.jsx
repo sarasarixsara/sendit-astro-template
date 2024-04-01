@@ -30,7 +30,7 @@ export default function GlobalSignup(block) {
         <div className="row">
           <div className="col-lg-12 mx-auto">
             <div className="contact-body">
-              <h2>
+              <h2 >
                 {block.title} <br /> {block.title2}{" "}
               </h2>
               <form className="sing-up-items row gy-4 gx-3" ref={form} onSubmit={sendEmail}>

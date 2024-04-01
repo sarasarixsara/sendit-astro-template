@@ -74,7 +74,3 @@ export default function GlobalFeature(block) {
     </section>
   );
 }
-<style>
-
-
-</style>

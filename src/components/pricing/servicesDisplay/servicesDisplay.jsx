@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
 
 export default function ServicesSlider(block) {
   const [showAll, setShowAll] = useState(false);
@@ -7,23 +6,45 @@ export default function ServicesSlider(block) {
   const toggleShowAll = () => {
     setShowAll(!showAll);
   };
+  const [windowWidth, setWindowWidth] = useState(null);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Verificamos si estamos en el navegador antes de agregar el event listener
+    if (typeof window !== 'undefined') {
+      setWindowWidth(window.innerWidth);
+      window.addEventListener('resize', handleResize);
+    }
+
+    // Limpiamos el event listener en el componente se desmonta
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('resize', handleResize);
+      }
+    };
+  }, []);
+
+  if (!windowWidth) {
+    return null; // Otra opción podría ser mostrar un spinner o un mensaje de carga
+  }
+
+  const maxSlidesToShow = windowWidth < 768 ? 2 : 3;
   return (
     <div className="slider-container" id="soluciones">
       <div className="header-section">
         <h2>{block.title}</h2>
       </div>
       <div className="card-container">
-        <div className="row">
-          {block.sliders
-            .slice(0, showAll ? block.sliders.length : 3)
-            .map((slides, i) => (
-              
-                  <Services slides={slides} i={i} key={i}  />
-                )
- 
-            )}
-        </div>
+      <div className="row">
+      {block.sliders
+        .slice(0, showAll ? block.sliders.length : maxSlidesToShow)
+        .map((slides, i) => (
+          <Services slides={slides} i={i} key={i} />
+        ))}
+    </div>
       </div>
       {!showAll && (
         <div className="text-center mt-3">
@@ -59,6 +80,7 @@ function Services({ slides, i }) {
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
+        
       >
         <div className="modal-dialog" style={{ maxWidth: "1000px" }}>
           <div className="modal-content">
@@ -101,5 +123,10 @@ function Services({ slides, i }) {
         </div>
       </div>
     </div>
-  );
+
+);
+
 }
+<style>
+ 
+</style>
