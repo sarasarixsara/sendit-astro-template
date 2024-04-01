@@ -19,7 +19,7 @@ const breakpoints = {
   }
 export default function GlobalTestimonialSlider(block) {
   return (
-    <section className="testimonial">
+    <section className="testimonial" id="portafolio">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-8 mx-auto text-center mb-2" style={{backgroundColor: "black"}}>

@@ -1,7 +1,7 @@
 {
   "logo": "/images/footer-logo (1).svg",
   "logo_url": "/",
-  "copyright": "Con tecnología de Black Golden",
+  "copyright": " Black Golden",
   "social": [
     {
       "number": 573152102953,
@@ -14,8 +14,7 @@
     {
       "links": [
         {
-          "link": "/features/",
-          "text": "¿Quiénes Somos?"
+          "text": "Asociados a:"
         }
         
       ]
@@ -25,8 +24,7 @@
    
       "links": [
         {
-          "link": "/pricing/",
-          "text": "Soluciones"
+          "text": "Contacto:"
         }
         
       ]
@@ -35,28 +33,9 @@
    
       "links": [
         {
-          "link": "/about/",
-          "text": "Capacitaciones"
+          "text": "Redes sociales:"
         }
         
-      ]
-    },
-    {
-      "links": [
-        {
-          "link": "/privacy/",
-          "text": "Productos"
-        }
-        
-      ]
-    },
-    {
-    
-      "links": [
-        {
-          "link": "/contact/",
-          "text": "Contáctanos"
-        }
       ]
     }
   ]

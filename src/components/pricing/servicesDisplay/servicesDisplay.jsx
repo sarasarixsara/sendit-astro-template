@@ -9,7 +9,7 @@ export default function ServicesSlider(block) {
   };
 
   return (
-    <div className="slider-container">
+    <div className="slider-container" id="soluciones">
       <div className="header-section">
         <h2>{block.title}</h2>
       </div>
@@ -60,21 +60,21 @@ function Services({ slides, i }) {
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog" style={{ maxWidth: "1000px" }}>
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel" key={i}>
+        <div className="modal-dialog" style={{ maxWidth: "1000px" }}>
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="exampleModalLabel" key={i}>
                 {slides.service}
               </h1>
 
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body" key={i}>
+            <div className="modal-body" key={i}>
               <h2>Descripcion</h2>
               <p>{slides.desc}</p>
 
@@ -85,15 +85,15 @@ function Services({ slides, i }) {
                 </div>
               </div>
             </div>
-            <div class="modal-footer">
+            <div className="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                className="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
                 Close
               </button>
-              <button type="button" class="btn btn-primary">
+              <button type="button" className="btn btn-primary">
                 Save changes
               </button>
             </div>

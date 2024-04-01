@@ -115,7 +115,7 @@ content_blocks:
         placeholder: Tu correo
       email:
         heading: Servicio de interes
-        placeholder: Your Email
+        
       
       sign_up_text: Enviar
       log_in_button:

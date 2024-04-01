@@ -3,7 +3,7 @@ const md = new MarkdownIt({ html: true });
 
 export default function GlobalHeader(block) {
   return (
-    <section className="feature pt-8 pb-0">
+    <section className="feature pt-8 pb-0" id="nosotros">
       <div className="container">
         <div className="row">
           <div className="col-lg-12 mx-auto">

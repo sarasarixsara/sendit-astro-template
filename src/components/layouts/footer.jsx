@@ -8,15 +8,14 @@ export default function Footer({}) {
       <div className="container-fluid">
         <div className="footer-wrapper">
           <div className="row py-6 px-lg-20 ">
-           
 
             {footer.sections.map((section, i) => (
-              <div className="col-6 col-md-3 col-lg-3 order-1 mb-4" key={i}>
+              <div className="col-6 col-md-3 col-lg-4 order-1 mb-4" key={i}>
                 <div className="footer-widget">
                   <ul className="list-unstyled">
                     {section.links.map((link, i) => (
                       <li key={i}>
-                        <a href={`${link.link}`} >{link.text}</a>
+                        {link.text}
                       </li>
                     ))}
                   </ul>
