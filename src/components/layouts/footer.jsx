@@ -31,8 +31,8 @@ export default function Footer({}) {
         <div className="asociados-wrapper">
           <h2 className="text-white">Asociados a:</h2>
           <div className="asociados">
-            <img src="images/alianza.png" alt="" width={"40%"} />
-            <img src="images/cluster.png" alt="" width={"20%"} />
+            <img src="../images/alianza.png" alt="" width={"40%"} />
+            <img src="../images/cluster.png" alt="" width={"20%"} />
           </div>
         </div>
       </div>

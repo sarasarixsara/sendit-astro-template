@@ -4,15 +4,21 @@
 .footer {
   position: relative;
   background: $color-primary;
-  
-  &-wrapper {
-    max-width: 1500px;
-    margin: 0 auto;
+  height: 100%;
+  overflow-x: hidden;
+  padding: 10px;
 
-    p{
+  &-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
       text-align: center;
     }
-    
+
     @include media-breakpoint-down-xxl {
       max-width: 1100px;
     }
@@ -25,8 +31,6 @@
     @include media-breakpoint-down-md {
       max-width: 400px;
     }
-
-
 
     // .footer-logo {
     //   @include media-breakpoint-down-lg {
@@ -71,11 +75,10 @@
           margin-right: $base-margin;
           text-align: center;
           &:last-child {
-             margin-right: $base-margin * 0;
+            margin-right: $base-margin * 0;
           }
           a {
             transition: all 0.3s ease-in-out;
-            
           }
         }
       }
@@ -83,10 +86,28 @@
         font-size: $base-font-size * 1.25;
       }
     }
+    .footer-image{
+      @include media-breakpoint-down-md {
+        display: none;
+      }
+    }
+    .asociados-wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .asociados{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+
+    }
   }
   &-widget {
-    
-    
     h3 {
       margin-bottom: $base-margin * 1.6;
       color: $color-secondary-dark;
@@ -99,7 +120,7 @@
       margin-bottom: $base-margin * 0;
       li {
         display: block;
-        
+
         text-align: center;
         a {
           color: $color-white;
