@@ -1,51 +1,48 @@
 import footer from "@data/footer.json";
 import navigation from "@data/navigation.json";
 
-
 export default function Footer({}) {
   return (
     <footer className="footer" id="footer">
-      <div className="container-fluid">
-        <div className="footer-wrapper">
-          <div className="row py-6 px-lg-20 ">
-           
+      <div className="footer-wrapper">
+        <img
+          className="footer-image"
+          src={navigation.logo}
+          alt="Nav-Logo"
+          width={"30%"}
+          height={"50%"}
+        />
 
-            {footer.sections.map((section, i) => (
-              <div className="col-6 col-md-3 col-lg-3 order-1 mb-4" key={i}>
-                <div className="footer-widget">
-                  <ul className="list-unstyled">
-                    {section.links.map((link, i) => (
-                      <li key={i}>
-                        <a href={`${link.link}`} >{link.text}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-             <div className="col-12 col-lg-12 me-auto order-2 order-lg-1">
-              <div className="mt-7 mt-md-0">
-               
-                <p>
-                  © Copyright <span>{new Date().getFullYear()}</span>{" "}
-                  {footer.copyright}
-                </p>
-              </div>
-               {/* <div className="social-icon">
+        <div className="row py-6 px-lg-10 ">
+          {footer.sections.map((section, i) => (
+            <div className="col-12 col-lg-6 order-1 mb-4" key={i}>
+              <div className="footer-widget">
                 <ul className="list-unstyled">
-                  {footer.social.map((link, i) => (
+                  {section.links.map((link, i) => (
                     <li key={i}>
-                      <a href={'https://wa.me/' +`${navigation.whsp.number}`+ '?text=' + `${link.message.replace(/ /g, "%20")}`}  target="_blank">
-                        <img src={link.social_icon} width="30" />
-                          
-                      </a>
+                      <a href={`${link.link}`}>{link.text}</a>
                     </li>
                   ))}
                 </ul>
-              </div>  */}
+              </div>
             </div>
+          ))}
+        </div>
+        <div className="asociados-wrapper">
+          <h2 className="text-white">Asociados a:</h2>
+          <div className="asociados">
+            <img src="images/alianza.png" alt="" width={"40%"} />
+            <img src="images/cluster.png" alt="" width={"20%"} />
           </div>
         </div>
+      </div>
+      <div className="col-12 mt-2 text-center">
+        <p>
+          © Copyright <span>{new Date().getFullYear()}</span>{" "}
+          <a href="https://blackgolden.co/" target="_blank">
+            {footer.copyright}
+          </a>
+        </p>
       </div>
     </footer>
   );
