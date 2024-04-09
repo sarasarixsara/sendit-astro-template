@@ -31,8 +31,12 @@ export default function Footer({}) {
         <div className="asociados-wrapper">
           <h2 className="text-white">Asociados a:</h2>
           <div className="asociados">
-            <img src="../images/alianza.png" alt="" width={"40%"} />
-            <img src="../images/cluster.png" alt="" width={"20%"} />
+            <a href="https://alianzatic.org/" target="_blank">
+              <img src="../images/alianza.png" alt="" width={"40%"} />
+            </a>
+            <a href="https://www.instagram.com/clustertolimatic/?hl=es-la" target="_blank">
+              <img src="../images/cluster.png" alt="" width={"20%"} />
+            </a>
           </div>
         </div>
       </div>
