@@ -29,13 +29,13 @@ export default function Footer({}) {
           ))}
         </div>
         <div className="asociados-wrapper">
-          <h2 className="text-white">Asociados a:</h2>
-          <div className="asociados">
-            <a href="https://alianzatic.org/" target="_blank">
-              <img src="../images/alianza.png" alt="" width={"40%"} />
+          <h2 className="text-white mt-4">Asociados a:</h2>
+          <div >
+            <a className="asociados" href="https://alianzatic.org/" target="_blank">
+              <img  src="../images/alianza.png" alt="" width={"50%"} />
             </a>
-            <a href="https://www.instagram.com/clustertolimatic/?hl=es-la" target="_blank">
-              <img src="../images/cluster.png" alt="" width={"20%"} />
+            <a className="asociados mt-2" href="https://www.instagram.com/clustertolimatic/?hl=es-la" target="_blank">
+              <img  src="../images/cluster.png" alt="" width={"30%"} />
             </a>
           </div>
         </div>

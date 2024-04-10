@@ -94,17 +94,18 @@
     .asociados-wrapper{
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+    
 
     }
     .asociados{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      
     }
   }
   &-widget {
