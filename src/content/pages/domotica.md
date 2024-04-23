@@ -19,7 +19,7 @@ content_blocks:
         highlight_tier: true
         description: Kit 1 de domótica.
         currency_symbol: $
-        price: 30,000
+        price: 3,000,000
         has_discount: false
         discount_price: 0
         features:
@@ -38,7 +38,7 @@ content_blocks:
         highlight_tier: false
         description: Kit 2 de domótica.
         currency_symbol: $
-        price: 60,000
+        price: 6,000,000
         has_discount: false
         discount_price: 125
         features:
@@ -57,7 +57,7 @@ content_blocks:
         highlight_tier: false
         description: Kit 3 de domótica.
         currency_symbol: $
-        price: 100,000
+        price: 10,000,000
         has_discount: false
         discount_price: 100,000
         features:
