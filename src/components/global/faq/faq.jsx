@@ -24,6 +24,10 @@ export default function GlobalFaq(block) {
               ))}
             </div>
           </div>
+          <div className="mt-4">
+            <p classname="legal-text font-weight-bold">CONVERGENCIA DIGITAL SAS, se permite comunicar respecto al bloqueo de contenidos, que NO se realiza por ningún motivo guardando el principio de neutralidad en la prestación del servicio, salvo aquellos que por disposición legal se deba realizar (contenido de pornografía infantil con base en la ley 679 de 2001), sin el consentimiento expreso del usuario.
+            </p>
+          </div>
         </div>
       </div>
     </section>

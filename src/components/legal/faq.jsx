@@ -12,7 +12,7 @@ export default function GlobalFaq(block) {
               <h2>
                 {block.title} <span>{block.title_suffix}</span>
               </h2>
-             
+              {block.title} 
             </div>
           </div>
         </div>
@@ -23,9 +23,13 @@ export default function GlobalFaq(block) {
                 <FaqItem faq={q} i={i} key={i} />
               ))}
             </div>
+
           </div>
+          
         </div>
+       
       </div>
+
     </section>
   );
 }

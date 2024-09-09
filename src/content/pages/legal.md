@@ -21,12 +21,20 @@ content_blocks:
       #   link: http://convergenciadigitalsas.com/internetsano/
       - title: Te protejo - Denuncie aquí
         link: https://teprotejo.org/
+      - title: Ministerio de Tecnologias de la Informacion y Comunicaciones
+        link: https://www.internetsano.gov.co
+      - title: ENTIC Confio
+        link: https://www.enticonfio.gov.co
       - title: Control parental
-        link: docs/Control-Parental.pdf
+        link: /docs/Control-Parental.pdf
       - title: Ley 679 de 2001
         link: /docs/LEY-679-DE-2001.pdf
+      - title: Metodo filtrado de URLs
+        link: /docs/filtradoURL.pdf
+      - title: Sistema Interno de Seguridad
+        link: /docs/sistemaSeguridad.pdf
       - title: Seguridad en internet
-        link: docs/Seguridad-en-Internet.pdf
+        link: /docs/Seguridad-en-Internet.pdf
       - title: Medidor de velocidad Speedtest
         link: https://www.speedtest.net/es
       - title: Medidor de velocidad ETB

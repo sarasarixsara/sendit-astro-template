@@ -20,7 +20,11 @@ export default function GlobalCounter(block) {
                 dangerouslySetInnerHTML={{
                   __html: md.render(block.description),
                 }}
+              
               />
+              <div className="btn btn-links mt-4"> 
+                Conoce el <a target="_blank" href="docs/SISTEMA DE MEDIDA DE CALIDAD.pdf">Sistema de medida de calidad</a> 
+              </div>
             </div>
           </div>
           <div className="col-12 pb-8">

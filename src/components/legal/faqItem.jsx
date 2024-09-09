@@ -20,6 +20,7 @@ export default function GlobalFaqItem({ faq, i }) {
       >
         
       </div>
+     
     </div>
   );
 }
