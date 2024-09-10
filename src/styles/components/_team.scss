@@ -6,6 +6,9 @@
 
   padding: $base-padding * 0 $base-padding * 0 $base-padding * 2;
 
+  @include media-breakpoint-up-xxl {
+    padding: $base-padding * 3 $base-padding * 0 $base-padding * 5;
+  }
   @include media-breakpoint-down-xxl {
     padding: $base-padding * 3 $base-padding * 0 $base-padding * 5;
   }
@@ -15,12 +18,13 @@
   }
 
   @include media-breakpoint-down-md {
-    padding: $base-padding * 0 $base-padding * 0 $base-padding * 4;
+    padding: $base-padding * 3 $base-padding * 0 $base-padding * 4;
   }
 
-  @include media-breakpoint-down-sm {
-    padding: $base-padding * 0 $base-padding * 0 $base-padding * 2;
-  }
+  // @include media-breakpoint-down-sm {
+  //   padding: $base-padding * 0 $base-padding * 0 $base-padding * 2;
+  // }
+
 
   .section-header {
     padding-bottom: $base-padding * 2;
