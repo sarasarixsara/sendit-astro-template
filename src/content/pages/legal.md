@@ -1,5 +1,5 @@
 ---
-title: Pricing
+title: Legal
 seo:
   page_description:
   canonical_url:

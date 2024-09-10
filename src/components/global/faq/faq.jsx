@@ -37,7 +37,16 @@ export default function GlobalFaq(block) {
             <div className="accordion-item mt-6">
               <span>07</span>
               <h2 className="accordion-header"> </h2>
-              <p className="header-content" onClick={handleOpenModal} style={{ cursor: "pointer", fontSize: "1.6rem", fontWeight:"600",marginBottom:"0" }}>
+              <p
+                className="header-content"
+                onClick={handleOpenModal}
+                style={{
+                  cursor: "pointer",
+                  fontSize: "1.6rem",
+                  fontWeight: "600",
+                  marginBottom: "0",
+                }}
+              >
                 Informacion de interes sobre Dignidad Infantil
               </p>
             </div>
@@ -64,7 +73,12 @@ export default function GlobalFaq(block) {
         >
           <div
             className="bg-white p-6 rounded-xl shadow-lg w-1/2"
-            style={{ width: "60%", height: "70%", overflowY: "auto", borderRadius: "10px" }}
+            style={{
+              width: "60%",
+              height: "70%",
+              overflowY: "auto",
+              borderRadius: "10px",
+            }}
           >
             <h2>Dignidad Infantil</h2>
             <p>
@@ -88,7 +102,8 @@ export default function GlobalFaq(block) {
               pornográfico o alusivo a actividades sexuales de menores de edad,
               por cuanto podría generar responsabilidad penal. Si encuentra
               algún contenido o actividad dentro de la red considerado como
-              pornografía infantil puede denunciarlo. <a href="/docs/LEY-679-DE-2001.pdf">Ley 679 de 2001</a>
+              pornografía infantil puede denunciarlo.{" "}
+              <a href="/docs/LEY-679-DE-2001.pdf" style={{ cursor: "pointer" , color: "blue"}}>Ley 679 de 2001</a>
               <h2>Internet Sano</h2>
               Otro de los aspectos que la Ley 679 de 2001 promulga, es el
               interés de proteger a los infantes de acceder a sitios con
@@ -117,6 +132,19 @@ export default function GlobalFaq(block) {
               información y denuncia. Una línea telefónica gratuita nacional 01
               8000 912667 y el sitio Web: www.teprotejo.org/
             </p>
+            <h2>Ley 1336 de 2009</h2>
+            <p>
+              Por medio de la cual se adiciona y robustece la Ley 679 de 2001,
+              de lucha contra la explotación, la pornografía y el turismo sexual
+              con niños, niñas y adolescentes.
+            </p>
+            <h2>DECRETO 1524 DE 2002</h2>
+            <p>
+              Que de conformidad con lo dispuesto por el artículo 44 de la
+              Constitución Política, los niños serán protegidos contra toda
+              forma de abandono, violencia física o moral, secuestro, venta,
+              abuso sexual, explotación laboral o económica y trabajos riesgosos
+            </p>
             <h2>Otros sitios de denuncia</h2>
             <p>
               <ul>
@@ -134,17 +162,18 @@ export default function GlobalFaq(block) {
                   Teléfono: 01 800 0912667 www.internetsano.gov.co{" "}
                 </li>
                 <li>
-                  <a href="https://www.teprotejo.org">TE PROTEJO</a>{" "}
+                  <a style={{ cursor: "pointer" , color: "blue"}} href="https://www.teprotejo.org">TE PROTEJO</a>{" "}
                 </li>
                 <li>
-                  <a href="http://www.enticonfio.gov.co">ENTIC CONFIO</a>{" "}
+                  <a style={{ cursor: "pointer" , color: "blue"}} href="http://www.enticonfio.gov.co">ENTIC CONFIO</a>{" "}
                 </li>
               </ul>
             </p>
             <h3>Control parental</h3>
-            <a href="/docs/LEY-679-DE-2001.pdf">Control parental</a>
-            <div style={{ display: "flex", gap: "10px" , justifyContent: "center"}}>
-              
+            <a style={{ cursor: "pointer" , color: "blue"}} href="/docs/LEY-679-DE-2001.pdf">Control parental</a>
+            <div
+              style={{ display: "flex", gap: "10px", justifyContent: "center" }}
+            >
               <iframe
                 width="300"
                 height="200"
