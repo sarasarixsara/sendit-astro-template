@@ -13,7 +13,7 @@ content_blocks:
   - _bookshop_name: global/faq
     title: Marco
     title_suffix: Legal
-    description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
+    description: ''
     FAQ:
       - title: Neutralidad en internet
         description: CONVERGENCIA DIGITAL SAS, se permite comunicar respecto al bloqueo de contenidos, que NO se realiza por ningún motivo guardando el principio de neutralidad en la prestación del servicio, salvo aquellos que por disposición legal se deba realizar (contenido de pornografía infantil con base en la ley 679 de 2001), sin el consentimiento expreso del usuario.
