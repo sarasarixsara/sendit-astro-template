@@ -32,7 +32,7 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100vh;">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Planes de Internet Para Su Hogar o Negocio en Tolima">
@@ -77,7 +77,7 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
       }}
     />
   </head>
-  <body>
+  <body style="height: 100%;">
     <Navigation client:load pageUrl={canonicalURL} />
     <slot />
     <Footer />

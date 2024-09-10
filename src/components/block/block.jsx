@@ -21,7 +21,7 @@ import React from "react";
 export default function AboutTeam(block) {
   return (
     <div className="team">
-      <div className="container">
+      <div className="container" style={{ textAlign: "justify", marginTop: "10%" }}>
         <div className="row">
           <div className="col-lg-10 col-xl-12 mx-auto">
             <div className="section-header">
