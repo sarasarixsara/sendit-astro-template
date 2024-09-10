@@ -47,9 +47,9 @@ export default function PricingTier({ tier }) {
     );
   }
   return (
-    <div className="col-lg-4">
+    <div className="col-lg-6 mr-12" >
       <div
-        className={`card pricing-item ${tier.highlight_tier ? "active" : ""}`}
+        className={`card pricing-item ${tier.highlight_tier ? "active" : ""}`} 
       >
         <h5 className="card-title">{tier.tier}</h5>
         <p className="card-text">{tier.description}</p>

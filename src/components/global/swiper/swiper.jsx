@@ -8,7 +8,7 @@ import HomeHero from '../../home/hero/hero';
 const props = {
     title: "Planes de Internet Para Su Hogar o Negocio",
     button: {
-        text: "Cotiza con nosotros",
+        text: "Conoce nuestros planes",
         link: "/contact/",
         number: "+573152102953",
         message: "Quiero cotizar un plan de internet para mi negocio"

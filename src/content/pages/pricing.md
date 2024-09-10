@@ -1,5 +1,5 @@
 ---
-title: Pricing
+title: Planes
 seo:
   page_description:
   canonical_url:
@@ -15,11 +15,11 @@ content_blocks:
 
   - _bookshop_name: pricing/table
     pricing_tier:
-      - tier: Hogar 
+      - tier: Básico 
         highlight_tier: true
-        description: Kit 1 de domótica.
+        description: 3MB de Internet.
         currency_symbol: $
-        price: 3,000,000
+        price: 68,000
         has_discount: false
         discount_price: 0
         features:
@@ -34,11 +34,11 @@ content_blocks:
           text: Contáctanos
           number: 573152102953
           message: Hola, me interesa el plan 
-      - tier: Básico 
+      - tier: Hogar
         highlight_tier: false
-        description: Kit 2 de domótica.
+        description: 5MB de Internet.
         currency_symbol: $
-        price: 6,000,000
+        price: 113,000
         has_discount: false
         discount_price: 125
         features:
@@ -53,40 +53,22 @@ content_blocks:
           text: Contáctanos
           number: 573152102953
           message: Hola, me interesa el plan 
-      - tier: Empresarial 
-        highlight_tier: false
-        description: Kit 3 de domótica.
-        currency_symbol: $
-        price: 10,000,000
-        has_discount: false
-        discount_price: 100,000
-        features:
-          - item: Soporte
-            active_feature: true
-          - item: Actualizacion regular
-            active_feature: true
-        
-          
-        button:
-          link: /contact
-          text: Contáctanos
-          number: 573152102953
-          message: Hola, me interesa el plan 
-  - _bookshop_name: pricing/services
-    title: Otros servicios   
-    slider:
-  
-      - descp: Domótica.
-        src: /images/pricing/iot.jpg  
-    
-      - descp: Internet
-        src: /images/pricing/internet.jpg
-    
-      - descp: Redes y cableado
-        src: /images/pricing/redes.jpg
 
-      - descp: Seguridad electronica
-        src: /images/pricing/camara.jpg
+  # - _bookshop_name: pricing/services
+  #   title: Otros servicios   
+  #   slider:
+  
+  #     - descp: Domótica.
+  #       src: /images/pricing/iot.jpg  
+    
+  #     - descp: Internet
+  #       src: /images/pricing/internet.jpg
+    
+  #     - descp: Redes y cableado
+  #       src: /images/pricing/redes.jpg
+
+  #     - descp: Seguridad electronica
+  #       src: /images/pricing/camara.jpg
   # - _bookshop_name: featureNew/heroNew
   #   image: /images/pricing/redes.jpg
   #   image_alt: File upload

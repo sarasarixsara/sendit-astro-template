@@ -22,9 +22,9 @@ export default function GlobalCounter(block) {
                 }}
               />
               <div className="btn btn-links mt-4">
-                Conoce el{" "}
-                <a target="_blank" href="docs/SISTEMA DE MEDIDA DE CALIDAD.pdf">
-                  Sistema de medida de calidad
+                Conoce la{" "}
+                <a target="_blank" href="docs/naturalezaServicio.pdf">
+                  Naturaleza y Características del Servicio 
                 </a>
               </div>
             </div>
