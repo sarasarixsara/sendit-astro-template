@@ -1,6 +1,5 @@
 ---
-_schema: default
-title: Inicio
+title: Pricing
 seo:
   page_description:
   canonical_url:
@@ -10,37 +9,37 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
- 
 
   - _bookshop_name: global/faq
     title: Marco
     title_suffix: Legal
-    #description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
+    description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
     FAQ:
-      # - title: Internet seguro
-      #   link: http://convergenciadigitalsas.com/internetsano/
-      - title: Te protejo - Denuncie aquí
-        link: https://teprotejo.org/
-      - title: Ministerio de Tecnologias de la Informacion y Comunicaciones
-        link: https://www.internetsano.gov.co
-      - title: ENTIC Confio
-        link: https://www.enticonfio.gov.co
-      - title: Control parental
-        link: /docs/Control-Parental.pdf
-      - title: Ley 679 de 2001
-        link: /docs/LEY-679-DE-2001.pdf
-      - title: Metodo filtrado de URLs
-        link: /docs/filtradoURL.pdf
-      - title: Sistema Interno de Seguridad
-        link: /docs/sistemaSeguridad.pdf
-      - title: Seguridad en internet
+      - title: Neutralidad en internet
+        description: CONVERGENCIA DIGITAL SAS, se permite comunicar respecto al bloqueo de contenidos, que NO se realiza por ningún motivo guardando el principio de neutralidad en la prestación del servicio, salvo aquellos que por disposición legal se deba realizar (contenido de pornografía infantil con base en la ley 679 de 2001), sin el consentimiento expreso del usuario.
+        link: ''
+        linkTitle: ''
+      - title: Seguridad en Internet
+        description: ''
         link: /docs/Seguridad-en-Internet.pdf
-      - title: Medidor de velocidad Speedtest
-        link: https://www.speedtest.net/es
-      - title: Medidor de velocidad ETB
-        link: https://etb.com/medidor/
-      # - title: Especificaciones técnicas de nuestros equipos
-      #   link: http://convergenciadigitalsas.com/equipos/
+        linkTitle: Seguridad en Internet
+      - title: Condiciones Calidad y Aplicacion
+        description: ''
+        link: /docs/SISTEMA DE MEDIDA DE CALIDAD.pdf
+        linkTitle: Sistema de medida de calidad
 
+      - title: Medidor de velocidad de Internet
+        description: ''
+        link: https://www.speedtest.net/es
+        linkTitle: Medir con SpeedTest  
+        link2: https://etb.com/medidor/
+        linkTitle2: Medidor de velocidad ETB 
+
+      - title: Sistemas internos de seguridad
+        description: ''
+        link: /docs/filtradoURL.pdf
+        linkTitle: Metodo filtrado de URLs
+        link2: /docs/sistemaSeguridad.pdf
+        linkTitle2: Sistema interno de seguridad 
 
 ---
