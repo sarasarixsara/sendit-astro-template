@@ -103,7 +103,7 @@ export default function GlobalFaq(block) {
               por cuanto podría generar responsabilidad penal. Si encuentra
               algún contenido o actividad dentro de la red considerado como
               pornografía infantil puede denunciarlo.{" "}
-              <a href="/docs/LEY-679-DE-2001.pdf" style={{ cursor: "pointer" , color: "blue"}}>Ley 679 de 2001</a>
+              <a href="/docs/LEY-679-DE-2001.pdf" target="_blank" style={{ cursor: "pointer" , color: "blue"}}>Ley 679 de 2001</a>
               <h2>Internet Sano</h2>
               Otro de los aspectos que la Ley 679 de 2001 promulga, es el
               interés de proteger a los infantes de acceder a sitios con
@@ -162,15 +162,15 @@ export default function GlobalFaq(block) {
                   Teléfono: 01 800 0912667 www.internetsano.gov.co{" "}
                 </li>
                 <li>
-                  <a style={{ cursor: "pointer" , color: "blue"}} href="https://www.teprotejo.org">TE PROTEJO</a>{" "}
+                  <a style={{ cursor: "pointer" , color: "blue"}} href="https://www.teprotejo.org" target="_blank">TE PROTEJO</a>{" "}
                 </li>
                 <li>
-                  <a style={{ cursor: "pointer" , color: "blue"}} href="http://www.enticonfio.gov.co">ENTIC CONFIO</a>{" "}
+                  <a style={{ cursor: "pointer" , color: "blue"}} href="http://www.enticonfio.gov.co" target="_blank">ENTIC CONFIO</a>{" "}
                 </li>
               </ul>
             </p>
             <h3>Control parental</h3>
-            <a style={{ cursor: "pointer" , color: "blue"}} href="/docs/LEY-679-DE-2001.pdf">Control parental</a>
+            <a style={{ cursor: "pointer" , color: "blue"}} href="/docs/Control-Parental.pdf" target="_blank">Control parental</a>
             <div
               style={{ display: "flex", gap: "10px", justifyContent: "center" }}
             >
