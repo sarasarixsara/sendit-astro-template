@@ -1,6 +1,7 @@
 ---
 import "../styles/theme.scss";
-import Footer from "@components/layouts/footer";
+
+import Footer from "../components/layouts/footer";
 import Navigation from "@components/layouts/navigation";
 import { SEO } from "astro-seo";
 import site from "@data/site.json";
@@ -70,11 +71,7 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
           alt: image_alt,
         },
       }}
-      twitter={{
-        creator: `${seo?.author_twitter_handle || site.twitter_site}`,
-        site: `${site.twitter_site}`,
-        card: "summary_large_image",
-      }}
+
     />
   </head>
   <body>

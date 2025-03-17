@@ -1,0 +1,38 @@
+User-agent: *
+Allow: /
+
+# Disallow crawling of admin or backend areas
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /login/
+Disallow: /private/
+Disallow: /signup/
+Disallow: /login/
+Disallow: /blog/
+
+# Disallow crawling of search results or internal search pages
+Disallow: /search/
+Disallow: /?s=
+
+# Disallow crawling of duplicate content or non-essential pages
+Disallow: /tag/
+Disallow: /category/
+Disallow: /author/
+
+# Allow crawling of important pages
+Allow: /features/
+Allow: /redes/
+Allow: /pricing/
+Allow: /domotica/
+Allow: /about/
+Allow: /contact/
+Allow: /blog/
+
+# Disallow crawling of unnecessary files
+Disallow: /assets/
+Disallow: /images/
+Disallow: /js/
+Disallow: /css/
+
+# Sitemap location
+Sitemap: https://www.convergenciadigital.com/sitemap.xml

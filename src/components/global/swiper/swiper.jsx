@@ -6,12 +6,12 @@ import { Navigation } from 'swiper/modules';
 import HomeHero from '../../home/hero/hero';
 
 const props = {
-    title: "Planes de Internet Para Su Hogar o Negocio",
+    title: "Planes de Internet y Domotica Para el Hogar o Negocio",
     button: {
         text: "Cotiza con nosotros",
         link: "/contact/",
         number: "+573152102953",
-        message: "Quiero cotizar un plan de internet para mi negocio"
+        message: "Quiero cotizar un plan de internet o domotica para mi negocio"
     }
 }
 
