@@ -173,7 +173,7 @@ export default function Navigation({ pageUrl }) {
               <div className="nav-item">
                 <a
                   href={`${navigation.btn.link}`}
-                  target="_blank"
+
                   //className="btn btn-sm btn-links"
                   className="btn btn-sm btn-primary"
                 >
@@ -181,11 +181,11 @@ export default function Navigation({ pageUrl }) {
                 </a>
               </div>
             </div>
-            <div className="whsp-container">
-              <a href={`${generateLink(navigation.whsp.number, navigation.whsp.message)}`} target="_blank">
-                <img src={navigation.whsp.src} alt="Descripción de la imagen" width={"50"} />
-              </a>
-            </div>
+            {/*<div className="whsp-container">*/}
+            {/*  <a href={`${generateLink(navigation.whsp.number, navigation.whsp.message)}`} target="_blank">*/}
+            {/*    <img src={navigation.whsp.src} alt="Descripción de la imagen" width={"50"} />*/}
+            {/*  </a>*/}
+            {/*</div>*/}
           </div>
         </nav>
       </header>

@@ -80,7 +80,7 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
   <body>
     <Navigation client:load pageUrl={canonicalURL} />
     <slot />
-    <Footer />
+    <!--<Footer />-->
 
     <script src="/vendor/jQuery/jquery.min.js" is:inline></script>
     <script src="/vendor/bootstrap/bootstrap.bundle.min.js" is:inline></script>

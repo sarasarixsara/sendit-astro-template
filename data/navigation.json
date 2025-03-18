@@ -47,7 +47,7 @@
     }
   ],
   "btn": {
-    "link": "https://api.whatsapp.com/send/?phone=573182309432&text=Me+interesa+conocer+mas+sobre+sus+productos&type=phone_number&app_absent=0",
+    "link": "/",
     "text": "Contáctanos"
   },
   "whsp":{
