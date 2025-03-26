@@ -45,9 +45,10 @@ export default function Navigation({ pageUrl }) {
     <>
       <header>
         <nav
-          className={`navbar navbar-expand-lg position-fixed w-100 zindex-dropdown${isSticky ? " sticky-nav" : ""}`}
-          id="mainnavigationBar"
+            className="navbar navbar-expand-lg position-absolute w-100 zindex-dropdown"
+            id="mainnavigationBar"
         >
+
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
               <img src={navigation.logo} alt="Nav-Logo" />

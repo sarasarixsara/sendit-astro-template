@@ -1,7 +1,7 @@
 {
-  "logo": "/images/footer-logo.svg",
+  "logo": "/images/footer-logo.png",
   "logo_url": "/",
-  "copyright": "MyCompany. All rights reserved.",
+  "copyright": "Black Golden.",
   "social": [
     {
       "link": "https://www.facebook.com/mycompany",
@@ -26,49 +26,34 @@
   ],
   "sections": [
     {
-      "title": "Main Pages",
+      "title": "Principal",
       "links": [
         {
           "link": "/",
-          "text": "Home"
+          "text": "Inicio"
         },
         {
           "link": "/features/",
-          "text": "Features"
-        },
-        {
-          "link": "/pricing/",
-          "text": "Price"
-        },
-        {
-          "link": "/about/",
-          "text": "About"
+          "text": "Servicios"
         }
+
       ]
     },
     {
-      "title": "Community",
+      "title": "Comunidad",
       "links": [
         {
           "link": "/blog/",
           "text": "Blog"
-        },
-        {
-          "link": "/feed.xml",
-          "text": "RSS Feed"
         }
       ]
     },
     {
-      "title": "Company",
+      "title": "Empresa",
       "links": [
         {
           "link": "/contact/",
-          "text": "Contact"
-        },
-        {
-          "link": "/privacy/",
-          "text": "Privacy Policy"
+          "text": "Contacto"
         }
       ]
     }

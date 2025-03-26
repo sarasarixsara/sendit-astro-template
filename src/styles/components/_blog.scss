@@ -251,7 +251,7 @@
 
          p {
             font-size: $base-font-size * 1.1;
-            margin-bottom: $base-margin * 5;
+            margin-bottom: $base-margin * 2.5;
             line-height: 29px;
 
             @include media-breakpoint-down-xl {
@@ -260,7 +260,7 @@
          }
 
          ul {
-            margin-bottom: 0;
+            margin-bottom: $base-margin * 2.5;
 
             li {
                list-style: decimal;

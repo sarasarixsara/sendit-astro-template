@@ -71,7 +71,7 @@ export default function GlobalFeature(block) {
     );
   }
   return (
-    <section className="feature pt-sm-10 pt-5 pb-4">
+    <section className="feature pt-sm-10 pt-2 pb-2">
       <div className="container">{content}</div>
     </section>
   );

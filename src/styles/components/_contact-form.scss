@@ -1,5 +1,5 @@
 .contact {
-  padding-bottom: $base-padding * 9.4;
+  padding-bottom: $base-padding * 5;
 
   @include media-breakpoint-down-xl {
     padding-bottom: $base-padding * 5;
@@ -7,7 +7,7 @@
 
   &-hero {
     background: $color-secondary-dark;
-    padding: $base-padding * 17.4 0 $base-padding * 9.6;
+    padding: $base-padding * 10 0 $base-padding * 5;
 
     @include media-breakpoint-down-xl {
       padding: $base-padding * 13 0 $base-padding * 5;
@@ -28,7 +28,7 @@
 
     &-content {
       h1 {
-        font-size: $base-font-size * 4;
+        font-size: $base-font-size * 2.9;
         margin-bottom: $base-margin * 1.5;
 
         @include media-breakpoint-down-sm {

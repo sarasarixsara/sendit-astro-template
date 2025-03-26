@@ -1,34 +1,23 @@
 {
-  "logo": "/images/logo.svg",
+  "logo": "/images/logo.png",
   "items": [
     {
-      "text": "Home",
+      "text": "Inicio",
       "link": "/",
       "enable_dropdown": false,
       "dropdown": []
     },
     {
-      "text": "Features",
+      "text": "Servicios",
       "link": "/features/",
       "enable_dropdown": false,
       "dropdown": []
     },
-    {
-      "text": "Pricing",
-      "link": "/pricing/",
-      "enable_dropdown": false,
-      "dropdown": []
-    },
-    {
-      "text": "About",
-      "link": "/about/",
-      "enable_dropdown": false,
-      "dropdown": []
-    },
+
     {
       "text": "Blog",
       "link": "/blog/",
-      "enable_dropdown": true,
+      "enable_dropdown": false,
       "dropdown": [
         {
           "dropdown_text": "All Articles",
@@ -45,7 +34,7 @@
       ]
     },
     {
-      "text": "Contact",
+      "text": "Contacto",
       "link": "/contact/",
       "enable_dropdown": false,
       "dropdown": []
@@ -53,7 +42,7 @@
   ],
   "enable_nav_btn": true,
   "nav_btn": {
-    "text": "Get Started",
-    "link": "/signup/"
+    "text": "Contáctame",
+    "link": "/"
   }
 }

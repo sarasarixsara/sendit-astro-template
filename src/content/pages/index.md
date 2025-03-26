@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Home
+title: Inicio
 seo:
   page_description:
   canonical_url:
@@ -11,110 +11,101 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: home/hero
-    title: Beautiful email campaigns
+    title: Defensa Legal Especializada
     description: >-
-      With Sendit, you can quickly create beautiful rich emails that capture a
-      reader's attention, engage them, and convert them into customers.
-    image: /images/hero/hero-image-2.png
+      Asesoría personalizada en Derecho Penal y Justicia Militar. Tu solución, mi compromiso.
+    image: /images/hero/hero1.jpg
     image_alt: Reports dashboard
     button:
-      text: Try This Free
+      text: Agenda una consulta
       link: /signup/
-  - _bookshop_name: global/counter
-    title: Scale your
-    title_suffix: Business
-    description: >-
-      We have an extensive library of pre-written sales emails, proven marketing
-      templates, and more to get you started on your next project.
-    alternate_style: false
-    numbers:
-      - prefix: $
-        number: 200
-        suffix: m
-        text: Venture capital raised
-      - prefix:
-        number: 2016
-        suffix:
-        text: Established in
-      - prefix:
-        number: 40
-        suffix: +
-        text: Amazing team members
-      - prefix:
-        number: 4322
-        suffix: +
-        text: Active users and growing
-  - _bookshop_name: home/video
-    image: /images/video/video-thum.jpg
-    image_alt: Thumbnail for video
-    video_url: https://vimeo.com/45830194
+  #  - _bookshop_name: global/counter
+  #    title: Scale your
+  #    title_suffix: Business
+  #    description: >-
+  #      We have an extensive library of pre-written sales emails, proven marketing
+  #      templates, and more to get you started on your next project.
+  #    alternate_style: false
+  #    numbers:
+  #      - prefix: $
+  #        number: 200
+  #        suffix: m
+  #        text: Venture capital raised
+  #      - prefix:
+  #        number: 2016
+  #        suffix:
+  #        text: Established in
+  #      - prefix:
+  #        number: 40
+  #        suffix: +
+  #        text: Amazing team members
+  #      - prefix:
+  #        number: 4322
+  #        suffix: +
+  #        text: Active users and growing
+  #  - _bookshop_name: home/video
+  #    image: /images/video/video-thum.jpg
+  #    image_alt: Thumbnail for video
+  #    video_url: https://vimeo.com/45830194
   - _bookshop_name: global/header
-    title: "Sendit "
-    title_suffix: Features
+    title: " "
+    title_suffix: 
     remove_top_padding: true
     description: >-
-      Our platform offers the most advanced features including automated email
-      content creation, dynamic personalization, and customer segmentation.
-  - _bookshop_name: global/feature
-    image: /images/feature/feature-card-one.png
-    image_alt: Message inbox
-    title: Email Campaign in one minute
-    description: >-
-      Send an email campaign with one click, in just minutes. Automate your
-      emails and content, while keeping the human touch.
-    button:
-      link: /signup
-      text: Try This Free
-    reversed: false
-  - _bookshop_name: global/feature
-    image: /images/feature/feature-card-two.png
-    image_alt: Visitor chart
-    title: See every Lead in one Place
-    description: >-
-      Sales analytics and automation made simple: see every sales lead in one
-      place, regardless of where it came from.
-    button:
-      link: /signup
-      text: Try This Free
-    reversed: true
-  - _bookshop_name: global/feature
-    image: /images/feature/feature-card-three.png
-    image_alt: File upload
-    title: 100% free uploads
-    description: >-
-      Sendit is used by everyone from small businesses to fortune 500 companies.
-      Browse our collection of email marketing templates and start sending
-      beautiful emails in minutes.
-    button:
-      link: /signup
-      text: Try This Free
-    reversed: false
+      Como Especialista en Procedimiento Penal Constitucional y Justicia Militar, cuento con las herramientas adecuadas para comprender 
+      y actuar en la complejidad del marco del Derecho Procesal Penal Ordinario y Penal Militar y Policial. Mi enfoque se basa 
+      en la actualización constante de los preceptos constitucionales y legales, lo que me permite ofrecerte soluciones precisas y efectivas.
+
   - _bookshop_name: global/testimonial
-    title: Build relationships that
-    title_suffix: last
+    title: Lo que dicen nuestros
+    title_suffix: clientes
     description: >-
-      Customers from around the world are building game changing email marketing
-      campaigns.
+      Cada caso es único, cada cliente es nuestra prioridad. Estas son algunas historias de quienes han confiado en nuestra defensa legal
     slider:
       - image: /images/testimonial/logo-2.jpg
         image_alt: Profile photo of Pete Fish
-        author: Pete Fish
-        designation: CMO at Clear Appeal
+        author: Carlos M
+        designation: Suboficial del Ejército
         message: >-
-          Sendit has taken Clear Appeal to the next level with it's beautiful
-          targetted email campaigns.
+          La Dra. Ivon me brindó la mejor defensa en un proceso injusto. Gracias a su experiencia y dedicación, logré demostrar mi inocencia. 
+          Profesionalismo y empatía en cada paso.
       - image: /images/testimonial/logo-3.jpg
         image_alt: Profile photo of Dolly Watson
-        author: Dolly Watson
-        designation: Digital Marketer at Time Cop
+        author: Ana P
+        designation: Oficial de la Policía
         message: >-
-          Wow, what a difference Sendit has made. My customers are more engaged
-          than ever.
+          Tuve problemas en un proceso disciplinario dentro de mi institución y la Dra. Ivon Osorio logró demostrar las irregularidades. 
+          Gran abogada y persona de confianza.
       - image: /images/testimonial/logo-4.jpg
         image_alt: Profile photo of Simon Moriarty
-        author: Simon Moriarty
-        designation: Head of Marketing at Pinnacle Mines
+        author: Luisa R
+        designation: Militar en retiro
         message: >-
-          I can't imagine life without Sendit now, I have no idea how we were
-          surviving before.
+          Defensa impecable y gran conocimiento en justicia militar. Recomiendo a la abogada Ivon sin dudarlo
+
+  - _bookshop_name: global/faq
+    title: Tienes
+    title_suffix: Preguntas?
+    description: Aquí respondemos algunas de las consultas más frecuentes. Si no encuentras tu respuesta, no dudes en contactarme directamente.
+    FAQ:
+      - title: ¿Cómo sé si necesito un abogado penalista?
+        description: Si estás siendo investigado, has sido detenido o acusado de un delito, o simplemente necesitas asesoramiento sobre un asunto penal,       
+          es fundamental contar con un abogado penalista. Un profesional del derecho te orientará sobre tus derechos, te representará en el proceso y trabajará para 
+          garantizar la mejor defensa posible.
+      - title: ¿Qué debo llevar a la primera consulta?
+        description: Para aprovechar al máximo la primera consulta, es recomendable llevar
+             Documentos relacionados con el caso (citaciones, denuncias, notificaciones judiciales).
+            Identificación personal.
+            Lista de dudas o preguntas que tengas sobre tu situación legal.
+            Cualquier otra prueba o evidencia que pueda ser relevante para el caso.
+      - title: ¿Cuánto tiempo puede durar un proceso judicial?
+        description: La duración de un proceso judicial depende de varios factores, como la complejidad del caso, la carga de trabajo del tribunal y las etapas del 
+         procedimiento. Algunos casos pueden resolverse en meses, mientras que otros pueden tardar años. En la consulta inicial, se puede estimar un tiempo aproximado 
+         según el tipo de procedimiento y las circunstancias específicas del caso.
+      - title: ¿Qué áreas del derecho penal cubre?
+        description: Ofrecemos representación en diversas áreas del derecho penal, incluyendo
+             Defensa en procesos penales (delitos comunes, delitos económicos, delitos de violencia, entre otros).
+            Justicia Militar (defensa de miembros de las Fuerzas Armadas y cuerpos de seguridad en procedimientos disciplinarios y penales).
+             Derechos Humanos y litigios constitucionales, como amparos y defensa contra violaciones de derechos fundamentales.
+
 ---
