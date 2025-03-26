@@ -8,7 +8,7 @@ export default function PricingHero(block) {
         <div className="row">
           <div className="col-lg-8 mx-auto">
             <div className="section-header position-relative text-center">
-              <h2>{block.title}</h2>
+              <h1>{block.title}</h1>
               
             </div>
           </div>

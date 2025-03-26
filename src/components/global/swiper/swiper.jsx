@@ -6,7 +6,7 @@ import { Navigation } from 'swiper/modules';
 import HomeHero from '../../home/hero/hero';
 
 const props = {
-    title: "Planes de Internet y Domotica Para el Hogar o Negocio",
+    title: "Planes de Internet y Domótica: Conectividad e IoT para Hogares y Negocios",
     button: {
         text: "Cotiza con nosotros",
         link: "/contact/",

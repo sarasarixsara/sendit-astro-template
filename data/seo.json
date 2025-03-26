@@ -1,32 +1,32 @@
 {
-	"site_name": "Convergencia Digital S.A.S",
-	"site_title": "Convergencia Digital S.A.S",
-	"description": "A polished, marketing website template built with Astro.",
-	"author": "",
-	"author_email": "",
-	"images": [
-		{
-			"image": "/images/_screenshot.png",
-			"description": "Screenshot for Sendit Template",
-			"height": 0,
-			"width": 0
-		}
-	],
-	"_structures": {
-		"images": {
-			"style": "select",
-			"values": [
-				{
-					"label": "Image",
-					"icon": "image",
-					"value": {
-						"image": "",
-						"description": "",
-						"height": 0,
-						"width": 0
-					}
-				}
-			]
-		}
-	}
+  "site_name": "Convergencia Digital S.A.S",
+  "site_title": "Convergencia Digital S.A.S",
+  "description": "Descubra planes de Internet de alta velocidad y soluciones de domótica para hogares y negocios en Tolima. Integre IoT para automatización, seguridad y eficiencia energética. Conectividad inteligente para un estilo de vida moderno.",
+  "author": "Convergencia Digital S.A.S",
+  "author_email": "",
+  "images": [
+    {
+      "image": "/images/large-logo.png",
+      "description": "Convergencia Digital S.A.S",
+      "height": 0,
+      "width": 0
+    }
+  ],
+  "_structures": {
+    "images": {
+      "style": "select",
+      "values": [
+        {
+          "label": "Image",
+          "icon": "image",
+          "value": {
+            "image": "",
+            "description": "",
+            "height": 0,
+            "width": 0
+          }
+        }
+      ]
+    }
+  }
 }

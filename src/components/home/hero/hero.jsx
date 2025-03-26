@@ -8,13 +8,13 @@ export default function HomeHero(block) {
       <div className="hero-two-shape"></div>
       <div className="container-fluid">
         <div className="row align-items-center">
-          <div className="col-lg-6">
+          <div className="col-lg-8">
             <div className="hero-two-content">
               <h1 className="mb-4">{block.title}</h1>
               
             </div>
           </div>
-          <div className="col-lg-6 justify-content-center" style={{display: "flex"}}>
+          <div className="col-lg-4 justify-content-center" style={{display: "flex"}}>
           <div className="">
                 {block.button && (
                 

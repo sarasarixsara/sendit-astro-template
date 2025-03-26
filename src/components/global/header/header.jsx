@@ -12,10 +12,10 @@ export default function GlobalHeader(block) {
                 block.remove_top_padding ? "no-top-pad" : ""
               }`}
             >
-              <h2>
+              <h1>
                 {block.title}
                 <span>{block.title_suffix}</span>
-              </h2>
+              </h1>
               <div
                 dangerouslySetInnerHTML={{
                   __html: md.render(block.description),
