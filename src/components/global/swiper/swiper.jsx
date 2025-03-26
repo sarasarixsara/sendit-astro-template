@@ -8,7 +8,7 @@ import HomeHero from '../../home/hero/hero';
 const props = {
     title: "Planes de Internet y Domótica: Conectividad e IoT para Hogares y Negocios",
     button: {
-        text: "Cotiza con nosotros",
+        text: "Conoce nuestros planes",
         link: "/contact/",
         number: "+573152102953",
         message: "Quiero cotizar un plan de internet o domotica para mi negocio"

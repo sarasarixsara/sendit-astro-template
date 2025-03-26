@@ -8,7 +8,12 @@
     {
       "link": "/features/",
       "text": "¿Quiénes somos?"
+    },
+    {
+      "link": "/legal/",
+      "text": "Legal y regulatorio"
     }
+
   ],
   "products": [
     {
@@ -46,6 +51,7 @@
       "text": "Seguridad electronica"
     }
   ],
+
   "btn": {
     "link": "https://api.whatsapp.com/send/?phone=573138825184&text=Me+interesa+conocer+mas+sobre+sus+productos&type=phone_number&app_absent=0",
     "text": "Contáctanos"

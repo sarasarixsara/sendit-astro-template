@@ -18,10 +18,8 @@ export default function HomeHero(block) {
           <div className="">
                 {block.button && (
                 
-                  <a href={'https://wa.me/' +`${navigation.whsp.number}`+ '?text=' + `${block.button.message.replace(/ /g, "%20")}`}  target="_blank"
-
-                    className="btn btn-primary btn-lg"
-                  >
+                  // <a href={'https://wa.me/' +`${navigation.whsp.number}`+ '?text=' + `${block.button.message.replace(/ /g, "%20")}`}  target="_blank"
+                  <a href="pricing/"  className="btn btn-primary btn-lg">
                     {" "}
                     {block.button.text}{" "}
                   </a>
