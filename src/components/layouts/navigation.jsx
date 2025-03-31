@@ -181,6 +181,11 @@ export default function Navigation({ pageUrl }) {
             </>
           ) : null }
         </div>
+          <div className="whsp-container">
+            <a href="/" target="_blank">
+              <img src="../images/whsp-button.png" alt="Descripción de la imagen" width={"50"} />
+            </a>
+          </div>
         </nav>
       </header>
     </>

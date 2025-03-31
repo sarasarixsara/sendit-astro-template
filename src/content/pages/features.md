@@ -24,7 +24,7 @@ content_blocks:
     title: Asesoría Legal Personalizada
     description: "Análisis individualizado de tu caso para brindarte soluciones ajustadas a tus necesidades."
     button:
-      link: /signup
+      link: /
       text: Conocer mas
     reversed: false
 
@@ -34,7 +34,7 @@ content_blocks:
     title: Defensa Técnica en Procesos Penales
     description: "Estrategias sólidas para la defensa o acusación en procesos de Derecho Penal Ordinario y Justicia Militar."
     button:
-      link: /signup
+      link: /
       text: Conocer mas
     reversed: true
 
@@ -44,7 +44,7 @@ content_blocks:
     title: Acompañamiento en Procesos Judiciales
     description: "Guía y apoyo en cada etapa del proceso, garantizando el cumplimiento del debido proceso."
     button:
-      link: /signup
+      link: /
       text: Conocer mas
     reversed: false
     
@@ -54,7 +54,7 @@ content_blocks:
     title: Consultoría en Normatividad Legal
     description: "Interpretación y aplicación de la normatividad vigente para proteger tus derechos."
     button:
-      link: /signup
+      link: /
       text: Conocer mas
     reversed: true
   

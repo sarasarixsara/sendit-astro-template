@@ -14,11 +14,11 @@ content_blocks:
     title: Defensa Legal Especializada
     description: >-
       Asesoría personalizada en Derecho Penal y Justicia Militar. Tu solución, mi compromiso.
-    image: /images/hero/hero1.jpg
+    image: images/hero/background.jpg
     image_alt: Reports dashboard
     button:
       text: Agenda una consulta
-      link: /signup/
+      link: /
   #  - _bookshop_name: global/counter
   #    title: Scale your
   #    title_suffix: Business
