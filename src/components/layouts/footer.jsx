@@ -6,11 +6,10 @@ export default function Footer({}) {
     <footer className="footer" id="footer">
       <div className="footer-wrapper">
         <img
-          className="footer-image"
+          className="footer-image h-10"
           src={navigation.logo}
           alt="Nav-Logo"
-          width={"30%"}
-          height={"50%"}
+          height={"120px"}
         />
 
         <div className="row py-6 px-lg-10 ">
@@ -28,19 +27,14 @@ export default function Footer({}) {
             </div>
           ))}
         </div>
-        <div className="asociados-wrapper">
-          <h2 className="text-white mt-4">Asociados a:</h2>
-          <div >
-            <a className="asociados" href="https://alianzatic.org/" target="_blank">
-              <img  src="../images/alianza.png" alt="" width={"50%"} />
-            </a>
-            <a className="asociados mt-2" href="https://www.instagram.com/clustertolimatic/?hl=es-la" target="_blank">
-              <img  src="../images/cluster.png" alt="" width={"30%"} />
-            </a>
-          </div>
-        </div>
+        <h6 >
+          Contactanos en: <br />
+          accionsocialmelgar@gmail.com <br />
+          DIRECCION: Km. 1 Vía
+          Melgar – Bogotá
+        </h6>
       </div>
-      <div className="col-12 mt-2 text-center">
+      <div className="col-12 mt-2 text-center ">
         <p>
           © Copyright <span>{new Date().getFullYear()}</span>{" "}
           <a href="https://blackgolden.co/" target="_blank">

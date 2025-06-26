@@ -6,12 +6,12 @@ import { Navigation } from 'swiper/modules';
 import HomeHero from '../../home/hero/hero';
 
 const props = {
-    title: "Planes de Internet Para Su Hogar o Negocio",
+    title: "Asociacion FAC Nuestra Señora de Loreto",
     button: {
-        text: "Conoce nuestros planes",
-        link: "/contact/",
-        number: "+573152102953",
-        message: "Quiero cotizar un plan de internet para mi negocio"
+        text: "Conoce sobre nosotros",
+        link: "https://api.whatsapp.com/send/?phone=573332669152&text=Me+interesa+conocer+mas+sobre+su+asociacion&type=phone_number&app_absent=0/",
+        number: "+573332669152",
+        message: "Quiero conocer mas sobre la asociacion FAC Nuestra Señora de Loreto",
     }
 }
 
@@ -20,8 +20,9 @@ export default function App() {
     return (
         <>
             <Swiper
-                navigation={true} modules={[Navigation]} className="mySwiper">
+                navigation={true} modules={[Navigation]} className="mySwiper h-32">
                 <SwiperSlide><HomeHero {...props} /></SwiperSlide>
+                {/* <SwiperSlide><HomeHero {...props} /></SwiperSlide> */}
                 {/* <SwiperSlide>
                     <div style={{ position: "relative", height: "25rem" }}>
                         <div style={{

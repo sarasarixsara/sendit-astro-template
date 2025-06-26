@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Inicio
+title: Loreto Melgar
 seo:
   page_description:
   canonical_url:
@@ -12,10 +12,10 @@ seo:
 content_blocks:
   - _bookshop_name: global/swiper
   - _bookshop_name: global/counter
-    title: Disponibilidad de los Servicios de 
-    title_suffix: Conectividad a Internet
+    title: Comprometidos con el Bienestar de
+    title_suffix: Nuestra Fuerza Aérea
     description: >-
-      El despliegue de la red de distribución donde se ofrecen los servicios de conectividad a Internet por parte de Convergencia Digital esta basado en tecnología Wi-Fi de largo alcance por lo que la disponibilidad del servicio es del 99,6%.
+      En la Asociación FAC Nuestra Señora de Loreto – Melgar trabajamos con vocación de servicio, desarrollando iniciativas que transforman positivamente la vida de quienes han dedicado su labor a la defensa de nuestro país.
     alternate_style: false
     numbers:
       - prefix: +
@@ -54,28 +54,23 @@ content_blocks:
       
     slider:
       - image: /images/testimonial/logo-1.jpg
-        image_alt: Profile photo of Pete Fish
-        author: Cableado estructurado y Redes Empresariales
+        image_alt: Gestión de Apoyos Interinstitucionales
+        author: Gestión de Apoyos Interinstitucionales
         message: >-
-          Instalación y mantenimiento de cableado estructurado de redes de telecomunicaciones y de redes empresariales. Instalación y gestión de zonas Wi-fi.
+          Canalizamos solicitudes de respaldo ante entidades públicas, privadas y académicas para desarrollar proyectos que beneficien directamente a los miembros de la Fuerza Aérea Colombiana y sus familias.
       - image: /images/testimonial/logo-2.jpg
-        image_alt: Profile photo of Dolly Watsona
-        author: Equipamiento Para Radio Enlaces
+        image_alt: Intervención Social Estratégica
+        author: Intervención Social Estratégica
         
         message: >-
-          Suministro, instalación y mantenimiento de equipamiento para el radio enlace PtP y PtMP aplicado tanto a proyectos corporativos, como gubernamentales.
+          Identificamos y analizamos problemáticas sociales dentro de la institución para diseñar soluciones sostenibles que mejoren el bienestar integral de nuestra comunidad.
       - image: /images/testimonial/logo-3.jpg
-        image_alt: Soluciones en Fibra Óptica
-        author: Soluciones integrales en Fibra Óptica
+        image_alt: SAdministración de Bienes y Donaciones
+        author: Administración de Bienes y Donaciones
          
         message: >-
-          Instalación, certificación y mantenimiento de Fibra Óptica, Red Óptica Pasiva con Capacidad de Gigabit y Red de Actividad en Nodo (GPON/AON)
-      - image: /images/testimonial/logo-4.jpg
-        image_alt: Consultoría y Diseño
-        author: Consultoría y Diseño
-         
-        message: >-
-          Consultoría y diseño de aplicaciones para el uso del Internet de las cosas en proyectos de domótica e inmótica, ahorro energético, seguridad y accesibilidad para casas Inteligentes.
+         Adquirimos, gestionamos y destinamos bienes muebles, inmuebles y donaciones con total transparencia, asegurando su uso en programas que fortalecen la educación, la salud y el desarrollo social.
+    
 
   # - _bookshop_name: global/faq
   #   title: Marco

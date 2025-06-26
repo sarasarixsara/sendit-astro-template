@@ -3,10 +3,17 @@
 **********/
 .hero-two {
   position: relative;
-  background: $color-gray-dark;
-  padding: $base-padding * 11.3 0 $base-padding * 5;
+  position: relative;
+  background-image: url('/images/hero/5.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: calc($base-padding * 12.3) 0 calc($base-padding * 5);
   z-index: 1;
   overflow: hidden;
+
+  // 🔳 Overlay que oscurece la imagen
+
 
   @include media-breakpoint-down-xl {
     padding: $base-padding * 8 0 $base-padding * 2;
@@ -25,9 +32,9 @@
   }
 
   &-shape {
-    -webkit-mask-image: url(/images/hero/hero-two-shape.png);
-    mask-image: url(/images/hero/hero-two-shape.png);
-    background: $color-background-effects;
+    // -webkit-mask-image: url(/images/hero/hero-two-shape.png);
+    // mask-image: url(/images/hero/hero-two-shape.png);
+    // background: $color-background-effects;
     position: absolute;
     top: 0;
     left: 0;
@@ -84,7 +91,7 @@
       font-size: $base-padding * 1.4;
     }
   }
-
+ 
   &-banner {
     position: relative;
     text-align: right;
@@ -124,5 +131,12 @@
         left: 7%;
       }
     }
+  }
+   &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3); // u otro color
+    z-index: 0;
   }
 }

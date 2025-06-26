@@ -3,7 +3,7 @@
 **********/
 .footer {
   position: relative;
-  background: $color-primary;
+  background: white;
   // height: 100%;
   overflow-x: hidden;
   padding: 10px;
@@ -124,7 +124,7 @@
 
         text-align: center;
         a {
-          color: $color-white;
+          color: $color-primary;
           font-weight: 600;
           transition: all 0.3s ease-in-out;
           &:hover {

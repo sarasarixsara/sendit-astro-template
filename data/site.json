@@ -1,9 +1,9 @@
 {
-  "site_title": "Convergencia Digital S.A.S",
-  "description": "Servicios de conectividad a Internet para su hogar o negocio.",
-  "favicon_icon": "/images/favicon.jpeg",
-  "favicon_image": "/images/favicon.jpeg",
+  "site_title": "ASOCIACIÓN FAC NUESTRA SEÑORA DE LORETO MELGAR",
+  "description": "ASOCIACIÓN FAC NUESTRA SEÑORA DE LORETO MELGAR",
+  "favicon_icon": "/images/loreto-logo.jpeg",
+  "favicon_image": "/images/loreto-logo.jpeg",
   "twitter_site": "@twitter_site",
-  "image": "/images/large-logo.png",
-  "image_alt": "/images/large-logo.png"
+  "image": "/images/loreto-logo.jpeg",
+  "image_alt": "/images/loreto-logo.jpeg"
 }

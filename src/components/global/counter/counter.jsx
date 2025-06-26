@@ -21,20 +21,42 @@ export default function GlobalCounter(block) {
                   __html: md.render(block.description),
                 }}
               />
-              <div className="btn btn-links mt-4">
+              {/* <div className="btn btn-links mt-4">
                 Conoce la{" "}
                 <a target="_blank" href="docs/naturalezaServicio.pdf">
                   Naturaleza y Características del Servicio 
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className="section-header col-lg-6" style={{padding: 0,}}>
-            <h1>Nuestra cobertura</h1>
-            <p>Convergencia Digital cuenta con cobertura en los municipios de Ibagué y Suárez</p>
-            </div>
-          <div className="col-lg-6" style={{display: "flex", flexWrap: "wrap"}}>
-          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1qQgbngrCHlgnDUdnI-n5-36AZLg_Rcc&ehbc=2E312F&noprof=1" width="540" height="280"></iframe>
+          <div className="section-header col-lg-6" style={{ padding: 0 }}>
+            <h2>Ponte en contacto con nosotros</h2>
+            <p>
+              Teléfono:{" "}
+              <a href="https://api.whatsapp.com/send/?phone=573332669152&text=Me+interesa+conocer+mas+sobre+su+asociacion&type=phone_number&app_absent=0">
+                3332669152
+              </a>
+            </p>
+            <p>
+              Email:{" "}
+              <a href="emailto:accionsocialmelgar@gmail.com">
+                accionsocialmelgar@gmail.com
+              </a>{" "}
+            </p>
+            <p>Ubicación: Km 1 Vía Melgar Bogotá. Base Aérea Tc Luis F Pinto</p>
+          </div>
+          <div
+            className="col-lg-6"
+            style={{ display: "flex", flexWrap: "wrap" }}
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7828030807814!2d-74.07383658161287!3d4.6327996523906725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2c89b424fb%3A0x5b5e23f29cee19c2!2sAsociaci%C3%B3n%20FAC%20Nuestra%20Se%C3%B1ora%20de%20Loreto!5e0!3m2!1ses!2sco!4v1750954430200!5m2!1ses!2sco"
+              width="500"
+              height="350"
+          
+              loading="lazy"
+            
+            ></iframe>
           </div>
 
           <div className="col-12 pb-8 mt-4">

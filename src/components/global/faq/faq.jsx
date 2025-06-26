@@ -34,22 +34,7 @@ export default function GlobalFaq(block) {
                 <FaqItem faq={q} i={i} key={i} />
               ))}
             </div>
-            <div className="accordion-item mt-6">
-              <span>07</span>
-              <h2 className="accordion-header"> </h2>
-              <p
-                className="header-content"
-                onClick={handleOpenModal}
-                style={{
-                  cursor: "pointer",
-                  fontSize: "1.6rem",
-                  fontWeight: "600",
-                  marginBottom: "0",
-                }}
-              >
-                Informacion de interes sobre Dignidad Infantil
-              </p>
-            </div>
+           
           </div>
         </div>
       </div>

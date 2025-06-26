@@ -1,11 +1,11 @@
 {
-  "logo": "/images/footer-logo (1).svg",
+  "logo": "/images/footer-logo-blanco (1).svg",
   "logo_url": "/",
   "copyright": "Con tecnología de Black Golden",
   "social": [
     {
-      "number": 573152102953,
-      "message": "Me interesa conocer mas sobre sus productos",
+      "number": 573332669152,
+      "message": "Me interesa conocer mas sobre su asociacion",
       "social_icon": "/images/footer/whsp-icon.svg",
       "link":"https://google.com"
     }
@@ -22,41 +22,14 @@
     },
    
     {
-   
       "links": [
         {
-          "link": "/pricing/",
-          "text": "Soluciones"
+          "link": "/esal/",
+          "text": "ESAL"
         }
         
-      ]
-    },
-    {
-      "links": [
-        {
-          "link": "/privacy/",
-          "text": "Productos"
-        }
-        
-      ]
-    },
-    {
-      "links": [
-        {
-          "link": "/legal/",
-          "text": "Legal y regulatorio"
-        }
-        
-      ]
-    },
-    {
-    
-      "links": [
-        {
-          "link": "/contact/",
-          "text": "Contáctanos"
-        }
       ]
     }
+
   ]
 }
