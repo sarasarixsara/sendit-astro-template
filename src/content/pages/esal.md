@@ -17,9 +17,9 @@ content_blocks:
     FAQ:
       - title: Informe de Gestión 2024
         description: 
-        link: '/2. Estados financieros 2024 - 2023 Fac melgar.pdf'
+        link: '/1. INFORME DE GESTION 2024.pdf'
         linkTitle: 'Informe de Gestión 2024'
-      - title: Estados financieros 2024 - 2023
+      - title: Informe de Gestion 2024 
         description: ''
         link: /2. Estados financieros 2024 - 2023 Fac melgar.pdf
         linkTitle: Estados financieros 2024 - 2023

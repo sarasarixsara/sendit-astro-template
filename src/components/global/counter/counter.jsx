@@ -1,7 +1,15 @@
 import MarkdownIt from "markdown-it";
+import { useEffect, useState } from "react";
 const md = new MarkdownIt({ html: true });
 
 export default function GlobalCounter(block) {
+    const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null; // o un loader temporal
   return (
     <section
       className={`counter-up ${
@@ -21,12 +29,7 @@ export default function GlobalCounter(block) {
                   __html: md.render(block.description),
                 }}
               />
-              {/* <div className="btn btn-links mt-4">
-                Conoce la{" "}
-                <a target="_blank" href="docs/naturalezaServicio.pdf">
-                  Naturaleza y Características del Servicio 
-                </a>
-              </div> */}
+            
             </div>
           </div>
           <div className="section-header col-lg-6" style={{ padding: 0 }}>

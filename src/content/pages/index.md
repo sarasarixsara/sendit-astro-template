@@ -48,8 +48,8 @@ content_blocks:
   #     De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
 
   - _bookshop_name: global/testimonial/testimonialSlider
-    title: Conoce nuestros 
-    title_suffix: servicios
+    title: 
+    title_suffix: Conoce nuestros servicios
     description: >-
       
     slider:
