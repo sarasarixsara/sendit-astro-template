@@ -36,17 +36,17 @@ export default function GlobalCounter(block) {
             <h2>Ponte en contacto con nosotros</h2>
             <p>
               Teléfono:{" "}
-              <a href="https://api.whatsapp.com/send/?phone=573332669152&text=Me+interesa+conocer+mas+sobre+su+asociacion&type=phone_number&app_absent=0">
-                3332669152
+              <a href="https://api.whatsapp.com/send/?phone=57&text=Me+interesa+conocer+mas+sobre+su+asociacion&type=phone_number&app_absent=0">
+                TELEFONO
               </a>
             </p>
             <p>
               Email:{" "}
-              <a href="emailto:accionsocialmelgar@gmail.com">
-                accionsocialmelgar@gmail.com
+              <a href="emailto:">
+                EMAIL
               </a>{" "}
             </p>
-            <p>Ubicación: Km 1 Vía Melgar Bogotá. Base Aérea Tc Luis F Pinto</p>
+            <p>DIRECCION</p>
           </div>
           <div
             className="col-lg-6"

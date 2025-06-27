@@ -15,7 +15,7 @@ content_blocks:
     title: Comprometidos con el Bienestar de
     title_suffix: Nuestra Fuerza Aérea
     description: >-
-      En la Asociación FAC Nuestra Señora de Loreto – Melgar trabajamos con vocación de servicio, desarrollando iniciativas que transforman positivamente la vida de quienes han dedicado su labor a la defensa de nuestro país.
+      En la Asociación FAC Nuestra Señora de Loreto – Tres Esquinas trabajamos con vocación de servicio, desarrollando iniciativas que transforman positivamente la vida de quienes han dedicado su labor a la defensa de nuestro país.
     alternate_style: false
     numbers:
       - prefix: +

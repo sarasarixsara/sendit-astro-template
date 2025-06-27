@@ -9,8 +9,8 @@ const props = {
     title: "Asociacion FAC Nuestra Señora de Loreto",
     button: {
         text: "Conoce sobre nosotros",
-        link: "https://api.whatsapp.com/send/?phone=573332669152&text=Me+interesa+conocer+mas+sobre+su+asociacion&type=phone_number&app_absent=0/",
-        number: "+573332669152",
+        link: "https://api.whatsapp.com/send/?phone=57&text=Me+interesa+conocer+mas+sobre+su+asociacion&type=phone_number&app_absent=0/",
+        number: "+57",
         message: "Quiero conocer mas sobre la asociacion FAC Nuestra Señora de Loreto",
     }
 }

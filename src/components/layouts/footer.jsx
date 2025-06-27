@@ -29,9 +29,8 @@ export default function Footer({}) {
         </div>
         <h6 >
           Contactanos en: <br />
-          accionsocialmelgar@gmail.com <br />
-          DIRECCION: Km. 1 Vía
-          Melgar – Bogotá
+           <br />
+          
         </h6>
       </div>
       <div className="col-12 mt-2 text-center ">
