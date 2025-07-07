@@ -32,22 +32,7 @@ export default function GlobalCounter(block) {
             
             </div>
           </div>
-          <div className="section-header col-lg-6" style={{ padding: 0 }}>
-            <h2>Ponte en contacto con nosotros</h2>
-            <p>
-              Teléfono:{" "}
-              <a href="https://api.whatsapp.com/send/?phone=57&text=Me+interesa+conocer+mas+sobre+su+asociacion&type=phone_number&app_absent=0">
-                TELEFONO
-              </a>
-            </p>
-            <p>
-              Email:{" "}
-              <a href="emailto:">
-                EMAIL
-              </a>{" "}
-            </p>
-            <p>DIRECCION</p>
-          </div>
+          
           <div
             className="col-lg-6"
             style={{ display: "flex", flexWrap: "wrap" }}
@@ -62,28 +47,7 @@ export default function GlobalCounter(block) {
             ></iframe> */}
           </div>
 
-          <div className="col-12 pb-8 mt-4">
-            <div className="counter-up-wrapper d-grid">
-              {block.numbers.map((number, i) => (
-                <div className="counter-up-content" key={i}>
-                  <div className="counter-up-content-item">
-                    <div className="counter-percent">
-                      {number.prefix && (
-                        <span className="percent">{number.prefix}</span>
-                      )}
-
-                      <span className="counter">{number.number}</span>
-
-                      {number.suffix && (
-                        <span className="percent">{number.suffix}</span>
-                      )}
-                    </div>
-                    <p>{number.text}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

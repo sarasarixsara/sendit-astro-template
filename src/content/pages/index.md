@@ -31,6 +31,28 @@ content_blocks:
         suffix: 
         text: Usuarios
  
+  - _bookshop_name: featureNew/heroNew
+    image: /images/pricing/redes.jpg
+    image_alt: File upload
+    title: Redes corportativas y Zonas Wifi
+    description: >-
+        Creamos redes corporativas y zonas WiFi de alto rendimiento para garantizar la conectividad confiable de su empresa    
+
+    reversed: false
+  - _bookshop_name: featureNew/heroNew
+    image: /images/pricing/camara.jpg
+    image_alt: File upload
+    title: CCTV y seguridad
+    description: >-
+        Proteja su hogar o negocio con nuestros sistemas de CCTV y seguridad de vanguardia, que ofrecen monitoreo en tiempo real y protección las 24 horas.
+    reversed: true
+
+  - _bookshop_name: featureNew/heroNew
+    image: /images/pricing/iot.jpg
+    image_alt: File upload
+    title: Radio enlaces, diseño  y asesoria
+    description: >-
+        Ofrecemos asesoría personalizada y soluciones a medida para ayudarlo a optimizar su infraestructura tecnológica y alcanzar sus objetivos empresariales.
   
 
   # - _bookshop_name: global/text
@@ -47,52 +69,9 @@ content_blocks:
   #   description: >-
   #     De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
 
-  - _bookshop_name: global/testimonial/testimonialSlider
-    title: 
-    title_suffix: Conoce nuestros servicios
-    description: >-
-      
-    slider:
-      - image: /images/testimonial/logo-1.jpg
-        image_alt: Gestión de Apoyos Interinstitucionales
-        author: Gestión de Apoyos Interinstitucionales
-        message: >-
-          Canalizamos solicitudes de respaldo ante entidades públicas, privadas y académicas para desarrollar proyectos que beneficien directamente a los miembros de la Fuerza Aérea Colombiana y sus familias.
-      - image: /images/testimonial/logo-2.jpg
-        image_alt: Intervención Social Estratégica
-        author: Intervención Social Estratégica
-        
-        message: >-
-          Identificamos y analizamos problemáticas sociales dentro de la institución para diseñar soluciones sostenibles que mejoren el bienestar integral de nuestra comunidad.
-      - image: /images/testimonial/logo-3.jpg
-        image_alt: SAdministración de Bienes y Donaciones
-        author: Administración de Bienes y Donaciones
-         
-        message: >-
-         Adquirimos, gestionamos y destinamos bienes muebles, inmuebles y donaciones con total transparencia, asegurando su uso en programas que fortalecen la educación, la salud y el desarrollo social.
-    
 
-  # - _bookshop_name: global/faq
-  #   title: Marco
-  #   title_suffix: Legal
-  #   #description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
-  #   FAQ:
-  #     # - title: Internet seguro
-  #     #   link: http://convergenciadigitalsas.com/internetsano/
-  #     - title: Te protejo - Denuncie aquí
-  #       link: https://teprotejo.org/
-  #     - title: Control parental
-  #       link: docs/Control-Parental.pdf
-  #     - title: Ley 679 de 2001
-  #       link: /docs/LEY-679-DE-2001.pdf
-  #     - title: Seguridad en internet
-  #       link: docs/Seguridad-en-Internet.pdf
-  #     - title: Medidor de velocidad Speedtest
-  #       link: https://www.speedtest.net/es
-  #     - title: Medidor de velocidad ETB
-  #       link: https://etb.com/medidor/
-      # - title: Especificaciones técnicas de nuestros equipos
-      #   link: http://convergenciadigitalsas.com/equipos/
+
+
 
 
 ---
