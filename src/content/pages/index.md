@@ -11,25 +11,25 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: global/swiper
-  - _bookshop_name: global/counter
-    title: Comprometidos con el Bienestar de
-    title_suffix: Nuestra Fuerza Aérea
-    description: >-
-      En la Asociación FAC Nuestra Señora de Loreto – Melgar trabajamos con vocación de servicio, desarrollando iniciativas que transforman positivamente la vida de quienes han dedicado su labor a la defensa de nuestro país.
-    alternate_style: false
-    numbers:
-      - prefix: +
-        number: 50
-        suffix: 
-        text: Proyectos
-      - prefix: +
-        number: 100
-        suffix:
-        text: Productos
-      - prefix: +
-        number: 700
-        suffix: 
-        text: Usuarios
+  # - _bookshop_name: global/counter
+  #   title: Comprometidos con el Bienestar de
+  #   title_suffix: Nuestra Fuerza Aeroespacial
+  #   description: >-
+  #     En la Asociación FAC Nuestra Señora de Loreto – Melgar trabajamos con vocación de servicio, desarrollando iniciativas que transforman positivamente la vida de quienes han dedicado su labor a la defensa de nuestro país.
+  #   alternate_style: false
+  #   numbers:
+  #     - prefix: +
+  #       number: 50
+  #       suffix: 
+  #       text: Proyectos
+  #     - prefix: +
+  #       number: 100
+  #       suffix:
+  #       text: Productos
+  #     - prefix: +
+  #       number: 700
+  #       suffix: 
+  #       text: Usuarios
  
   
 
@@ -46,7 +46,7 @@ content_blocks:
   #   remove_top_padding: true
   #   description: >-
   #     De manera adicional bajo el mismo principio Convergencia Digital S.A.S realiza practicas de gestión de trafico Razonables y no discriminatorias respecto a otros proveedores de servicio, contenidos o protocolos de red específicos.
-
+  
   - _bookshop_name: global/testimonial/testimonialSlider
     title: 
     title_suffix: Conoce nuestros servicios
@@ -57,7 +57,7 @@ content_blocks:
         image_alt: Gestión de Apoyos Interinstitucionales
         author: Gestión de Apoyos Interinstitucionales
         message: >-
-          Canalizamos solicitudes de respaldo ante entidades públicas, privadas y académicas para desarrollar proyectos que beneficien directamente a los miembros de la Fuerza Aérea Colombiana y sus familias.
+          Canalizamos solicitudes de respaldo ante entidades públicas, privadas y académicas para desarrollar proyectos que beneficien directamente a los miembros de la Fuerza Aeroespacial Colombiana y sus familias.
       - image: /images/testimonial/logo-2.jpg
         image_alt: Intervención Social Estratégica
         author: Intervención Social Estratégica
@@ -71,7 +71,7 @@ content_blocks:
         message: >-
          Adquirimos, gestionamos y destinamos bienes muebles, inmuebles y donaciones con total transparencia, asegurando su uso en programas que fortalecen la educación, la salud y el desarrollo social.
     
-
+  - _bookshop_name: swipe/photos
   # - _bookshop_name: global/faq
   #   title: Marco
   #   title_suffix: Legal

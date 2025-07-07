@@ -6,10 +6,15 @@
   background-image: url("/images/hero/5.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-   padding: $base-padding * 12.3 0 $base-padding * 5;
-  z-index: 1;
+  background-position: top;
   overflow: hidden;
+  z-index: 1;
+
+  /* Altura mínima para asegurar visibilidad de la parte superior */
+  min-height: 100vh; /* ocupa el alto completo de la pantalla */
+
+  padding-top: 12rem;
+  padding-bottom: 5rem;
 
   // 🔳 Overlay que oscurece la imagen
 
