@@ -46,10 +46,10 @@ content_blocks:
         link: /6. FORMALIZACION ESAL 52451002716716.pdf
         linkTitle: Presentación esal
 
-      - title: RUT Loreto Melgar
+      - title: RUT Loreto Tres Esquinas
         description: ''
         link: /7. RUT LORETO TRES ESQUINAS.pdf
-        linkTitle: RUT Loreto Melgar
+        linkTitle: RUT Loreto Tres Esquinas
       
 
 ---

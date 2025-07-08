@@ -7,15 +7,17 @@
   overflow: hidden;
 
   .section-header {
-    padding-bottom: $base-padding *6;
-    
+    padding-bottom: $base-padding * 4;
 
     @include media-breakpoint-down-xxl {
       padding-bottom: $base-padding * 7;
     }
+    @include media-breakpoint-down-xl {
+      padding: $base-padding * 8 0 $base-padding * 4;
+    }
 
     @include media-breakpoint-down-sm {
-      padding: $base-padding * 6 0 $base-padding * 4;
+      padding: $base-padding * 8 0 $base-padding * 4;
     }
 
     p {
@@ -33,24 +35,24 @@
     position: relative;
     z-index: 1;
 
-     .card-image {
-      text-align:justify;
+    .card-image {
+      text-align: justify;
       display: flex;
       justify-content: center;
-      img{
+      img {
         border-radius: 10px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
       }
-    //   z-index: 1;
-    //   text-align:justify;
+      //   z-index: 1;
+      //   text-align:justify;
 
-    //   img {
-    //     max-width: 100%;
+      //   img {
+      //     max-width: 100%;
 
-    //     @include media-breakpoint-down-lg {
-    //       width: 100%;
-    //     }
-    //   }
+      //     @include media-breakpoint-down-lg {
+      //       width: 100%;
+      //     }
+      //   }
     }
 
     .effect-one,
@@ -118,10 +120,11 @@
       }
     }
 
+
     p {
       color: $color-text-light;
       margin-bottom: $base-margin * 0.7;
-      font-size: 20px;
+      font-size: 30px;
       line-height: 33px;
       letter-spacing: -0.8px;
       text-align: justify;
@@ -496,7 +499,7 @@
               li {
                 position: relative;
                 color: $color-text-light;
-                font-size: $base-font-size * 1.25;
+                font-size: $base-font-size * 4.25;
                 line-height: 32.5px;
                 margin-bottom: $base-margin * 0.8;
                 font-family: $font-secondary;
@@ -599,7 +602,8 @@
         }
 
         @include media-breakpoint-down-xl {
-          padding: $base-padding * 3 $base-padding * 1 $base-padding * 2 $base-padding * 2;
+          padding: $base-padding * 3 $base-padding * 1 $base-padding * 2
+            $base-padding * 2;
         }
 
         h2 {

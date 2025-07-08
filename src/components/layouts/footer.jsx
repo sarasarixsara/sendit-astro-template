@@ -27,10 +27,15 @@ export default function Footer({}) {
             </div>
           ))}
         </div>
-        <h6 >
+        <h6 className="contact">
           Contactanos en: <br />
-           <br />
+          loretotqs2023@gmail.com
+          <br />
+          CACOM 6 Tres Esquinas Caquetá
+          <br />
+          <a href="tel:3160561540">3160561540</a>
           
+          <br />
         </h6>
       </div>
       <div className="col-12 mt-2 text-center ">

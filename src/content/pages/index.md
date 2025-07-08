@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Loreto Melgar
+title: Loreto Tres Esquinas
 seo:
   page_description:
   canonical_url:
@@ -12,47 +12,35 @@ seo:
 content_blocks:
   - _bookshop_name: global/swiper
   - _bookshop_name: global/counter
-    title: Comprometidos con el Bienestar de
-    title_suffix: Nuestra Fuerza Aérea
+    title: La selva nos regala un lugar donde se vive en contacto con la naturaleza,
+    title_suffix: Tres Esquinas es habitar en un hogar que tiene alma
     description: >-
-      En la Asociación FAC Nuestra Señora de Loreto – Tres Esquinas trabajamos con vocación de servicio, desarrollando iniciativas que transforman positivamente la vida de quienes han dedicado su labor a la defensa de nuestro país.
+     
     alternate_style: false
-    numbers:
-      - prefix: +
-        number: 50
-        suffix: 
-        text: Proyectos
-      - prefix: +
-        number: 100
-        suffix:
-        text: Productos
-      - prefix: +
-        number: 700
-        suffix: 
-        text: Usuarios
+
  
   - _bookshop_name: featureNew/heroNew
-    image: /images/pricing/redes.jpg
+    image: /images/2 (2).jpeg
     image_alt: File upload
-    title: Redes corportativas y Zonas Wifi
+    title: 
     description: >-
-        Creamos redes corporativas y zonas WiFi de alto rendimiento para garantizar la conectividad confiable de su empresa    
+        La selva nos regala un lugar donde se vive en contacto con la naturaleza, Tres Esquinas es habitar en un hogar que tiene alma    
 
     reversed: false
   - _bookshop_name: featureNew/heroNew
-    image: /images/pricing/camara.jpg
+    image: /images/3 (2).jpeg
     image_alt: File upload
-    title: CCTV y seguridad
+    title: 
     description: >-
-        Proteja su hogar o negocio con nuestros sistemas de CCTV y seguridad de vanguardia, que ofrecen monitoreo en tiempo real y protección las 24 horas.
+        Somos un grupo de Señoras voluntarias que ponemos nuestro corazón y alma para el bienestar de la comunidad
     reversed: true
 
   - _bookshop_name: featureNew/heroNew
-    image: /images/pricing/iot.jpg
+    image: /images/4 (2).jpeg
     image_alt: File upload
-    title: Radio enlaces, diseño  y asesoria
+    title: 
     description: >-
-        Ofrecemos asesoría personalizada y soluciones a medida para ayudarlo a optimizar su infraestructura tecnológica y alcanzar sus objetivos empresariales.
+       Promovemos actividades enfocadas al bienestar de los soldados, pilar fundamental de la Unidad
   
 
   # - _bookshop_name: global/text

@@ -8,9 +8,8 @@ export default function GlobalHeader(block) {
         <div className="row">
           <div className="col-lg-12 mx-auto">
             <div
-              className={`section-header @@disply ${
-                block.remove_top_padding ? "no-top-pad" : ""
-              }`}
+              className={"section-header"
+            }
             >
               <h2>
                 {block.title}

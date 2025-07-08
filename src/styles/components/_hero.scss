@@ -3,13 +3,18 @@
 **********/
 .hero-two {
   
-  background-image: url("/images/hero/5.jpeg");
+  background-image: url("/images/hero/1 (2).jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-   padding: $base-padding * 12.3 0 $base-padding * 5;
-  z-index: 1;
+  background-position: top;
   overflow: hidden;
+ 
+
+  /* Altura mínima para asegurar visibilidad de la parte superior */
+  min-height: 100vh; /* ocupa el alto completo de la pantalla */
+
+  padding-top: 12rem;
+  padding-bottom: 5rem;
 
   // 🔳 Overlay que oscurece la imagen
 
@@ -130,11 +135,11 @@
       }
     }
   }
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.3); // u otro color
-    z-index: 0;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   inset: 0;
+  //   background-color: rgba(0, 0, 0, 0.3); // u otro color
+  //   z-index: 0;
+  // }
 }

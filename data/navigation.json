@@ -15,12 +15,12 @@
   
 
   "btn": {
-    "link": "https://api.whatsapp.com/send/?phone=573332669152&text=Me+interesa+conocer+mas+sobre+su+asociacion&type=phone_number&app_absent=0",
+    "link": "https://api.whatsapp.com/send/?phone=573160561540&text=Me+interesa+conocer+mas+sobre+su+asociacion&type=phone_number&app_absent=0",
     "text": "Contáctanos"
   },
   "whsp":{
     "src":"/images/whsp-button.png",
-    "number": 573332669152,
+    "number": 573160561540,
     "message": "Me interesa conocer mas sobre su asociacion"
 
   }

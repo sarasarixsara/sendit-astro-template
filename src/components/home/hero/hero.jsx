@@ -19,7 +19,7 @@ export default function HomeHero(block) {
                 {block.button && (
                 
                   // <a href={'https://wa.me/' +`${navigation.whsp.number}`+ '?text=' + `${block.button.message.replace(/ /g, "%20")}`}  target="_blank"
-                  <a href="https://api.whatsapp.com/send/?phone=57&text=Me+interesa+conocer+mas+sobre+su+asociacion&type=phone_number&app_absent=0" 
+                  <a href="https://api.whatsapp.com/send/?phone=573160561540&text=Me+interesa+conocer+mas+sobre+su+asociacion&type=phone_number&app_absent=0" 
                     target="_blank" className="btn btn-primary btn-lg">
                     {" "}
                     {block.button.text}{" "}
