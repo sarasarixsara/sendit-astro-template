@@ -14,7 +14,7 @@ export default function Footer({}) {
 
         <div className="row py-6 px-lg-10 ">
           {footer.sections.map((section, i) => (
-            <div className="col-12 col-lg-6 order-1 mb-4" key={i}>
+            <div className="col-12 col-lg-6 order-1 mb-2" key={i}>
               <div className="footer-widget">
                 <ul className="list-unstyled">
                   {section.links.map((link, i) => (
@@ -27,7 +27,7 @@ export default function Footer({}) {
             </div>
           ))}
         </div>
-        <h6 className="contact">
+        <h6 className="contact text-center">
           Contactanos en: <br />
           loretotqs2023@gmail.com
           <br />

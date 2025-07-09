@@ -8,25 +8,20 @@ export default function HomeHero(block) {
       
       <div className="container-fluid">
         <div className="row align-items-center">
-          <div className="col-lg-6">
+          <div className="col-lg-6 h-fit">
             <div className="hero-two-content ">
-              <h1 className="mb-4 text-white ">{block.title}</h1>
-              
+              <h1 className=" text-white ">{block.title}</h1>
+            
             </div>
           </div>
           <div className="col-lg-6 justify-content-center" style={{display: "flex"}}>
-          <div className="">
-                {block.button && (
-                
-                  // <a href={'https://wa.me/' +`${navigation.whsp.number}`+ '?text=' + `${block.button.message.replace(/ /g, "%20")}`}  target="_blank"
-                  <a href="https://api.whatsapp.com/send/?phone=573160561540&text=Me+interesa+conocer+mas+sobre+su+asociacion&type=phone_number&app_absent=0" 
-                    target="_blank" className="btn btn-primary btn-lg">
-                    {" "}
-                    {block.button.text}{" "}
-                  </a>
-                )}
-              </div>
-           
+            <div className="hero-two-btn-md-up">
+              {block.button && (
+                <a href="/features/" className="btn btn-primary btn-lg">
+                  {block.button.text}
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </div>

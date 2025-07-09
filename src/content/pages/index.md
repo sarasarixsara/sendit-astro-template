@@ -24,7 +24,7 @@ content_blocks:
     image_alt: File upload
     title: 
     description: >-
-        La selva nos regala un lugar donde se vive en contacto con la naturaleza, Tres Esquinas es habitar en un hogar que tiene alma    
+        Somos un grupo de Señoras voluntarias que ponemos nuestro corazón y alma para el bienestar de la comunidad 
 
     reversed: false
   - _bookshop_name: featureNew/heroNew
@@ -32,7 +32,7 @@ content_blocks:
     image_alt: File upload
     title: 
     description: >-
-        Somos un grupo de Señoras voluntarias que ponemos nuestro corazón y alma para el bienestar de la comunidad
+        Promovemos actividades enfocadas al bienestar de los soldados, pilar fundamental de la Unidad
     reversed: true
 
   - _bookshop_name: featureNew/heroNew
@@ -40,7 +40,7 @@ content_blocks:
     image_alt: File upload
     title: 
     description: >-
-       Promovemos actividades enfocadas al bienestar de los soldados, pilar fundamental de la Unidad
+       Participamos activamente en las actividades del colegio para hacer felices a todos nuestros niños
   
 
   # - _bookshop_name: global/text

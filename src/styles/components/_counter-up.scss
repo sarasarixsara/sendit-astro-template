@@ -3,7 +3,7 @@
 **********/
 .counter-up {
   .section-header {
-    padding: $base-padding * 5 0 $base-padding * 3.1;
+     //padding: $base-padding * 8 0 $base-padding * 3.1;
 
     p {
       width: 60%;
@@ -19,6 +19,16 @@
 
       @include media-breakpoint-down-md {
         width: 100%;
+      }
+      @include media-breakpoint-down-sm {
+      }
+    }
+    h2 {
+      @include media-breakpoint-down-lg {
+        font-size: $base-font-size * 1.5;
+      }
+      @include media-breakpoint-down-sm {
+        font-size: $base-font-size * 1.5;
       }
     }
   }
@@ -76,7 +86,6 @@
     height: 100%;
 
     @include media-breakpoint-down-lg {
-
       &:nth-child(2),
       &:nth-child(4) {
         .counter-up-content-item {
