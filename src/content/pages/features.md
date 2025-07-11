@@ -18,13 +18,13 @@ content_blocks:
 
   - _bookshop_name: feature/hero
     title: Nuestra Misión
-    description: Contribuir al mejoramiento de la calidad de vida del personal activo, perteneciente a la Fuerza Aeroespacial Colombiana, permitiendo con ello la conservacion del nucleo familiar y la estabilidad economica y social. 
+    description: Contribuir al mejoramiento de la calidad de vida del personal activo, perteneciente a la Fuerza Aeroespacial Colombiana, permitiendo con ello la conservación del núcleo familiar y la estabilidad económica y social. 
     reversed : false
 
     
   - _bookshop_name: feature/hero
     title: Nuestra Visión
-    description: "Proyectamos la Asociacion como una empresa con fines sociales, generadora de recursos, que permitan dar cobertura a las necesidades de las familias beneficiarias."
+    description: "Proyectamos la Asociación como una empresa con fines sociales, generadora de recursos, que permitan dar cobertura a las necesidades de las familias beneficiarias."
     reversed : true
 
 ---

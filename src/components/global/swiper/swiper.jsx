@@ -6,7 +6,7 @@ import { Navigation } from 'swiper/modules';
 import HomeHero from '../../home/hero/hero';
 
 const props = {
-    title: "Asociacion FAC Nuestra Señora de Loreto Tres Esquinas",
+    title: "Asociación FAC Nuestra Señora de Loreto Tres Esquinas",
     button: {
         text: "Conoce sobre nosotros",
         link: "https://api.whatsapp.com/send/?phone=573160561540&text=Me+interesa+conocer+mas+sobre+su+asociacion&type=phone_number&app_absent=0/",

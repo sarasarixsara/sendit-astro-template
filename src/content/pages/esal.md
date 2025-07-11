@@ -36,10 +36,10 @@ content_blocks:
         linkTitle: Certificado antecedentes judiciales  
     
 
-      - title: Acta asamblea general No.141
+      - title: Acta asamblea general No.26
         description: ''
         link: /5. ACTA ASAMBLEA GENERAL 27 feb 2025.pdf
-        linkTitle: Acta asamblea general No.141
+        linkTitle: Acta asamblea general No.26
 
       - title: Presentación esal
         description: ''
