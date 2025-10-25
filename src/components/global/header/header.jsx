@@ -25,6 +25,16 @@ export default function GlobalHeader(block) {
           </div>
         </div>
       </div>
+      <iframe
+        width="424"
+        height="240"
+        src="https://www.youtube.com/embed/E5BSybQmoQY"
+        title="Ferstival Hatoviejo Cotrafa"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
     </section>
   );
 }

@@ -2,7 +2,7 @@ import footer from "@data/footer.json";
 
 export default function Footer({}) {
   return (
-    <footer className="footer pt-xxl-19 pt-8 pb-sm-7 pb-5" id="footer">
+    <footer className="footer pt-xxl-19 pt-8 " id="footer">
       <div className="container-fluid">
         <div className="footer-wrapper">
           <div className="row">

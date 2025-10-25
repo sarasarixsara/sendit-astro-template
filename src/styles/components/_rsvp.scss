@@ -1,0 +1,531 @@
+// RSVP Component Styles
+// Replaces all Tailwind classes with custom CSS
+
+.rsvp {
+  position: relative;
+  padding: 8rem 1.5rem;
+  background: linear-gradient(to bottom, white, rgba(243, 232, 255, 0.3), rgba(253, 242, 248, 0.5));
+  overflow: hidden;
+
+  // Background decoration
+  &__bg-decoration {
+    position: absolute;
+    inset: 0;
+    opacity: 0.2;
+  }
+
+  &__bg-blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(64px);
+
+    &--top {
+      top: 5rem;
+      left: 25%;
+      width: 24rem;
+      height: 24rem;
+      background-color: rgba(216, 180, 254, 0.3);
+    }
+
+    &--bottom {
+      bottom: 5rem;
+      right: 25%;
+      width: 20rem;
+      height: 20rem;
+      background-color: rgba(251, 207, 232, 0.3);
+    }
+  }
+
+  // Decorative pattern
+  &__pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.05;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // Main container
+  &__container {
+    position: relative;
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  // Header section
+  &__header {
+    margin-bottom: 4rem;
+  }
+
+  &__header-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__ornament-line {
+    height: 1px;
+    width: 6rem;
+
+    &--left {
+      background: linear-gradient(to right, transparent, rgb(216, 180, 254), rgb(192, 132, 252));
+    }
+
+    &--right {
+      background: linear-gradient(to left, transparent, rgb(216, 180, 254), rgb(192, 132, 252));
+    }
+  }
+
+  &__ornament-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgb(192, 132, 252);
+  }
+
+  &__title {
+    font-family: var(--bs-font-serif, serif);
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, rgb(147, 51, 234), rgb(236, 72, 153), rgb(147, 51, 234));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    @media (min-width: 768px) {
+      font-size: 3.75rem;
+    }
+  }
+
+  &__divider-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__divider-line {
+    width: 4rem;
+    height: 1px;
+
+    &--left {
+      background: linear-gradient(to right, transparent, rgb(216, 180, 254));
+    }
+
+    &--right {
+      background: linear-gradient(to left, transparent, rgb(216, 180, 254));
+    }
+  }
+
+  &__divider-symbol {
+    color: rgb(216, 180, 254);
+  }
+
+  &__subtitle {
+    font-family: var(--bs-font-serif, serif);
+    font-size: 1.25rem;
+    color: rgb(75, 85, 99);
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+
+  // Main card wrapper
+  &__card-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+
+    &:hover &-glow {
+      opacity: 1;
+    }
+  }
+
+  &__card-glow {
+    position: absolute;
+    inset: -1rem;
+    background: linear-gradient(to right, rgba(192, 132, 252, 0.2), rgba(244, 114, 182, 0.2), rgba(192, 132, 252, 0.2));
+    border-radius: 1.5rem;
+    filter: blur(32px);
+    opacity: 0;
+    transition: all 0.7s;
+  }
+
+  // Main card
+  &__card {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 2.5rem;
+    border: 1px solid rgba(243, 232, 255, 0.5);
+
+    @media (min-width: 768px) {
+      padding: 3.5rem;
+    }
+  }
+
+  // Corner ornaments
+  &__corner {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-width: 2px;
+    border-color: rgba(216, 180, 254, 0.5);
+
+    &--top-left {
+      top: 1rem;
+      left: 1rem;
+      border-top-style: solid;
+      border-left-style: solid;
+      border-top-left-radius: 1rem;
+    }
+
+    &--top-right {
+      top: 1rem;
+      right: 1rem;
+      border-top-style: solid;
+      border-right-style: solid;
+      border-top-right-radius: 1rem;
+    }
+
+    &--bottom-left {
+      bottom: 1rem;
+      left: 1rem;
+      border-bottom-style: solid;
+      border-left-style: solid;
+      border-bottom-left-radius: 1rem;
+    }
+
+    &--bottom-right {
+      bottom: 1rem;
+      right: 1rem;
+      border-bottom-style: solid;
+      border-right-style: solid;
+      border-bottom-right-radius: 1rem;
+    }
+  }
+
+  // Deadline message
+  &__deadline {
+    margin-bottom: 2.5rem;
+  }
+
+  &__deadline-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(to right, rgb(250, 245, 255), rgb(253, 242, 248));
+    border: 1px solid rgba(216, 180, 254, 0.6);
+    border-radius: 9999px;
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+
+  &__deadline-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: rgb(192, 132, 252);
+  }
+
+  &__deadline-text {
+    font-family: var(--bs-font-serif, serif);
+    font-size: 1.125rem;
+    color: rgb(55, 65, 81);
+    font-weight: 300;
+  }
+
+  &__deadline-date {
+    font-weight: 400;
+    color: rgb(147, 51, 234);
+  }
+
+  // Contact buttons
+  &__buttons {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  // Button wrapper
+  &__button-wrapper {
+    position: relative;
+
+    &:hover &-glow {
+      opacity: 0.5;
+    }
+
+    &:hover &-btn {
+      transform: scale(1.05);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    &:hover &-sparkle {
+      opacity: 1;
+    }
+  }
+
+  &__button-glow {
+    position: absolute;
+    inset: -0.25rem;
+    border-radius: 9999px;
+    filter: blur(16px);
+    opacity: 0;
+    transition: all 0.5s;
+
+    &--whatsapp {
+      background: linear-gradient(to right, rgb(163, 230, 53), rgb(16, 185, 129));
+    }
+
+    &--email {
+      background: linear-gradient(to right, rgb(192, 132, 252), rgb(244, 114, 182));
+    }
+  }
+
+  // Button
+  &__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    color: white;
+    border-radius: 9999px;
+    padding: 1.25rem 2rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+    text-decoration: none;
+
+    &--whatsapp {
+      background: linear-gradient(to right, rgb(132, 204, 22), rgb(16, 185, 129));
+
+      &:hover {
+        background: linear-gradient(to right, rgb(101, 163, 13), rgb(5, 150, 105));
+      }
+    }
+
+    &--email {
+      background: linear-gradient(to right, rgb(168, 85, 247), rgb(236, 72, 153));
+
+      &:hover {
+        background: linear-gradient(to right, rgb(147, 51, 234), rgb(219, 39, 119));
+      }
+    }
+  }
+
+  &__button-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    transition: transform 0.3s;
+
+    .rsvp__button-wrapper:hover & {
+      transform: scale(1.1);
+    }
+  }
+
+  &__button-text {
+    font-family: var(--bs-font-serif, serif);
+    font-size: 1.125rem;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__button-sparkle {
+    position: absolute;
+    top: -0.25rem;
+    right: -0.25rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: white;
+    border-radius: 9999px;
+    opacity: 0;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+    .rsvp__button-wrapper:hover & {
+      opacity: 1;
+    }
+  }
+
+  // Phone contact
+  &__phone {
+    margin-bottom: 2rem;
+  }
+
+  &__phone-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(to right, rgba(250, 245, 255, 0.5), rgba(253, 242, 248, 0.5));
+    border: 1px solid rgb(243, 232, 255);
+    border-radius: 9999px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__phone-icon-wrapper {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  &__phone-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: rgb(192, 132, 252);
+  }
+
+  &__phone-text {
+    font-family: var(--bs-font-serif, serif);
+    color: rgb(55, 65, 81);
+    font-size: 1rem;
+    font-weight: 300;
+
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__phone-number {
+    font-weight: 400;
+    color: rgb(147, 51, 234);
+  }
+
+  // Bottom ornament
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(243, 232, 255, 0.5);
+  }
+
+  &__footer-divider {
+    position: relative;
+  }
+
+  &__footer-line {
+    height: 1px;
+    width: 5rem;
+
+    &--left {
+      background: linear-gradient(to right, transparent, rgb(216, 180, 254), rgb(248, 180, 217));
+    }
+
+    &--right {
+      background: linear-gradient(to left, transparent, rgb(248, 180, 217), rgb(216, 180, 254));
+    }
+  }
+
+  &__footer-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(192, 132, 252);
+    border-radius: 9999px;
+  }
+
+  &__footer-heart-wrapper {
+    position: relative;
+  }
+
+  &__footer-heart-glow {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom right, rgb(192, 132, 252), rgb(244, 114, 182));
+    border-radius: 9999px;
+    filter: blur(16px);
+    opacity: 0.3;
+  }
+
+  &__footer-heart {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    color: rgb(192, 132, 252);
+  }
+
+  // Thank you message
+  &__thank-you {
+    margin-top: 1.5rem;
+    font-family: var(--bs-font-serif, serif);
+    color: rgb(107, 114, 128);
+    font-style: italic;
+    font-size: 0.875rem;
+    letter-spacing: 0.025em;
+  }
+}
+
+// Animations specific to RSVP
+@keyframes pulse-slow {
+  0%, 100% { 
+    opacity: 0.15; 
+    transform: scale(1); 
+  }
+  50% { 
+    opacity: 0.25; 
+    transform: scale(1.05); 
+  }
+}
+
+@keyframes pulse-slow-delayed {
+  0%, 100% { 
+    opacity: 0.12; 
+    transform: scale(1); 
+  }
+  50% { 
+    opacity: 0.22; 
+    transform: scale(1.08); 
+  }
+}
+
+@keyframes pulse-gentle {
+  0%, 100% { 
+    transform: scale(1); 
+    opacity: 1; 
+  }
+  50% { 
+    transform: scale(1.1); 
+    opacity: 0.85; 
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 10s ease-in-out infinite;
+}
+
+.animate-pulse-slow-delayed {
+  animation: pulse-slow-delayed 12s ease-in-out infinite;
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 3s ease-in-out infinite;
+}

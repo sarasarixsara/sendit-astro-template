@@ -173,6 +173,7 @@ export default function Navigation({ pageUrl }) {
                 <a
                   href={`${navigation.nav_btn?.link}`}
                   className="btn btn-sm btn-links"
+                  target="_blank"
                 >
                   {navigation.nav_btn?.text}
                 </a>
@@ -182,7 +183,7 @@ export default function Navigation({ pageUrl }) {
           ) : null }
         </div>
           <div className="whsp-container">
-            <a href="/" target="_blank">
+            <a href="https://wa.link/huxt9d" target="_blank">
               <img src="../images/whsp-button.png" alt="Descripción de la imagen" width={"50"} />
             </a>
           </div>

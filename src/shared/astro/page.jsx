@@ -1,5 +1,7 @@
 const components = {};
-const componentImports = import.meta.glob("../../components/**/*.jsx", {
+// Import both .jsx and .tsx component files so dynamic blocks (Bookshop) can load
+// components authored in either JSX or TSX.
+const componentImports = import.meta.glob("../../components/**/*.{jsx,tsx}", {
   eager: true,
 });
 Object.entries(componentImports).forEach(([path, obj]) => {

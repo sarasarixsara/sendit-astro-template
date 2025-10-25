@@ -1,0 +1,456 @@
+// Countdown Component Styles
+// Replaces all Tailwind classes with custom CSS
+
+.countdown {
+  position: relative;
+  padding: 8rem 1.5rem;
+  background: linear-gradient(to bottom right, white, rgba(243, 232, 255, 0.3), rgba(252, 231, 243, 0.3));
+  overflow: hidden;
+
+  // Background decoration
+  &__bg-decoration {
+    position: absolute;
+    inset: 0;
+    opacity: 0.3;
+  }
+
+  &__bg-blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(64px);
+
+    &--top {
+      top: 5rem;
+      right: 5rem;
+      width: 18rem;
+      height: 18rem;
+      background-color: rgba(216, 180, 254, 0.3);
+    }
+
+    &--bottom {
+      bottom: 5rem;
+      left: 5rem;
+      width: 24rem;
+      height: 24rem;
+      background-color: rgba(251, 207, 232, 0.2);
+    }
+  }
+
+  // Decorative pattern
+  &__pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.05;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // Main container
+  &__container {
+    position: relative;
+    max-width: 72rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  // Header section
+  &__header {
+    margin-bottom: 4rem;
+  }
+
+  &__header-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__ornament-line {
+    height: 1px;
+    width: 5rem;
+
+    &--left {
+      background: linear-gradient(to right, transparent, rgba(216, 180, 254, 0.75), rgb(192, 132, 252));
+    }
+
+    &--right {
+      background: linear-gradient(to left, transparent, rgba(216, 180, 254, 0.75), rgb(192, 132, 252));
+    }
+  }
+
+  &__ornament-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: rgb(192, 132, 252);
+  }
+
+  &__title {
+    font-family: var(--bs-font-serif, serif);
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, rgb(147, 51, 234), rgb(236, 72, 153), rgb(147, 51, 234));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    @media (min-width: 768px) {
+      font-size: 3.75rem;
+    }
+  }
+
+  &__divider-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  &__divider-line {
+    width: 4rem;
+    height: 1px;
+
+    &--left {
+      background: linear-gradient(to right, transparent, rgb(216, 180, 254));
+    }
+
+    &--right {
+      background: linear-gradient(to left, transparent, rgb(216, 180, 254));
+    }
+  }
+
+  &__divider-symbol {
+    color: rgb(216, 180, 254);
+  }
+
+  &__subtitle {
+    font-family: var(--bs-font-serif, serif);
+    font-size: 1.25rem;
+    color: rgb(75, 85, 99);
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+  }
+
+  // Cards grid
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  // Individual card
+  &__card {
+    position: relative;
+
+    &-glow {
+      position: absolute;
+      inset: 0;
+      border-radius: 1.5rem;
+      filter: blur(32px);
+      opacity: 0;
+      transition: all 0.7s;
+      transform: scale(1.1);
+
+      &--purple-pink {
+        background: linear-gradient(to bottom right, rgb(168, 85, 247), rgb(236, 72, 153));
+      }
+
+      &--pink-purple {
+        background: linear-gradient(to bottom right, rgb(236, 72, 153), rgb(192, 132, 252));
+      }
+
+      &--purple-light {
+        background: linear-gradient(to bottom right, rgb(192, 132, 252), rgb(244, 114, 182));
+      }
+
+      &--pink-light {
+        background: linear-gradient(to bottom right, rgb(244, 114, 182), rgb(168, 85, 247));
+      }
+    }
+
+    &:hover &-glow {
+      opacity: 0.2;
+    }
+
+    &-content {
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      border-radius: 1.5rem;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(243, 232, 255, 0.5);
+      padding: 2rem;
+      transition: all 0.5s;
+
+      @media (min-width: 768px) {
+        padding: 2.5rem;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        border-color: rgb(216, 180, 254);
+      }
+    }
+
+    // Corner decorations
+    &-corner {
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      border-color: rgba(216, 180, 254, 0.4);
+
+      &--top-left {
+        top: 0.5rem;
+        left: 0.5rem;
+        border-top: 1px solid;
+        border-left: 1px solid;
+        border-top-left-radius: 0.5rem;
+      }
+
+      &--top-right {
+        top: 0.5rem;
+        right: 0.5rem;
+        border-top: 1px solid;
+        border-right: 1px solid;
+        border-top-right-radius: 0.5rem;
+      }
+
+      &--bottom-left {
+        bottom: 0.5rem;
+        left: 0.5rem;
+        border-bottom: 1px solid;
+        border-left: 1px solid;
+        border-bottom-left-radius: 0.5rem;
+      }
+
+      &--bottom-right {
+        bottom: 0.5rem;
+        right: 0.5rem;
+        border-bottom: 1px solid;
+        border-right: 1px solid;
+        border-bottom-right-radius: 0.5rem;
+      }
+    }
+
+    // Number display
+    &-number {
+      font-size: 3.75rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.025em;
+
+      @media (min-width: 768px) {
+        font-size: 4.5rem;
+      }
+
+      &--purple-pink {
+        background-image: linear-gradient(to bottom right, rgb(168, 85, 247), rgb(236, 72, 153));
+      }
+
+      &--pink-purple {
+        background-image: linear-gradient(to bottom right, rgb(236, 72, 153), rgb(192, 132, 252));
+      }
+
+      &--purple-light {
+        background-image: linear-gradient(to bottom right, rgb(192, 132, 252), rgb(244, 114, 182));
+      }
+
+      &--pink-light {
+        background-image: linear-gradient(to bottom right, rgb(244, 114, 182), rgb(168, 85, 247));
+      }
+    }
+
+    // Card divider
+    &-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    &-divider-line {
+      height: 1px;
+      width: 2rem;
+      opacity: 0.5;
+
+      &--purple-pink {
+        background: linear-gradient(to right, rgb(168, 85, 247), rgb(236, 72, 153));
+      }
+
+      &--pink-purple {
+        background: linear-gradient(to right, rgb(236, 72, 153), rgb(192, 132, 252));
+      }
+
+      &--purple-light {
+        background: linear-gradient(to right, rgb(192, 132, 252), rgb(244, 114, 182));
+      }
+
+      &--pink-light {
+        background: linear-gradient(to right, rgb(244, 114, 182), rgb(168, 85, 247));
+      }
+
+      &--left {
+        background: linear-gradient(to right, rgb(168, 85, 247), rgb(236, 72, 153));
+      }
+
+      &--right {
+        background: linear-gradient(to left, rgb(168, 85, 247), rgb(236, 72, 153));
+      }
+    }
+
+    &-divider-dot {
+      width: 0.25rem;
+      height: 0.25rem;
+      border-radius: 9999px;
+
+      &--purple-pink {
+        background: linear-gradient(to right, rgb(168, 85, 247), rgb(236, 72, 153));
+      }
+
+      &--pink-purple {
+        background: linear-gradient(to right, rgb(236, 72, 153), rgb(192, 132, 252));
+      }
+
+      &--purple-light {
+        background: linear-gradient(to right, rgb(192, 132, 252), rgb(244, 114, 182));
+      }
+
+      &--pink-light {
+        background: linear-gradient(to right, rgb(244, 114, 182), rgb(168, 85, 247));
+      }
+    }
+
+    // Label
+    &-label {
+      font-family: var(--bs-font-serif, serif);
+      font-size: 0.875rem;
+      color: rgb(75, 85, 99);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      @media (min-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+
+    // Sparkle effect
+    &-sparkle {
+      position: absolute;
+      top: -0.5rem;
+      right: -0.5rem;
+      opacity: 0;
+      transition: opacity 0.5s;
+
+      .countdown__card:hover & {
+        opacity: 1;
+      }
+    }
+
+    &-sparkle-dot {
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 9999px;
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+      &--purple-pink {
+        background: linear-gradient(to bottom right, rgb(168, 85, 247), rgb(236, 72, 153));
+      }
+
+      &--pink-purple {
+        background: linear-gradient(to bottom right, rgb(236, 72, 153), rgb(192, 132, 252));
+      }
+
+      &--purple-light {
+        background: linear-gradient(to bottom right, rgb(192, 132, 252), rgb(244, 114, 182));
+      }
+
+      &--pink-light {
+        background: linear-gradient(to bottom right, rgb(244, 114, 182), rgb(168, 85, 247));
+      }
+    }
+  }
+
+  // Bottom ornament section
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  &__footer-divider {
+    position: relative;
+  }
+
+  &__footer-line {
+    height: 1px;
+    width: 6rem;
+
+    &--left {
+      background: linear-gradient(to right, transparent, rgb(216, 180, 254), rgb(248, 180, 217));
+    }
+
+    &--right {
+      background: linear-gradient(to left, transparent, rgb(248, 180, 217), rgb(216, 180, 254));
+    }
+  }
+
+  &__footer-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(192, 132, 252);
+    border-radius: 9999px;
+  }
+
+  &__footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__footer-icon {
+    width: 2rem;
+    height: 2rem;
+    color: rgb(192, 132, 252);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  &__footer-text {
+    font-family: var(--bs-font-serif, serif);
+    color: rgb(107, 114, 128);
+    font-style: italic;
+    font-size: 0.875rem;
+    letter-spacing: 0.025em;
+  }
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
