@@ -11,13 +11,20 @@ Object.entries(componentImports).forEach(([path, obj]) => {
   }
   const bookshopName = parts.join("/");
   components[bookshopName] = obj.default;
+  console.log(`Registered: ${bookshopName} -> ${obj.default ? 'OK' : 'UNDEFINED'}`);
 });
+
+console.log('All components:', Object.keys(components));
 
 export default function Page({ contentBlocks }) {
   return (
     <main>
       {contentBlocks.map((block, i) => {
         const Component = components[block._bookshop_name];
+        if (!Component) {
+          console.error(`NOT FOUND: ${block._bookshop_name}`);
+          console.error('Available:', Object.keys(components));
+        }
         return <Component {...block} key={i} />;
       })}
     </main>

@@ -29,4 +29,6 @@ content_blocks:
     whspUrl: https://wa.me/573001234567?text=Hola!%20Confirmo%20mi%20asistencia%20a%20la%20fiesta
     emailUrl: mailto:fiesta@ejemplo.com?subject=Confirmación%20de%20Asistencia
 
+  - _bookshop_name: domeGallery
+
 ---
