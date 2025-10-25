@@ -6,9 +6,9 @@
 //   phone: string;
 // }
 
-export default function rsvp(block: any) {
+export default function Rsvp(block: any) {
   return (
-    <section className="rsvp">
+    <section className="Rsvp">
       {/* Background decoration */}
       <div className="rsvp__bg-decoration">
         <div className="rsvp__bg-blob rsvp__bg-blob--top animate-pulse-slow" />

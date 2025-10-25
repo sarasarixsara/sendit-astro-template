@@ -12,21 +12,21 @@ seo:
 content_blocks:
 
   - _bookshop_name: heroSection
-    eventDate: Defensa Legal Especializada
-    groomName: Asesoría personalizada en Derecho Penal y Justicia Militar. Tu solución, mi compromiso.
+    eventDate: 15 de Diciembre, 2025
+    groomName: Sofía
 
   - _bookshop_name: countDown
     eventDate: 15 de Diciembre, 2025
 
   - _bookshop_name: eventDetails
-    message1: Defensa Legal Especializada
-    mesagge2: Asesoría personalizada en Derecho Penal y Justicia Militar. Tu solución, mi compromiso.
-    receptionPlace: public/images/hero/background.jpg
-    dressCode: Reports dashboard
+    message1: ¡Vamos a celebrar juntas!
+    mesagge2: Prepárate para una noche llena de música, risas y muchas sorpresas
+    receptionPlace: Jardín Las Palmas - Calle Principal #123
+    dressCode: Elegante casual - Colores pastel
 
-  - _bookshop_name: rsvp
-    phone: 15 de Diciembre, 2025
-    whspUrl: no tengo
-    emailUrl: notengo
+  - _bookshop_name: rsvp/Rsvp
+    phone: +57 300 123 4567
+    whspUrl: https://wa.me/573001234567?text=Hola!%20Confirmo%20mi%20asistencia%20a%20la%20fiesta
+    emailUrl: mailto:fiesta@ejemplo.com?subject=Confirmación%20de%20Asistencia
 
 ---
