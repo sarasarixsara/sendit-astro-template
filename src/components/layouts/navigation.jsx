@@ -39,8 +39,8 @@ export default function Navigation({ pageUrl }) {
           id="mainnavigationBar"
         >
           <div className="container-fluid">
-            <div className="d-flex w-100 justify-content-between align-items-start">
-              <div className="d-flex d-lg-none flex-column">
+            <div className="d-flex w-100 justify-content-between align-items-center">
+              <div className="d-flex d-sm-none flex-column ">
                 <a className="navbar-brand mb-2" href="/">
                   <img src={navigation.logo} alt="Nav-Logo" height={"45px"} />
                 </a>
@@ -48,7 +48,21 @@ export default function Navigation({ pageUrl }) {
                   href={`${navigation.btn.link}`}
                   target="_blank"
                   className="btn btn-primary rounded"
-                  style={{ padding: "0.25rem 0.5rem", fontSize: "0.875rem" }}
+                 
+                >
+                  {navigation.btn.text}
+                </a>
+              </div>
+              
+              <div className="d-none d-sm-flex d-lg-none align-items-center gap-2">
+                <a className="navbar-brand mb-0" href="/" style={{ width: "auto" }}>
+                  <img src={navigation.logo} alt="Nav-Logo" height={"35px"} />
+                </a>
+                <a
+                  href={`${navigation.btn.link}`}
+                  target="_blank"
+                  className="btn btn-sm btn-primary rounded"
+                  style={{ padding: "0.25rem 0.5rem", fontSize: "1rem", whiteSpace: "nowrap" }}
                 >
                   {navigation.btn.text}
                 </a>
