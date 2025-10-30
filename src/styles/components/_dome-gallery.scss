@@ -101,7 +101,7 @@ body.dg-scroll-lock {
 // Image Item Styles
 .item__image {
   position: absolute;
-  inset: 10px;
+  inset: 2px;
   border-radius: var(--tile-radius, 12px);
   overflow: hidden;
   cursor: pointer;
@@ -114,7 +114,7 @@ body.dg-scroll-lock {
   
   &--reference {
     position: absolute;
-    inset: 10px;
+    inset: 2px;
     pointer-events: none;
   }
 }
@@ -153,7 +153,7 @@ body.dg-scroll-lock {
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 
@@ -170,7 +170,7 @@ body.dg-scroll-lock {
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 

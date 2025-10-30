@@ -1,6 +1,14 @@
 ---
 import Page from "@shared/page";
-import Layout, { SEOProps } from "./Layout.astro";
+import Layout, { type SEOProps } from "./Layout.astro";
+
+// Import React components
+import CountDown from "@components/countDown/countDown";
+import PhotoGallery from "@components/photoGallery/photoGallery";
+import HeroSection from "@components/heroSection/heroSection";
+import EventDetails from "@components/eventDetails/eventDetails";
+import Rsvp from "@components/rsvp/Rsvp";
+import DomeGallery from "@components/domeGallery/domeGallery";
 
 type Props = {
   frontmatter: {
@@ -17,5 +25,109 @@ const props = Astro.props.frontmatter;
 ---
 
 <Layout {...props}>
-  <Page bookshop:live contentBlocks={props.content_blocks} />
+  <HeroSection 
+    client:load
+    eventDate="13 de Diciembre, 2025"
+    groomName="María Alejandra Gutierrez"
+  />
+  <!-- <DomeGallery 
+    client:load
+    fit={0.15}
+    minRadius={1000}
+    segments={35}
+    dragSensitivity={20}
+    enlargeTransitionMs={300}
+    overlayBlurColor="#060010"
+    imageBorderRadius="30px"
+    openedImageBorderRadius="30px"
+    openedImageWidth="400px"
+    openedImageHeight="400px"
+    grayscale={false}
+    images={[
+      {
+        src: '/images/carrousel/image1.jpg',
+        alt: 'Fiesta con globos de colores'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=774&auto=format&fit=crop',
+        alt: 'Cumpleaños con pastel y flores'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=774&auto=format&fit=crop',
+        alt: 'Celebración de fiesta'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1464207687429-7505649dae38?q=80&w=774&auto=format&fit=crop',
+        alt: 'Decoraciones de cumpleaños'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=774&auto=format&fit=crop',
+        alt: 'Confeti y celebración'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=774&auto=format&fit=crop',
+        alt: 'Fiesta de cumpleaños'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1565708676705-54ed0ffaaf54?q=80&w=774&auto=format&fit=crop',
+        alt: 'Globos festivos'
+      }
+    ]}
+  /> -->
+  
+  <CountDown 
+    client:load
+    eventDate="13 de Diciembre, 2025"
+  />
+    <PhotoGallery 
+    client:load
+    title="Recuerdos de Maria Alejandra"
+    subtitle="Momentos que siempre guardaremos en el corazon"
+    images={[
+      {
+        src: '/images/carrousel/image1.jpeg',
+        alt: 'En su cumpleanos',
+        caption: 'Un momento especial'
+      },
+      {
+        src: '/images/carrousel/image2.jpeg',
+        alt: 'Celebrando con amigos',
+        caption: 'Rodeada de amor'
+      },
+      {
+        src: '/images/carrousel/image3.jpeg',
+        alt: 'Sonriendo feliz',
+        caption: 'Pura alegria'
+      },
+      {
+        src: '/images/carrousel/image4.jpeg',
+        alt: 'Momento inolvidable',
+        caption: 'Recuerdos para siempre'
+      },
+      {
+        src: '/images/carrousel/image5.jpeg',
+        alt: 'Momento inolvidable',
+        caption: 'Recuerdos para siempre'
+      }
+    ]}
+  />
+  
+  <EventDetails 
+    client:load
+    message1="Vamos a celebrar juntos!"
+    mesagge2="Preparate para una noche llena de musica, risas y muchas sorpresas"
+    receptionPlace="Chalet La Novia. Calle 108A #48-86 S. B/ Aparco. Indicaciones: Bajando por Avda Mirolindo, pasa el 1er semaforo despues de Mercacentro 10 del poblado y gira a la derecha, hay dos entradas: 1- Calle 108, del antiguo club Recreacafe, actual hotel Habitad, sigue los avisos del chalet; la via esta en mal estado. 2- Calle 109, antiguo UMIT, entra a la derrcha, luego derecha e izquierda."
+    dressCode="Elegante casual - Colores pastel"
+  />
+  
+
+  
+  <Rsvp 
+    client:load
+    phone="3023802903"
+    whspUrl="https://wa.me/573023802903?text=Hola!%20Confirmo%20mi%20asistencia%20a%20la%20fiesta"
+    emailUrl="mailto:fiesta@ejemplo.com?subject=Confirmación%20de%20Asistencia"
+  />
+  
+  
 </Layout>

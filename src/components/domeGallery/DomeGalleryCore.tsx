@@ -35,34 +35,35 @@ type ItemDef = {
 };
 
 const DEFAULT_IMAGES: ImageItem[] = [
-  {
-    src: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Fiesta con globos de colores'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Cumpleaños con pastel y flores'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Celebración de fiesta'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1464207687429-7505649dae38?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Decoraciones de cumpleaños'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Confeti y celebración'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Fiesta de cumpleaños'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1565708676705-54ed0ffaaf54?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Globos festivos'
-  }
+ {
+        src: '/images/carrousel/image1.jpg',
+        alt: 'Fiesta con globos de colores'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=774&auto=format&fit=crop',
+        alt: 'Cumpleaños con pastel y flores'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=774&auto=format&fit=crop',
+        alt: 'Celebración de fiesta'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1464207687429-7505649dae38?q=80&w=774&auto=format&fit=crop',
+        alt: 'Decoraciones de cumpleaños'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=774&auto=format&fit=crop',
+        alt: 'Confeti y celebración'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=774&auto=format&fit=crop',
+        alt: 'Fiesta de cumpleaños'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1565708676705-54ed0ffaaf54?q=80&w=774&auto=format&fit=crop',
+        alt: 'Globos festivos'
+      }
+
 ];
 
 const DEFAULTS = {
@@ -146,7 +147,7 @@ export default function DomeGallery({
   fitBasis = 'auto',
   minRadius = 600,
   maxRadius = Infinity,
-  padFactor = 0.25,
+  padFactor = 0.05,
   overlayBlurColor = '#060010',
   maxVerticalRotationDeg = DEFAULTS.maxVerticalRotationDeg,
   dragSensitivity = DEFAULTS.dragSensitivity,
@@ -496,7 +497,7 @@ export default function DomeGallery({
       const originalImg = overlay.querySelector('img');
       if (originalImg) {
         const img = originalImg.cloneNode() as HTMLImageElement;
-        img.style.cssText = 'width: 100%; height: 100%; object-fit: cover;';
+        img.style.cssText = 'width: 100%; height: 100%; object-fit: contain;';
         animatingOverlay.appendChild(img);
       }
 
@@ -622,7 +623,7 @@ export default function DomeGallery({
     const img = document.createElement('img');
     img.src = rawSrc;
     img.alt = rawAlt;
-    img.style.cssText = `width:100%; height:100%; object-fit:cover; filter:${grayscale ? 'grayscale(1)' : 'none'};`;
+    img.style.cssText = `width:100%; height:100%; object-fit:contain; filter:${grayscale ? 'grayscale(1)' : 'none'};`;
     overlay.appendChild(img);
     viewerRef.current!.appendChild(overlay);
     const tx0 = tileR.left - frameR.left;
@@ -760,7 +761,7 @@ export default function DomeGallery({
                       src={it.src}
                       draggable={false}
                       alt={it.alt}
-                      className="w-full h-full object-cover pointer-events-none"
+                      className="w-full h-full object-contain pointer-events-none"
                       style={{
                         backfaceVisibility: 'hidden',
                         filter: `var(--image-filter, ${grayscale ? 'grayscale(1)' : 'none'})`

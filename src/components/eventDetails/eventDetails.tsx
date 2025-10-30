@@ -98,7 +98,7 @@ export default function EventDetails(block: any){
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <p className="event-details__card-info-text">Toda la noche</p>
+                  <p className="event-details__card-info-text">Te esperamos a las 6:00 pm</p>
                 </div>
 
                 <div className="event-details__card-info-item">
@@ -114,19 +114,15 @@ export default function EventDetails(block: any){
             </div>
           </div>
 
-          {/* Dress Code */}
-          <div className="event-details__card animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            {/* Glow effect */}
+          {/* <div className="event-details__card animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <div className="event-details__card-glow event-details__card-glow--purple" />
             
             <div className="event-details__card-content event-details__card-content--purple event-details__card-content--dress-code">
-              {/* Corner decorations */}
               <div className="event-details__card-corner event-details__card-corner--top-left event-details__card-corner--purple" />
               <div className="event-details__card-corner event-details__card-corner--top-right event-details__card-corner--purple" />
               <div className="event-details__card-corner event-details__card-corner--bottom-left event-details__card-corner--purple" />
               <div className="event-details__card-corner event-details__card-corner--bottom-right event-details__card-corner--purple" />
 
-              {/* Icon with glow */}
               <div className="event-details__card-icon-wrapper">
                 <div className="event-details__card-icon-container">
                   <div className="event-details__card-icon-glow event-details__card-icon-glow--purple" />
@@ -148,7 +144,6 @@ export default function EventDetails(block: any){
                 Código de Vestimenta
               </h3>
 
-              {/* Divider */}
               <div className="event-details__card-divider">
                 <div className="event-details__card-divider-line event-details__card-divider-line--purple-left" />
                 <div className="event-details__card-divider-dot event-details__card-divider-dot--purple" />
@@ -159,7 +154,7 @@ export default function EventDetails(block: any){
                 <p className="event-details__card-dress-text">{block.dressCode}</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

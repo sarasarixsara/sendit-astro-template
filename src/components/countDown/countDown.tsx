@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from "react";
 
-// interface CountdownProps {
-//   eventDate: string; // Format: "15 de Diciembre, 2025"
-// }
+interface CountdownProps {
+  eventDate: string; // Format: "15 de Diciembre, 2025"
+}
 
-export default function countDown(block: any) {
+export default function CountDown({ eventDate }: CountdownProps) {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -15,38 +15,58 @@ export default function countDown(block: any) {
   });
 
   useEffect(() => {
+    
     // Parse the Spanish date format
     const months: Record<string, number> = {
       enero: 0, febrero: 1, marzo: 2, abril: 3, mayo: 4, junio: 5,
       julio: 6, agosto: 7, septiembre: 8, octubre: 9, noviembre: 10, diciembre: 11
     };
 
-    const dateParts = block.eventDate.toLowerCase().match(/(\d+)\s+de\s+(\w+),?\s+(\d+)/);
-    if (!dateParts) return;
+    const dateParts = eventDate.toLowerCase().match(/(\d+)\s+de\s+(\w+),?\s+(\d+)/);
+    // console.log('Date parts:', dateParts);
+    
+    if (!dateParts) {
+      // console.error('Could not parse date:', eventDate);
+      return;
+    }
 
     const day = parseInt(dateParts[1]);
     const month = months[dateParts[2]];
     const year = parseInt(dateParts[3]);
+    
+    // console.log('Parsed date:', { day, month, year });
+    
     const targetDate = new Date(year, month, day).getTime();
+    // console.log('Target date:', new Date(targetDate));
 
-    const timer = setInterval(() => {
+    const updateCountdown = () => {
       const now = new Date().getTime();
       const difference = targetDate - now;
 
+      // console.log('Time difference:', difference);
+
       if (difference > 0) {
-        setTimeLeft({
+        const newTimeLeft = {
           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
           hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
           minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
           seconds: Math.floor((difference % (1000 * 60)) / 1000),
-        });
+        };
+        // console.log('New time left:', newTimeLeft);
+        setTimeLeft(newTimeLeft);
       } else {
-        clearInterval(timer);
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       }
-    }, 1000);
+    };
+
+    // Update immediately
+    updateCountdown();
+
+    // Then update every second
+    const timer = setInterval(updateCountdown, 1000);
 
     return () => clearInterval(timer);
-  }, [block.eventDate]);
+  }, [eventDate]);
 
   return (
     <section className="countdown">
