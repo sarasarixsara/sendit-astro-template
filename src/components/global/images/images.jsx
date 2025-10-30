@@ -3,12 +3,12 @@ const md = new MarkdownIt({ html: true });
 
 export default function GlobalTestimonial(block) {
   return (
-    <section className="testimonial">
+    <section style={{ backgroundColor: "#ffffff", paddingTop: "20px", paddingBottom: "20px" }}>
       <div className="container">
         <div className="row align-items-center">
           <div
             className="col-lg-8 mx-auto text-center mb-2"
-            style={{ backgroundColor: "black" }}
+            
           >
             <div className="testimonial-content">
               <h2>
@@ -34,15 +34,14 @@ function Testimonial({ slide, i }) {
           className="testimonial-item-person flex-column justify-content-between"
           style={{ height: "100%", display: "flex" }}
         >
-          <div>
-
+         
             <img
               src={slide.image}
               alt="logo"
               className={slide.image_alt}
+              style={{borderRadius: "10px"}}
               loading="lazy"
             />
-          </div>
         </div>
       </div>
     </div>

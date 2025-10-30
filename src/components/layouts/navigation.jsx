@@ -21,21 +21,35 @@ export default function Navigation({ pageUrl }) {
   };
 
   const generateLink = (phone, message) => {
-    return 'https://wa.me/' + `${phone}` + '?text=' + `${message.replace(/ /g, "%20")}`
+    return (
+      "https://wa.me/" +
+      `${phone}` +
+      "?text=" +
+      `${message.replace(/ /g, "%20")}`
+    );
   };
 
   return (
     <>
       <header>
         <nav
-          className={`navbar navbar-expand-lg position-fixed w-100 zindex-dropdown${isSticky ? " sticky-nav" : ""
-            }`}
+          className={`navbar navbar-expand-lg position-fixed w-100 zindex-dropdown${
+            isSticky ? " sticky-nav" : ""
+          }`}
           id="mainnavigationBar"
         >
           <div className="container-fluid">
-            <a className="navbar-brand" href="/" >
+            <a className="navbar-brand" href="/">
               <img src={navigation.logo} alt="Nav-Logo" height={"45px"} />
             </a>
+            <a
+              href={`${navigation.btn.link}`}
+              target="_blank"
+              className="btn-primary d-lg-none p-1 rounded"
+            >
+              {navigation.btn.text}
+            </a>
+
             <button
               className="navbar-toggler"
               type="button"
@@ -120,51 +134,62 @@ export default function Navigation({ pageUrl }) {
                   <li key={i} className="nav-item">
                     <a
                       href={`${link.link}`}
-                      className={`nav-link ${pageUrl?.pathname === link.link ? "active" : ""
-                        }`}
+                      className={`nav-link ${
+                        pageUrl?.pathname === link.link ? "active" : ""
+                      }`}
                     >
                       {link.text}
                     </a>
                   </li>
                 ))}
                 <li className="nav-item dropdown">
-                  <a className="nav-link " href="/" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a
+                    className="nav-link "
+                    href="/"
+                    role="link"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     Soluciones
-                    
                   </a>
                   <ul className="dropdown-menu">
                     {navigation.solutions.map((link, i) => (
-                      <li key={i} >
+                      <li key={i}>
                         <a
                           href={`${link.link}`}
-                          className={`dropdown-item ${pageUrl?.pathname === link.link ? "active" : ""
-                            }`}
+                          className={`dropdown-item ${
+                            pageUrl?.pathname === link.link ? "active" : ""
+                          }`}
                         >
                           {link.text}
                         </a>
                       </li>
                     ))}
-
                   </ul>
                 </li>
                 <li className="nav-item dropdown">
-                  <a className="nav-link " href="/" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a
+                    className="nav-link "
+                    href="/"
+                    role="link"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     Productos
-                    
                   </a>
                   <ul className="dropdown-menu">
                     {navigation.products.map((link, i) => (
-                      <li key={i} >
+                      <li key={i}>
                         <a
                           href={`${link.link}`}
-                          className={`dropdown-item ${pageUrl?.pathname === link.link ? "active" : ""
-                            }`}
+                          className={`dropdown-item ${
+                            pageUrl?.pathname === link.link ? "active" : ""
+                          }`}
                         >
                           {link.text}
                         </a>
                       </li>
                     ))}
-
                   </ul>
                 </li>
               </ul>
@@ -173,6 +198,7 @@ export default function Navigation({ pageUrl }) {
               <div className="nav-item">
                 <a
                   href={`${navigation.btn.link}`}
+                  target="_blank"
                   //className="btn btn-sm btn-links"
                   className="btn btn-sm btn-primary"
                 >
@@ -181,8 +207,18 @@ export default function Navigation({ pageUrl }) {
               </div>
             </div>
             <div className="whsp-container">
-              <a href={`${generateLink(navigation.whsp.number, navigation.whsp.message)}`} target="_blank">
-                <img src={navigation.whsp.src} alt="Descripción de la imagen" width={"50"} />
+              <a
+                href={`${generateLink(
+                  navigation.whsp.number,
+                  navigation.whsp.message
+                )}`}
+                target="_blank"
+              >
+                <img
+                  src={navigation.whsp.src}
+                  alt="Descripción de la imagen"
+                  width={"50"}
+                />
               </a>
             </div>
           </div>

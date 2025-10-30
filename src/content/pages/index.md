@@ -11,6 +11,31 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: global/swiper
+  - _bookshop_name: global/images/imagesSlider
+    title: 
+    title_suffix: Conoce nuestra app Nuplin
+    description: >-
+      
+    slider:
+      - image: /images/testimonial/nuplin6.jpeg
+        image_alt: Consultoría y Diseño
+
+      - image: /images/testimonial/nuplin3.jpeg
+        image_alt: Profile photo of Pete Fish
+        
+      - image: /images/testimonial/nuplin4.jpeg
+        image_alt: Profile photo of Dolly Watsona
+        
+      - image: /images/testimonial/nuplin2.jpeg
+        image_alt: Soluciones en Fibra Óptica
+       
+      - image: /images/testimonial/nuplin5.jpeg
+        image_alt: Consultoría y Diseño
+
+      - image: /images/testimonial/nuplin1.jpeg
+        image_alt: Consultoría y Diseño
+
+
   - _bookshop_name: global/counter
     title: Disponibilidad de los Servicios de 
     title_suffix: Conectividad a Internet

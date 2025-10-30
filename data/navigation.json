@@ -53,8 +53,8 @@
   ],
 
   "btn": {
-    "link": "https://api.whatsapp.com/send/?phone=573138825184&text=Me+interesa+conocer+mas+sobre+sus+productos&type=phone_number&app_absent=0",
-    "text": "Contáctanos"
+    "link": "https://clientes.portalinternet.io/saldo/convergencia-digital/",
+    "text": "Paga aquí"
   },
   "whsp":{
     "src":"/images/whsp-button.png",
