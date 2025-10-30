@@ -39,19 +39,16 @@ export default function Navigation({ pageUrl }) {
           id="mainnavigationBar"
         >
           <div className="container-fluid">
-            <div className="d-flex align-items-center gap-3">
-              <a className="navbar-brand" href="/">
-                <img src={navigation.logo} alt="Nav-Logo" height={"45px"} />
-              </a>
-              <a
-                href={`${navigation.btn.link}`}
-                target="_blank"
-                className="btn btn-primary rounded ms-3"
-                style={{ padding: "0.25rem 0.5rem", fontSize: "0.875rem" }}
-              >
-                {navigation.btn.text}
-              </a>
-            </div>
+            <a className="navbar-brand" href="/">
+              <img src={navigation.logo} alt="Nav-Logo" height={"45px"} />
+            </a>
+            <a
+              href={`${navigation.btn.link}`}
+              target="_blank"
+              className="btn-primary d-lg-none p-1 rounded"
+            >
+              {navigation.btn.text}
+            </a>
 
             <button
               className="navbar-toggler"
