@@ -30,7 +30,7 @@ export default function GlobalCounter(block) {
             </div>
           </div>
           <div className="section-header col-lg-6" style={{padding: 0,}}>
-            <h1>Nuestra cobertura</h1>
+            <h2>Nuestra cobertura</h2>
             <p>Convergencia Digital cuenta con cobertura en los municipios de Ibagué y Suárez</p>
             </div>
           <div className="col-lg-6" style={{display: "flex", flexWrap: "wrap"}}>

@@ -35,7 +35,7 @@ export default function Footer({}) {
               <img  src="../images/alianza.png" alt="" width={"50%"} />
             </a>
             <a className="asociados mt-2" href="https://www.instagram.com/clustertolimatic/?hl=es-la" target="_blank">
-              <img  src="../images/cluster.png" alt="" width={"30%"} />
+              <img  src="../images/cluster.png" alt="" width={"60%"} />
             </a>
           </div>
         </div>

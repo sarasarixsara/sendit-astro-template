@@ -39,16 +39,24 @@ export default function Navigation({ pageUrl }) {
           id="mainnavigationBar"
         >
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">
-              <img src={navigation.logo} alt="Nav-Logo" height={"45px"} />
-            </a>
-            <a
-              href={`${navigation.btn.link}`}
-              target="_blank"
-              className="btn-primary d-lg-none p-1 rounded"
-            >
-              {navigation.btn.text}
-            </a>
+            <div className="d-flex w-100 justify-content-between align-items-start">
+              <div className="d-flex d-lg-none flex-column">
+                <a className="navbar-brand mb-2" href="/">
+                  <img src={navigation.logo} alt="Nav-Logo" height={"45px"} />
+                </a>
+                <a
+                  href={`${navigation.btn.link}`}
+                  target="_blank"
+                  className="btn btn-primary rounded"
+                  style={{ padding: "0.25rem 0.5rem", fontSize: "0.875rem" }}
+                >
+                  {navigation.btn.text}
+                </a>
+              </div>
+              
+              <a className="navbar-brand d-none d-lg-block" href="/">
+                <img src={navigation.logo} alt="Nav-Logo" height={"45px"} />
+              </a>
 
             <button
               className="navbar-toggler"
@@ -125,6 +133,7 @@ export default function Navigation({ pageUrl }) {
                 </svg>
               </span>
             </button>
+            
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
@@ -194,6 +203,7 @@ export default function Navigation({ pageUrl }) {
                 </li>
               </ul>
             </div>
+            
             <div className="d-none d-lg-block">
               <div className="nav-item">
                 <a
@@ -206,6 +216,8 @@ export default function Navigation({ pageUrl }) {
                 </a>
               </div>
             </div>
+            </div>
+            
             <div className="whsp-container">
               <a
                 href={`${generateLink(
