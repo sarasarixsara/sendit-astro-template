@@ -13,7 +13,7 @@ content_blocks:
 
   - _bookshop_name: heroSection
     eventDate: 13 de Diciembre, 2025
-    groomName: María Alejandra Gutierrez
+    groomName: María Alejandra Gutierrez Barón
 
   - _bookshop_name: countDown
     eventDate: 13 de Diciembre, 2025

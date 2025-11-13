@@ -22,13 +22,15 @@ if (!Astro.props.frontmatter) {
   throw new Error("Page frontmatter must be defined");
 }
 const props = Astro.props.frontmatter;
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout {...props}>
   <HeroSection 
     client:load
     eventDate="13 de Diciembre, 2025"
-    groomName="María Alejandra Gutierrez"
+    groomName="María Alejandra Gutierrez Barón"
   />
   <!-- <DomeGallery 
     client:load
@@ -85,27 +87,27 @@ const props = Astro.props.frontmatter;
     subtitle="Momentos que siempre guardaremos en el corazon"
     images={[
       {
-        src: '/images/carrousel/image1.jpeg',
+        src: baseUrl + '/images/carrousel/image1.jpeg',
         alt: 'En su cumpleanos',
         caption: 'Un momento especial'
       },
       {
-        src: '/images/carrousel/image2.jpeg',
+        src: baseUrl + '/images/carrousel/image2.jpeg',
         alt: 'Celebrando con amigos',
         caption: 'Rodeada de amor'
       },
       {
-        src: '/images/carrousel/image3.jpeg',
+        src: baseUrl + '/images/carrousel/image3.jpeg',
         alt: 'Sonriendo feliz',
         caption: 'Pura alegria'
       },
       {
-        src: '/images/carrousel/image4.jpeg',
+        src: baseUrl + '/images/carrousel/image4.jpeg',
         alt: 'Momento inolvidable',
         caption: 'Recuerdos para siempre'
       },
       {
-        src: '/images/carrousel/image5.jpeg',
+        src: baseUrl + '/images/carrousel/image5.jpeg',
         alt: 'Momento inolvidable',
         caption: 'Recuerdos para siempre'
       }

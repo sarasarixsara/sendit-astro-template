@@ -5,6 +5,6 @@ import bookshop from '@bookshop/astro-bookshop';
 // https://astro.build/config
 export default defineConfig({
   site: "https://top-quail.cloudvent.net/",
-  base: "/eventos/maria-alejandra-gutierrez",
+  base: "/eventos/maria-alejandra-gutierrez-baron",
   integrations: [bookshop(), react()]
 });

@@ -1,501 +1,221 @@
 // Hero Section Component Styles
-// Replaces all Tailwind classes with custom CSS
-
 .hero-section {
   position: relative;
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom, rgb(250, 245, 255), rgba(253, 242, 248, 0.5), white);
   overflow: hidden;
 
-  // Background decoration blobs
-  &__bg {
+  // Responsive background images
+  &__background {
     position: absolute;
-    inset: 0;
-  }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 
-  &__bg-blob {
-    position: absolute;
-    border-radius: 9999px;
-    filter: blur(64px);
-
-    &--top {
-      top: 5rem;
-      left: 5rem;
-      width: 24rem;
-      height: 24rem;
-      background-color: rgba(216, 180, 254, 0.3);
+    &-mobile,
+    &-desktop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
     }
 
-    &--bottom {
-      bottom: 10rem;
-      right: 5rem;
-      width: 20rem;
-      height: 20rem;
-      background-color: rgba(251, 207, 232, 0.3);
-    }
+    &-mobile {
+      background-image: url('/images/birthday/cel-background.png');
+      display: block;
 
-    &--middle {
-      top: 50%;
-      left: 33.333%;
-      width: 16rem;
-      height: 16rem;
-      background-color: rgba(243, 232, 255, 0.3);
-    }
-  }
-
-  // Main content container
-  &__content {
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    padding: 0 1.5rem;
-    max-width: 72rem;
-    margin: 0 auto;
-  }
-
-  // Floating emojis background
-  &__floating-bg {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-  }
-
-  &__floating-emoji {
-    position: absolute;
-
-    &--1 {
-      top: 5rem;
-      left: 2.5rem;
-      font-size: 3rem;
-      opacity: 0.4;
-    }
-
-    &--2 {
-      top: 8rem;
-      right: 5rem;
-      font-size: 2.5rem;
-      opacity: 0.3;
-    }
-
-    &--3 {
-      top: 10rem;
-      left: 33.333%;
-      font-size: 3.75rem;
-      opacity: 0.2;
-    }
-
-    &--4 {
-      top: 33.333%;
-      right: 25%;
-      font-size: 3rem;
-      opacity: 0.35;
-    }
-
-    &--5 {
-      top: 50%;
-      left: 5rem;
-      font-size: 2.5rem;
-      opacity: 0.25;
-    }
-  }
-
-  // Top section with cake
-  &__top {
-    margin-bottom: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__ornament {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  &__ornament-line {
-    height: 0.25rem;
-    width: 6rem;
-    border-radius: 9999px;
-
-    &--left {
-      background: linear-gradient(to right, transparent, rgb(192, 132, 252), rgb(168, 85, 247));
-    }
-
-    &--right {
-      background: linear-gradient(to left, transparent, rgb(192, 132, 252), rgb(168, 85, 247));
-    }
-  }
-
-  &__ornament-icon {
-    width: 2rem;
-    height: 2rem;
-    color: rgb(192, 132, 252);
-  }
-
-  // Cake icon with glow
-  &__cake-wrapper {
-    position: relative;
-    margin-bottom: 2rem;
-
-    &:hover &-glow {
-      transform: scale(1.75);
-    }
-  }
-
-  &__cake-glow {
-    position: absolute;
-    inset: 0;
-    filter: blur(64px);
-    background: linear-gradient(to right, rgba(192, 132, 252, 0.5), rgba(244, 114, 182, 0.5), rgba(192, 132, 252, 0.5));
-    border-radius: 9999px;
-    transform: scale(1.5);
-    transition: all 0.7s;
-  }
-
-  &__cake-icon {
-    position: relative;
-    font-size: 9rem;
-    filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
-
-    @media (min-width: 768px) {
-      font-size: 10rem;
-    }
-  }
-
-  &__cake-sparkle {
-    position: absolute;
-    font-size: 3.75rem;
-
-    &--top {
-      top: -1rem;
-      right: -1rem;
-    }
-
-    &--bottom {
-      bottom: -1rem;
-      left: -1rem;
-    }
-  }
-
-  // Sparkle trio
-  &__sparkles {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-    position: relative;
-  }
-
-  &__sparkle {
-    font-size: 3rem;
-
-    &--center {
       @media (min-width: 768px) {
-        font-size: 3.75rem;
+        display: none;
+      }
+    }
+
+    &-desktop {
+      background-image: url('/images/birthday/pc-background.png');
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
       }
     }
   }
 
-  // Title
-  &__title {
-    font-family: var(--bs-font-serif, serif);
-    font-size: 4.5rem;
-    font-weight: 200;
-    background: linear-gradient(to right, rgb(147, 51, 234), rgb(236, 72, 153), rgb(147, 51, 234));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    margin-bottom: 1rem;
-    letter-spacing: 0.05em;
-    line-height: 1.1;
-
-    @media (min-width: 768px) {
-      font-size: 6rem;
-    }
-  }
-
-  // Subtitles
-  &__subtitle {
-    font-family: var(--bs-font-serif, serif);
-    font-size: 1.875rem;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.5rem;
-
-    @media (min-width: 768px) {
-      font-size: 2.25rem;
-    }
-
-    &--primary {
-      color: rgb(244, 114, 182);
-    }
-
-    &--secondary {
-      color: rgb(192, 132, 252);
-      font-size: 1.5rem;
-      margin-bottom: 2.5rem;
-    }
-  }
-
-  // Decorative divider section
-  &__divider-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin: 3rem 0;
-  }
-
-  &__divider-group {
+  // Content container
+  &__container {
     position: relative;
+    z-index: 1;
+    max-width: 100%;
+    width: 100%;
+    
+ 
+    text-align: center;
 
-    &:hover &-line {
-      background: linear-gradient(to right, transparent, rgb(192, 132, 252), rgb(244, 114, 182));
+    @media (min-width: 768px) {
+   
+      max-width: 100%;
     }
   }
 
-  &__divider-line {
-    height: 0.25rem;
-    width: 8rem;
-    border-radius: 9999px;
-    transition: all 0.3s;
+  // Photo wrapper with glow effect
+  &__photo-wrapper {
+    position: relative;
+    margin-bottom: 2rem;
 
-    &--left {
-      background: linear-gradient(to right, transparent, rgb(216, 180, 254), rgb(248, 180, 217));
-    }
-
-    &--right {
-      background: linear-gradient(to left, transparent, rgb(248, 180, 217), rgb(216, 180, 254));
+    @media (min-width: 768px) {
+      margin-bottom: 3rem;
     }
   }
 
-  &__divider-dot {
+  &__photo-glow {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1rem;
-    height: 1rem;
-    border-radius: 9999px;
-    box-shadow: 0 10px 15px -3px rgba(192, 132, 252, 0.5);
-
-    &--purple {
-      background: linear-gradient(to right, rgb(192, 132, 252), rgb(244, 114, 182));
-    }
-
-    &--pink {
-      background: linear-gradient(to left, rgb(244, 114, 182), rgb(192, 132, 252));
-    }
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.3) 0%, transparent 70%);
+    filter: blur(20px);
   }
 
-  &__divider-ornament {
-    font-size: 2.25rem;
-    font-weight: 300;
-  }
-
-  // Tagline
-  &__tagline {
-    font-family: var(--bs-font-serif, serif);
-    font-size: 1.5rem;
-    color: rgb(55, 65, 81);
-    font-style: italic;
-    margin-bottom: 3.5rem;
-    letter-spacing: 0.025em;
-    font-weight: 300;
+  &__photo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px rgba(168, 85, 247, 0.3);
 
     @media (min-width: 768px) {
-      font-size: 1.875rem;
+      width: 280px;
+      height: 280px;
+      border-width: 6px;
     }
   }
 
-  &__tagline-highlight {
-    background: linear-gradient(to right, rgb(168, 85, 247), rgb(236, 72, 153), rgb(168, 85, 247));
+  // Invitation section
+  &__invitation {
+    width: 100%;
+  }
+
+  &__name {
+    font-family: var(--bs-font-serif, serif);
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, rgb(147, 51, 234), rgb(236, 72, 153), rgb(147, 51, 234));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-  }
+    text-shadow: none;
 
-  // Date card wrapper
-  &__date-wrapper {
-    position: relative;
-    display: inline-block;
-
-    &:hover &-glow {
-      transform: scale(1.5);
-    }
-
-    &:hover &-card {
-      box-shadow: 0 25px 50px -12px rgba(248, 180, 217, 0.4);
-      border-color: rgba(248, 180, 217, 0.5);
+    @media (min-width: 768px) {
+      font-size: 4rem;
+      margin-bottom: 2rem;
     }
   }
 
-  &__date-glow {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to right, rgba(192, 132, 252, 0.4), rgba(244, 114, 182, 0.4), rgba(192, 132, 252, 0.4));
-    filter: blur(64px);
-    transform: scale(1.25);
-    transition: all 0.7s;
-    border-radius: 1.5rem;
+  // Divider with icon
+  &__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 768px) {
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
   }
 
-  &__date-particle {
-    position: absolute;
-    border-radius: 9999px;
+  &__divider-line {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(216, 180, 254, 0.6), transparent);
 
-    &--1 {
-      top: -1.5rem;
-      right: -1.5rem;
-      width: 1rem;
-      height: 1rem;
-      background-color: rgb(244, 114, 182);
-      opacity: 0.6;
+    @media (min-width: 768px) {
+      width: 100px;
     }
+  }
 
-    &--2 {
-      bottom: -2rem;
-      left: -2rem;
-      width: 0.75rem;
-      height: 0.75rem;
-      background-color: rgb(192, 132, 252);
-      opacity: 0.5;
-    }
+  &__divider-icon {
+    font-size: 1.5rem;
+    color: rgb(192, 132, 252);
+  }
 
-    &--3 {
-      top: 50%;
-      right: -2.5rem;
-      width: 0.75rem;
-      height: 0.75rem;
-      background-color: rgb(248, 180, 217);
-      opacity: 0.4;
+  // Message
+  &__message {
+    font-family: var(--bs-font-serif, serif);
+    font-size: 1.5rem;
+    color: rgb(107, 114, 128);
+    margin-bottom: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
     }
   }
 
   // Date card
   &__date-card {
-    position: relative;
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.95), rgba(243, 232, 255, 0.8), rgba(252, 231, 243, 0.8));
-    backdrop-filter: blur(40px);
-    border: 2px solid rgba(216, 180, 254, 0.7);
-    border-radius: 1.5rem;
-    padding: 3rem;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    transition: all 0.5s;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(168, 85, 247, 0.2);
+    border: 1px solid rgba(216, 180, 254, 0.3);
 
     @media (min-width: 768px) {
-      padding: 4rem;
+      padding: 2rem 3.5rem;
+      margin-bottom: 2rem;
     }
   }
 
-  &__date-corner {
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    border-width: 3px;
-
-    &--top-left {
-      top: 1rem;
-      left: 1rem;
-      border-top-style: solid;
-      border-left-style: solid;
-      border-color: rgb(216, 180, 254);
-      border-top-left-radius: 0.75rem;
-    }
-
-    &--top-right {
-      top: 1rem;
-      right: 1rem;
-      border-top-style: solid;
-      border-right-style: solid;
-      border-color: rgb(248, 180, 217);
-      border-top-right-radius: 0.75rem;
-    }
-
-    &--bottom-left {
-      bottom: 1rem;
-      left: 1rem;
-      border-bottom-style: solid;
-      border-left-style: solid;
-      border-color: rgb(248, 180, 217);
-      border-bottom-left-radius: 0.75rem;
-    }
-
-    &--bottom-right {
-      bottom: 1rem;
-      right: 1rem;
-      border-bottom-style: solid;
-      border-right-style: solid;
-      border-color: rgb(216, 180, 254);
-      border-bottom-right-radius: 0.75rem;
-    }
-  }
-
-  &__date-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  &__date-icon {
-    width: 2rem;
-    height: 2rem;
-
-    &--purple {
-      color: rgb(192, 132, 252);
-    }
-
-    &--pink {
-      color: rgb(244, 114, 182);
-    }
-  }
-
-  &__date-text {
+  &__date {
     font-family: var(--bs-font-serif, serif);
-    font-size: 3rem;
-    letter-spacing: 0.05em;
+    font-size: 1.5rem;
     font-weight: 300;
-    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
     background: linear-gradient(to right, rgb(126, 34, 206), rgb(219, 39, 119), rgb(126, 34, 206));
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent;
+    margin: 0;
 
     @media (min-width: 768px) {
-      font-size: 3.75rem;
+      font-size: 2rem;
     }
   }
 
-  &__date-divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-  }
+  // Tagline
+  &__tagline {
+    font-family: var(--bs-font-serif, serif);
+    font-size: 1.1rem;
+    color: rgb(107, 114, 128);
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.025em;
 
-  &__date-divider-line {
-    height: 0.25rem;
-    flex: 1;
-    border-radius: 9999px;
-
-    &--left {
-      background: linear-gradient(to right, transparent, rgb(248, 180, 217));
+    @media (min-width: 768px) {
+      font-size: 1.3rem;
     }
-
-    &--right {
-      background: linear-gradient(to left, transparent, rgb(248, 180, 217));
-    }
-  }
-
-  &__date-divider-heart {
-    font-size: 1.875rem;
   }
 }
+
