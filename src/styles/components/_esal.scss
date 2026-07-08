@@ -1,0 +1,92 @@
+.esal-document {
+
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+
+    .document-number {
+        position: static;
+        width: min-content;
+        height: auto;
+        left: auto;
+        top: auto;
+        line-height: normal;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+
+        display: inline;
+
+        font-size: 18px;
+        text-align: center;
+        font-weight: 700;
+        color: #3a7bd5;
+        flex-shrink: 0;
+        margin-right: 18px;
+    }
+
+    .document-title {}
+
+    .document-description {}
+
+    .document-icon {
+        width: 56px;
+        height: 56px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 50px;
+        flex-shrink: 0;
+
+        margin-right: 18px;
+    }
+
+    .document-content {
+        flex: 1;
+    }
+
+    .document-action {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 18px;
+        background: #EDF5FF;
+        border-radius: 12px;
+        color: #2672d8;
+        font-weight: 600;
+
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .esal-document {
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        .document-content {
+
+            width: 100%;
+        }
+
+        .document-download {
+
+            margin-top: 15px;
+
+            align-self: flex-end;
+        }
+
+        .document-icon {
+
+            margin-bottom: 10px;
+        }
+    }
+
+}
