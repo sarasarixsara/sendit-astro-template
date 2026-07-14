@@ -44,7 +44,7 @@ export default function AboutHero(block) {
             <div className="about-hero-two-banner">
               {block.hero_images.map((image, i) => (
                 <div className={`${renderPlacer(image.placement)}`} key={i}>
-                  <img src={image.image} alt={image.image_alt} loading="lazy" />
+                  <img src={image.image} alt={image.image_alt} loading="lazy" />dfgdfgdfgdfgdg
                 </div>
               ))}
               <div className="pattern"></div>
