@@ -19,7 +19,7 @@ const slides = [
     alt: "Sonido Inteligente",
     buttonRight: "25%",
     calendar:
-      "https://calendar.google.com/",
+      "https://calendar.app.google/o8J2x3m7PND1R5nC8",
   },
   {
     desktop: "/images/hero/Iluminacion.jpeg",
@@ -27,7 +27,7 @@ const slides = [
     alt: "Iluminación Inteligente",
     buttonRight: "70%",
     calendar:
-      "https://calendar.google.com/",
+      "https://calendar.app.google/o8J2x3m7PND1R5nC8",
   },
 ];
 
