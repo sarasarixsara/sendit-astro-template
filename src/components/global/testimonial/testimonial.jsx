@@ -12,7 +12,7 @@ export default function GlobalTestimonial(block) {
           >
             <div className="testimonial-content">
               <h2>
-                {block.title} <span> {block.title_suffix}</span>
+                {block.title}<span> {block.title_suffix}</span>
               </h2>
             </div>
           </div>
@@ -31,7 +31,7 @@ function Testimonial({ slide, i }) {
     <div className="col-lg-3 col-md-6 mb-5" key={i}>
       <div className="testimonial-item " style={{ height: "100%" }}>
         <div
-          className="testimonial-item-person flex-column justify-content-between"
+          className="testimonial-item-person flex-column justify-content-between border border-2"
           style={{ height: "100%", display: "flex" }}
         >
           <div>

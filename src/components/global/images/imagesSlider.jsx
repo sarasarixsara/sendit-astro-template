@@ -26,7 +26,7 @@ export default function GlobalTestimonialSlider(block) {
         paddingBottom: "20px",
       }}
     >
-      <div className="container">
+      <div className="container border border-2 border-color-red">
         <div className="row align-items-center">
           <div className="col-lg-8 mx-auto text-center mb-2">
             <div className="testimonial-content">

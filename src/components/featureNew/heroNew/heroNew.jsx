@@ -59,7 +59,7 @@ export default function GlobalFeature(block) {
           <div className="col-lg-6 order-1 order-lg-2">
             <div className="feature-item-banner mb-sm-8 mb-lg-10 mb-xxl-15 mb-7">
               <div className="card-image">
-                <img src={block.image} alt={block.image_alt} loading="lazy" width="400" height="300" />
+                <img src={block.image} alt={block.image_alt} loading="lazy" width="400" height="300" />                
               </div>
               <div className="effect-two"></div>
             </div>

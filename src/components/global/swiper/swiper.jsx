@@ -1,45 +1,127 @@
-import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
-import HomeHero from '../../home/hero/hero';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
 
-const props = {
-    title: "Planes de Internet y Domótica: Conectividad e IoT para Hogares y Negocios",
-    button: {
-        text: "Conoce nuestros planes",
-        link: "/contact/",
-        number: "+573152102953",
-        message: "Quiero cotizar un plan de internet o domotica para mi negocio"
-    }
-}
+const slides = [
+  {
+    desktop: "/images/hero/Internet.jpeg",
+    mobile: "/images/hero/Internet-mobile.jpeg",
+    alt: "Internet y Domótica",
+    buttonRight: "20%",
+    calendar:
+      "https://calendar.app.google/o8J2x3m7PND1R5nC8",
+  },
+  {
+    desktop: "/images/hero/Sonido.jpeg",
+    mobile: "/images/hero/Sonido-mobile.jpeg",
+    alt: "Sonido Inteligente",
+    buttonRight: "25%",
+    calendar:
+      "https://calendar.google.com/",
+  },
+  {
+    desktop: "/images/hero/Iluminacion.jpeg",
+    mobile: "/images/hero/Iluminacion-mobile.jpeg",
+    alt: "Iluminación Inteligente",
+    buttonRight: "70%",
+    calendar:
+      "https://calendar.google.com/",
+  },
+];
 
+export default function HeroSlider() {
+  return (
+    <>
+      <Swiper
+        navigation={true}
+        modules={[Navigation]}
+        className="mySwiper"
+        style={{
+          paddingTop: "120px",
+          paddingBottom: "0px",
+        }}
+      >
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div className="hero-slide">
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcSet={slide.mobile}
+                />
 
-export default function App() {
-    return (
-        <>
-            <Swiper
-                navigation={true} modules={[Navigation]} className="mySwiper">
-                <SwiperSlide><HomeHero {...props} /></SwiperSlide>
-                {/* <SwiperSlide>
-                    <div style={{ position: "relative", height: "25rem" }}>
-                        <div style={{
-                            position: "absolute", top: "50%",
-                            right: "10%",
-                            transform: "translateY(-50%)",
-                            backgroundColor: "rgba(0, 0, 0, 0.5)", 
-                            padding: "20px",
-                            borderRadius: "10px",
-                        }}>
-                            <h5 style={{ color: "white"}}>Seguridad electrónica</h5>
-                        </div>
-                        <img src="/images/hero/home-cctv.jpg" alt="" style={{ width: "100%" }} />
-                    </div>
-                </SwiperSlide> */}
+                <img
+                  src={slide.desktop}
+                  alt={slide.alt}
+                  className="hero-image"
+                />
+              </picture>
 
+              <a
+                href={slide.calendar}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-button"
+                style={{ "--button-right": slide.buttonRight }}
+              >
+                Agenda tu asesoría gratuita
+              </a>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-            </Swiper>
-        </>
-    );
+      <style jsx>{`
+        .hero-slide {
+          position: relative;
+          width: 100%;
+        }
+
+        .hero-image {
+          width: 100%;
+          display: block;
+        }
+
+        .hero-button {
+          position: absolute;
+          right: var(--button-right);
+          bottom: 12%;
+          background: #ef8a1c;
+          color: #fff;
+          text-decoration: none;
+          padding: 15px 28px;
+          border-radius: 12px;
+          font-size: 18px;
+          font-weight: 600;
+          transition: all 0.3s ease;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .hero-button:hover {
+          background: #d97706;
+          transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+          .hero-button {
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%);
+            bottom: 6%;
+            width: 88%;
+            text-align: center;
+            padding: 16px;
+            font-size: 17px;
+            border-radius: 10px;
+          }
+
+          .hero-button:hover {
+            transform: translateX(-50%);
+          }
+        }
+      `}</style>
+    </>
+  );
 }

@@ -74,23 +74,23 @@ content_blocks:
           message: Hola, me interesa el plan 
 
         
-  - _bookshop_name: global/images/imagesSlider
-    title: 
-    title_suffix: Conoce nuestra app Nuplin
-    description: >-
+  # - _bookshop_name: global/images/imagesSlider
+  #   title: 
+  #   title_suffix: Conoce nuestra app Nuplin
+  #   description: >-
       
-    slider:
-      - image: /images/pricing/nuplin1.jpeg
-        image_alt: Consultoría y Diseño
+  #   slider:
+  #     - image: /images/pricing/nuplin1.jpeg
+  #       image_alt: Consultoría y Diseño
 
-      - image: /images/pricing/nuplin2.jpeg
-        image_alt: Profile photo of Pete Fish
+  #     - image: /images/pricing/nuplin2.jpeg
+  #       image_alt: Profile photo of Pete Fish
         
-      - image: /images/pricing/nuplin4.jpeg
-        image_alt: Profile photo of Dolly Watsona
+  #     - image: /images/pricing/nuplin4.jpeg
+  #       image_alt: Profile photo of Dolly Watsona
         
-      - image: /images/pricing/nuplin3.jpeg
-        image_alt: Soluciones en Fibra Óptica
+  #     - image: /images/pricing/nuplin3.jpeg
+  #       image_alt: Soluciones en Fibra Óptica
        
 
 

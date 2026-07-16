@@ -22,13 +22,16 @@ export default function GlobalTestimonialSlider(block) {
     <section className="testimonial">
       <div className="container">
         <div className="row align-items-center">
+          
           <div
             className="col-lg-8 mx-auto text-center mb-2"
             style={{ backgroundColor: "black" }}
           >
+             
             <div className="testimonial-content">
               <h2>
                 {block.title} <span> {block.title_suffix}</span>
+               
               </h2>
             </div>
           </div>
