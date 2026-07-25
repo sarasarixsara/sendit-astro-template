@@ -1,0 +1,32 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Documentos ESAL
+  description: Documentos legales ESAL organizados por año.
+  icon: "checklist"
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: Información Legal
+  years:
+      year: 2025
+      documents:
+        - id: 1
+          title: Informe de Gestión
+          description: Descripción del bookshop.
+          file:
+  years:
+    - title: El año
+      description: Descripción del año
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  description:
+    type: markdown
+  file:
+    type: text
