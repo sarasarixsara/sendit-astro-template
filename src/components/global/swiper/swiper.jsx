@@ -1,10 +1,25 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 const slides = [
+   {
+    desktop: "/images/hero/energiaSolar.jpeg",
+    mobile: "/images/hero/energiaSolar-mobile.jpeg",
+    alt: "Energía Solar",
+    buttonRight: "70%",
+    calendar:
+      "https://calendar.app.google/o8J2x3m7PND1R5nC8",
+  },
+  {
+    desktop: "/images/hero/seguridad.jpeg",
+    mobile: "/images/hero/seguridad-mobile.jpeg",
+    alt: "Seguridad Electrónica",
+    buttonRight: "20%",
+    calendar:
+      "https://calendar.app.google/o8J2x3m7PND1R5nC8",
+  },
   {
     desktop: "/images/hero/Internet.jpeg",
     mobile: "/images/hero/Internet-mobile.jpeg",
@@ -35,8 +50,14 @@ export default function HeroSlider() {
   return (
     <>
       <Swiper
-        navigation={true}
-        modules={[Navigation]}
+        modules={[Autoplay]}
+        spaceBetween={30}
+        loop={true}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
         className="mySwiper"
         style={{
           paddingTop: "120px",
@@ -73,7 +94,7 @@ export default function HeroSlider() {
         ))}
       </Swiper>
 
-      <style jsx>{`
+      <style>{`
         .hero-slide {
           position: relative;
           width: 100%;
