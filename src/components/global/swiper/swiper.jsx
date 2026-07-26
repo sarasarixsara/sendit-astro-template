@@ -87,7 +87,7 @@ export default function HeroSlider() {
                 className="hero-button"
                 style={{ "--button-right": slide.buttonRight }}
               >
-                Agenda tu asesoría gratuita
+                Agenda tu asesoría
               </a>
             </div>
           </SwiperSlide>
